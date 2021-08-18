@@ -22,7 +22,7 @@ const theme = () => ({
   mixins,
   dimensions,
   fontFamily: `
-  'Poppins',-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+  'Nunito Sans',-apple-system,BlinkMacSystemFont,"Helvetica Neue",
   "Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif
   `,
   secondary: '#051A26',
