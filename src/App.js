@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
+import { TopNav, Footer } from './Layout'
+import { IconContext } from 'react-icons'
+import { ThemeProvider } from 'styled-components'
+import { Home, FAQ } from './View'
+import { AppRoutes } from './constants'
+import theme from './base/theme'
+import GlobalStyle from './base/globalStyles'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const ScrollToTop = () => {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }, [pathname])
+
+  return null
 }
 
-export default App;
+const App = () => {
+  const location = useLocation()
+  let background = location.state && location.state.background
+
+  return (
+    <ThemeProvider theme={{ ...theme() }}>
+      <GlobalStyle />
+      <IconContext.Provider value={{ className: 'icon' }}>
+        <TopNav {...{ location }} />
+        <div className="app--content">
+          <Switch location={background || location}>
+            <Route path="/" exact={true}>
+              <Redirect to={AppRoutes.home} />
+            </Route>
+            <Route path={AppRoutes.home} component={Home} />
+            <Route path={AppRoutes.faq} component={FAQ} />
+          </Switch>
+        </div>
+        <Footer />
+        <ScrollToTop />
+      </IconContext.Provider>
+    </ThemeProvider>
+  )
+}
+
+export default App
