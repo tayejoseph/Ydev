@@ -3,7 +3,7 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
 import { TopNav, Footer } from './Layout'
 import { IconContext } from 'react-icons'
 import { ThemeProvider } from 'styled-components'
-import { Home, FAQ } from './View'
+import { Home, FAQ, TermAndConditions } from './View'
 import { AppRoutes } from './constants'
 import theme from './base/theme'
 import GlobalStyle from './base/globalStyles'
@@ -33,6 +33,10 @@ const App = () => {
             </Route>
             <Route path={AppRoutes.home} component={Home} />
             <Route path={AppRoutes.faq} component={FAQ} />
+            <Route
+              path={AppRoutes.termsandagreement}
+              component={TermAndConditions}
+            />
           </Switch>
         </div>
         <Footer />

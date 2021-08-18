@@ -2,7 +2,7 @@ import React from 'react'
 import { ReachUs, TitleWithDesign } from '../../component'
 import Container from './styles'
 
-const TermsAndCondition = () => {
+const PrivacyPolicy = () => {
   return (
     <Container>
       <header>
@@ -93,4 +93,4 @@ const TermsAndCondition = () => {
   )
 }
 
-export default TermsAndCondition
+export default PrivacyPolicy
