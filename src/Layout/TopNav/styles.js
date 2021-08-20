@@ -25,6 +25,7 @@ export default Styled.div`
             grid-gap: 2em;
             align-items: center;
             a {
+                text-decoration: none; 
                 color: #050402;
                 font-size: 0.9rem;
             }

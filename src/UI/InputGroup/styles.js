@@ -20,7 +20,7 @@ export default styled.div.attrs({
     letter-spacing: 0.14px;
     padding: 0 1em;
     font-size: ${rem('14px')};
-    font-weight: 500;
+    font-weight: bold;
     color: #595f62;
     letter-spacing: 0.14px;
     &:active,

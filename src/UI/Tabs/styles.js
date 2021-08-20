@@ -22,6 +22,7 @@ export default Styled.div`
             padding: 0px;
             font-weight: 400;
             font-size: 1rem;
+            text-decoration: none; 
             ${maxQuery('sm')} {
               font-size: 0.9rem;
             }

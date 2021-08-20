@@ -92,12 +92,12 @@ export default styled.button`
       props.plain &&
       css`
         background-color: transparent;
-        border-color: transparent;
-        color: #000000;
+        border: none;
+        color: ${({ theme }) => theme.primary};
         padding: 0px;
         &:hover,
         &:focus {
-          color: #000000;
+          color: ${({ theme }) => lighten(0.1, theme.primary)};
           border-color: transparent !important;
           background-color: transparent !important;
         }

@@ -24,7 +24,7 @@ const Button = ({
   children,
   ...rest
 }) => {
-  const isPrimary = !secondary && !tertiary && true
+  const isPrimary = !secondary && !tertiary && !plain && true
   return (
     <Container
       className={`btn u--typo__btn ${className ? className : ''}`}

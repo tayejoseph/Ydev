@@ -40,6 +40,7 @@ export default Styled.div`
             }
             &:last-of-type {
                 margin: 1.5em 0px;
+                line-height: 140%;
             }
         }
         div.action--group {

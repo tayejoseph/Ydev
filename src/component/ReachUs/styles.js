@@ -1,20 +1,47 @@
-import Styled from 'styled-components'
+import Styled, { css } from 'styled-components'
 import { minQuery } from '../../helpers'
 
 export default Styled.div`
     display: grid;
-    grid-gap: 3em;
+    grid-gap: 2em;
     padding: 2em 0px;
     ${minQuery('lg')} {
         grid-template-columns: 1fr 1fr;
+        height: 30rem;
+        align-items: center;
     }
+    ${(props) =>
+      props.withBackDrop === true &&
+      css`
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100vw;
+          left: 50%;
+          top: 0px;
+          height: 100%;
+          transform: translateX(-50%);
+          z-index: 1;
+          background: #f6fdff;
+        }
+        * {
+          z-index: 2;
+          position: relative;
+        }
+      `}
     div.col--1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      div.content--container {
         svg {
             font-size: 8rem;
             height: 3rem;
+            margin-bottom: 0.1em;
         }
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             font-weight: 700;
             margin-bottom: 0.5em;
         }
@@ -29,8 +56,12 @@ export default Styled.div`
         }
         div.btn--group {
             display: flex;
-            grid-gap: 1.5em;
+            grid-gap: 2em;
+            button:last-of-type {
+              background: #fff;
+            }
         }
+      }
     }
     div.col--2 {
         display: flex;
