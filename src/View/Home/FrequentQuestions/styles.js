@@ -17,6 +17,7 @@ export default Styled.div`
             p {
                 font-size: 1rem;
                 a {
+                    text-decoration: none; 
                     color: ${({ theme }) => theme.primary};
                     &:hover, &:focus, &:active {
                         text-decoration: underline;

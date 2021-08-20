@@ -17,7 +17,7 @@ export default Styled.div`
         z-index: 1;
         left: 50%;
         transform: translateX(-50%);
-    }
+    } 
     * {
         position: relative;
         z-index: 2;
@@ -63,7 +63,7 @@ export default Styled.div`
                 p {
                     font-size: 1.1rem;
                     color: #fff;
-                    font-weight: 500;
+                    font-weight: bold;
                 }
                 div.social--row {
                     display: flex;
@@ -79,6 +79,7 @@ export default Styled.div`
                 a {
                     display: block;
                     flex-shrink: 0;
+                    text-decoration: none; 
                     width: fit-content;
                     &:not(:last-of-type) {
                         margin-bottom: 0.5em;
@@ -116,6 +117,7 @@ export default Styled.div`
             a {
                 font-size: 0.9rem;
                 color: #808080;
+                text-decoration: none; 
                 &:hover, &:active, &:focus {
                     text-decoration: underline;
                     outline: none;

@@ -3,7 +3,16 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
 import { TopNav, Footer } from './Layout'
 import { IconContext } from 'react-icons'
 import { ThemeProvider } from 'styled-components'
-import { Home, FAQ, TermAndConditions } from './View'
+import {
+  Home,
+  FAQ,
+  TermAndConditions,
+  HireAlumni,
+  Curriculum,
+  AboutUs,
+  PrivacyPolicy,
+  Events,
+} from './View'
 import { AppRoutes } from './constants'
 import theme from './base/theme'
 import GlobalStyle from './base/globalStyles'
@@ -37,6 +46,15 @@ const App = () => {
               path={AppRoutes.termsandagreement}
               component={TermAndConditions}
             />
+            <Route path={AppRoutes.privacypolicy} component={PrivacyPolicy} />
+            <Route path={AppRoutes.hireAlumni} component={HireAlumni} />
+            <Route path={AppRoutes.curriculum} component={Curriculum} />
+            <Route
+              path={AppRoutes.aboutUs.studentStories}
+              component={AboutUs}
+            />
+            <Route path={AppRoutes.events} component={Events} />
+            {/* <Route path={AppRoutes.hireGraduates} component={} /> */}
           </Switch>
         </div>
         <Footer />

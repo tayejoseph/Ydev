@@ -1,5 +1,6 @@
 import Styled from 'styled-components'
 import { exclusiveBgPattern } from '../../../assets/svgImgs'
+import { maxQuery } from '../../../helpers'
 
 export default Styled.div`
     position: relative;
@@ -44,6 +45,10 @@ export default Styled.div`
             border-radius: 15px;
             padding: 1.5em;
             padding-bottom: 3em;
+            ${maxQuery('lg')} {
+                max-width: 30rem;
+                margin: 0 auto;
+            }
             div.top--container {
                 display: flex;
                 /* align-items: center; */

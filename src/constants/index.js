@@ -1,3 +1,7 @@
 export { default as HomeContent } from './homeContent'
 export { default as AppRoutes } from './routes'
 export { default as footerContent } from './footerContent'
+export { default as aluminiContent } from './aluminiContent'
+export { default as curriculumContent } from './curriculumContent'
+export { default as upcomingEventContent } from './upcomingEventContent'
+export { default as aboutUsContent } from './aboutUsContent'

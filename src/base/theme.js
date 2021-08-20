@@ -21,10 +21,7 @@ const theme = () => ({
   textColor: '#050402;',
   mixins,
   dimensions,
-  fontFamily: `
-  'Nunito Sans',-apple-system,BlinkMacSystemFont,"Helvetica Neue",
-  "Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif
-  `,
+  fontFamily: 'Nunito Sans',
   secondary: '#051A26',
 })
 

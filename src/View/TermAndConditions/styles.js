@@ -28,6 +28,7 @@ export default Styled.div`
             padding-left: 1.5em;
             li {
                 letter-spacing: -0.02em;
+                line-height: 180%;
             }
         }
     }

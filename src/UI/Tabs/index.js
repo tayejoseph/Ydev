@@ -7,6 +7,7 @@ const Tabs = ({ tabs, content, width, theme }) => {
   const query = useQuery().get('tab')
   const { url } = useRouteMatch()
 
+  const activeTab = tabs.findIndex((item) => item.title === query)
   return (
     <Container width={width} className="tab--ui">
       <div className="tab--header">
@@ -24,7 +25,7 @@ const Tabs = ({ tabs, content, width, theme }) => {
             ))}
         </nav>
       </div>
-      <div className="tab--content">{content[query]}</div>
+      {activeTab && <div className="tab--content">{activeTab.content}</div>}
     </Container>
   )
 }

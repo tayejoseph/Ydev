@@ -26,6 +26,7 @@ export default Styled.div`
         }
         nav {
             a {
+                text-decoration: none; 
                 display: block;
                 width: fit-content;
                 padding: 0.3em 0px;

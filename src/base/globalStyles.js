@@ -32,6 +32,9 @@ export default createGlobalStyle`
           overflow: hidden;
         }
       }
+      p {
+        line-height: 140%;
+      }
       hr {
         border: none;
         border-bottom: 1px solid #E6E6E6;

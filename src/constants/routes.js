@@ -6,11 +6,13 @@ const routes = {
   privacypolicy: '/privacyPolicy',
   hireAlumni: '/hireOurAlumni',
   curriculum: '/curriculum',
-  aboutUs: '/aboutUs',
+  aboutUs: {
+    initial: '/aboutUs',
+    studentStories: '/aboutUs/studentStories',
+  },
   events: '/events',
   corporateTraining: '/corporateTraining',
   contactUs: '/contactUs',
-
   studentStories: '/studentStories',
   resources: '/resources',
   blog: '/blog',
