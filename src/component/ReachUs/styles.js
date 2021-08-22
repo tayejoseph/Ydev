@@ -1,5 +1,5 @@
 import Styled, { css } from 'styled-components'
-import { minQuery } from '../../helpers'
+import { minQuery, maxQuery } from '../../helpers'
 
 export default Styled.div`
     display: grid;
@@ -33,7 +33,9 @@ export default Styled.div`
     div.col--1 {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      ${minQuery('lg')} {
+        align-items: flex-end;
+      }
       div.content--container {
         svg {
             font-size: 8rem;
@@ -65,7 +67,14 @@ export default Styled.div`
     }
     div.col--2 {
         display: flex;
-        justify-content: flex-end;
-
+        justify-content: center;
+        ${minQuery('lg')} {
+          justify-content: flex-end;
+        }
+        ${maxQuery('lg')} {
+          img {
+            max-width: 20rem;
+          }
+        }
     }
 `

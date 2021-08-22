@@ -9,6 +9,7 @@ const routes = {
   aboutUs: {
     initial: '/aboutUs',
     studentStories: '/aboutUs/studentStories',
+    ourStory: '/aboutUs/ourStory',
   },
   events: '/events',
   corporateTraining: '/corporateTraining',
@@ -17,6 +18,10 @@ const routes = {
   resources: '/resources',
   blog: '/blog',
   hireGraduates: '/hireOurGraduates',
+  becomeAmentor: '/becomeAMentor',
+  becomeAnInstructor: '/becomeAnInstructor',
+  jobDetails: '/jobDetails',
+  // aboutUs
 }
 
 export default routes

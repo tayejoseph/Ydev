@@ -93,7 +93,7 @@ export default styled.button`
       css`
         background-color: transparent;
         border: none;
-        color: ${({ theme }) => theme.primary};
+        color: #000000;
         padding: 0px;
         &:hover,
         &:focus {
