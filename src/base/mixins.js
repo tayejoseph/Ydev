@@ -24,6 +24,24 @@ const mixins = {
     margin: 0 auto;
   `,
 
+  primaryBg: css`
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      height: 100%;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #f2fcff;
+      z-index: 1;
+    }
+    * {
+      position: relative;
+      z-index: 2;
+    }
+  `,
   scrollbar: css`
     & {
       overflow-y: overlay;

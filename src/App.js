@@ -9,9 +9,15 @@ import {
   TermAndConditions,
   HireAlumni,
   Curriculum,
-  AboutUs,
   PrivacyPolicy,
   Events,
+  OurStories,
+  StudentStories,
+  ContactUs,
+  CorperateTraining,
+  BecomeAMentor,
+  JobDetails,
+  BecomeAnInstructor,
 } from './View'
 import { AppRoutes } from './constants'
 import theme from './base/theme'
@@ -51,9 +57,21 @@ const App = () => {
             <Route path={AppRoutes.curriculum} component={Curriculum} />
             <Route
               path={AppRoutes.aboutUs.studentStories}
-              component={AboutUs}
+              component={StudentStories}
             />
+            <Route path={AppRoutes.aboutUs.ourStory} component={OurStories} />
             <Route path={AppRoutes.events} component={Events} />
+            <Route
+              path={AppRoutes.corporateTraining}
+              component={CorperateTraining}
+            />
+            <Route path={AppRoutes.contactUs} component={ContactUs} />
+            <Route path={AppRoutes.becomeAmentor} component={BecomeAMentor} />
+            <Route
+              path={AppRoutes.becomeAnInstructor}
+              component={BecomeAnInstructor}
+            />
+            <Route path={AppRoutes.jobDetails} component={JobDetails} />
             {/* <Route path={AppRoutes.hireGraduates} component={} /> */}
           </Switch>
         </div>

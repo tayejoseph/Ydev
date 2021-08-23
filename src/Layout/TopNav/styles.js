@@ -14,6 +14,10 @@ export default Styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        * {
+            position: relative;
+            z-index: 10;
+        }
         a.brand--logo {
             svg {
                 transform: scale(5.5);

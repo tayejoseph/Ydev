@@ -34,6 +34,7 @@ export default Styled.div`
                 font-size: 1.3rem;
                 margin-top: 0.2em;
                 margin-bottom: 0.25em;
+                font-weight: 600;
             }
             p {
                 font-size: 0.9rem;

@@ -24,6 +24,7 @@ export default createGlobalStyle`
         font-size: 95%;
       }
     }
+    
     html { 
       overflow-y: overlay;
       overflow-x: hidden;
@@ -72,7 +73,9 @@ export default createGlobalStyle`
       text-align: center;
     }
 
-    
+    .u--color__primary {
+      color: ${({ theme }) => theme.primary};
+    }
     .u--badge--green {
         background: #D3F8EF;
         color: #FF6C00;
