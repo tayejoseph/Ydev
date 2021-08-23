@@ -1,6 +1,6 @@
 import React from 'react'
 import { Player } from '@lottiefiles/react-lottie-player'
-import { Congrats } from '../../assets/LottieAnimations'
+import { Congrats } from '../../../assets/LottieAnimations'
 import { Button } from '../../../UI'
 import Container from './styles'
 

@@ -5,7 +5,7 @@ const InputGroup = ({
   children,
   onChange,
   label,
-  {hasRequired} = false,
+  hasRequired = false,
   type,
   ...props
 }) => {

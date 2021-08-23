@@ -1,11 +1,5 @@
 import Styled from 'styled-components'
-import {
-  CountryMaps,
-  Sphere,
-  LeftL,
-  Lgrid,
-  SquareBlock,
-} from '../../assets/svgImgs'
+import { CountryMaps, LeftL } from '../../assets/svgImgs'
 import { minQuery } from '../../helpers'
 
 export default Styled.div`

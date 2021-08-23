@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { CompanySponsors, TitleWithDesign, ReachUs } from '../../component'
-import { contactSection } from '../../assets/svgImgs'
+import { TitleWithDesign } from '../../component'
 import { Button, InputGroup } from '../../UI'
-import { AppRoutes, corporateTrainingContent } from '../../constants'
+import { AppRoutes } from '../../constants'
 import Container from './styles'
 
 const ContactUs = () => {

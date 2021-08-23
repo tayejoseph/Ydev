@@ -6,7 +6,7 @@ import {
   whyChooseDev,
 } from '../../assets/svgImgs'
 import { lighten } from 'polished'
-import { minQuery, maxQuery } from '../../helpers'
+import { minQuery } from '../../helpers'
 
 export default Styled.div`
     h1 {

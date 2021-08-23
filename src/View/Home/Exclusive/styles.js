@@ -16,7 +16,7 @@ export default Styled.div`
         left: 50%;
         z-index: 1;
         transform: translateX(-50%);
-        background-image: url(${exclusiveBgPattern});
+        background-imagem;: url(${exclusiveBgPattern});
         background-repeat: no-repeat;
         background-position: bottom right;
     }
@@ -37,7 +37,9 @@ export default Styled.div`
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 2em;
+        margin: 0 auto;
         margin-top: 3em;
+        max-width: 80rem;
         div.grid--item {
             background: #FFFFFF;
             border: 1px solid #D0EAF9;

@@ -1,12 +1,4 @@
 import { Eye, Love, Time, Tie } from '../assets/convertedSvgs'
-import {
-  TopAlumin,
-  Flexible,
-  Support,
-  firstEng,
-  secondEng,
-  thirdEng,
-} from '../assets/svgImgs'
 
 const becomeAMentorContent = {
   goodFit: [
