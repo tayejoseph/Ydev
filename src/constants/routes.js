@@ -12,16 +12,28 @@ const routes = {
     ourStory: '/aboutUs/ourStory',
   },
   events: '/events',
-  corporateTraining: '/corporateTraining',
   contactUs: '/contactUs',
-  studentStories: '/studentStories',
   resources: '/resources',
   blog: '/blog',
   hireGraduates: '/hireOurGraduates',
   becomeAmentor: '/becomeAMentor',
   becomeAnInstructor: '/becomeAnInstructor',
   jobDetails: '/jobDetails',
+  enterprise: {
+    corporateTraining: '/enterprise/corporateTraining',
+    hireAlumni: '/enterprise/hireAlumni',
+  },
   // aboutUs
+  schools: {
+    link: '/schools/:schoolName',
+    dataSchool: '/school/dataSchool',
+    designSchool: '/school/designSchool',
+    productSchool: '/school/productSchool',
+    devOpsSchool: '/school/devOpsSchool',
+    softwareSchool: '/school/softwareSchool',
+    qaSchool: '/school/qaSchool',
+    engineeringSchool: '/school/engineeringSchool',
+  },
 }
 
 export default routes

@@ -7,7 +7,7 @@ export default Styled.div`
     align-items: center;
     width: 100vw;
     background: #fff;
-    z-index: 4;
+    z-index: 9;
     div.content--container {
         ${({ theme }) => theme.mixins.maxWidth};
         margin: auto;
@@ -16,7 +16,7 @@ export default Styled.div`
         align-items: center;
         * {
             position: relative;
-            z-index: 10;
+            z-index: 999;
         }
         a.brand--logo {
             svg {
@@ -28,12 +28,78 @@ export default Styled.div`
             display: flex;
             grid-gap: 2em;
             align-items: center;
-            a {
-                text-decoration: none; 
-                color: #050402;
-                font-size: 0.9rem;
+            div.menu--container {
+                position: relative;
+                button.menu--item {
+                    color: #050402;
+                    font-size: 0.9rem;
+                    display: inline-flex;
+                    align-items: center;
+                    background: transparent;
+                    border: none;
+                    * {
+                        pointer-events: none;
+                    }
+                    span {
+                        border: 1px solid #DADADA;
+                        margin-left: 0.5em;
+                        border-radius: 50%;
+                        svg {
+                            display: flex;
+                            transition: all 0.5s;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                div.menu--lists {
+                    pointer-events: none;
+                    top: 2em;
+                    transition: all 0.25s;
+                    opacity: 0;
+                    z-index: -99;
+                    position: absolute;
+                    background: #fff;
+                    z-index: 999;
+                    border: 1px solid #DADADA;
+                    border-radius: 6px;
+                    min-width: 12rem;
+                    padding: 0.5em 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: all 0.2s;
+                    a {
+                        color: #050402;
+                        padding: 0.5em 1em;
+                        display: block;
+                        flex-shrink: 0;
+                        font-weight: 400;
+                        font-size: 0.9rem;
+                        transition: all 0.25s;
+                        &:hover, &:active, &:focus {
+                            text-decoration: none;
+                            color: ${({ theme }) => theme.primary};
+                        }
+                    }
+                }
             }
-            button {
+            div.menu--container {
+                &.active--nav {
+                    button {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    div.menu--lists {
+                        opacity: 1;
+                        pointer-events: auto;
+                        z-index: 999;
+                        top: 2em;
+                    }
+                }
+            }
+            button.contact--btn {
                 display: flex;
                 align-items: center;
                 .icon {

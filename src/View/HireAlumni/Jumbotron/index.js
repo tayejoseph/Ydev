@@ -5,7 +5,9 @@ import Container from './styles'
 const Jumbtron = () => {
   return (
     <Container>
-      <h1>Expand your access to world-class talents</h1>
+      <h1>
+        Expand your access to <span>world-class talents</span>
+      </h1>
       <p>
         Hire result-driven software developers for your team without
         geographical constraints. Ydev offers you top-vetted talents that

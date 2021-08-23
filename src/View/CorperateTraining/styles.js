@@ -32,7 +32,7 @@ export default Styled.div`
             left: 50%;
             transform: translateX(-50%);
             z-index: 4;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.81%, #FFFFFF 41.51%), url(${honeycombPattern});
+            /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.81%, #FFFFFF 41.51%), url(${honeycombPattern}); */
         }
         * {
             position: relative;

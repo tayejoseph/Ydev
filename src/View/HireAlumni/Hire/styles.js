@@ -2,6 +2,9 @@ import Styled from 'styled-components'
 import { maxQuery } from '../../../helpers'
 
 export default Styled.div`
+    h1 {
+        font-weight: 600;
+    }
     section.section--skills {
         header {
             display: flex;
@@ -11,6 +14,7 @@ export default Styled.div`
             h1 {
                 margin-bottom: 0.8em; 
                 font-size: 2rem;
+                font-weight: 600;
             }
             p {
                 color: #4B4956;

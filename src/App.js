@@ -53,7 +53,6 @@ const App = () => {
               component={TermAndConditions}
             />
             <Route path={AppRoutes.privacypolicy} component={PrivacyPolicy} />
-            <Route path={AppRoutes.hireAlumni} component={HireAlumni} />
             <Route path={AppRoutes.curriculum} component={Curriculum} />
             <Route
               path={AppRoutes.aboutUs.studentStories}
@@ -61,10 +60,6 @@ const App = () => {
             />
             <Route path={AppRoutes.aboutUs.ourStory} component={OurStories} />
             <Route path={AppRoutes.events} component={Events} />
-            <Route
-              path={AppRoutes.corporateTraining}
-              component={CorperateTraining}
-            />
             <Route path={AppRoutes.contactUs} component={ContactUs} />
             <Route path={AppRoutes.becomeAmentor} component={BecomeAMentor} />
             <Route
@@ -72,6 +67,15 @@ const App = () => {
               component={BecomeAnInstructor}
             />
             <Route path={AppRoutes.jobDetails} component={JobDetails} />
+
+            <Route
+              path={AppRoutes.enterprise.hireAlumni}
+              component={HireAlumni}
+            />
+            <Route
+              path={AppRoutes.enterprise.corporateTraining}
+              component={CorperateTraining}
+            />
             {/* <Route path={AppRoutes.hireGraduates} component={} /> */}
           </Switch>
         </div>

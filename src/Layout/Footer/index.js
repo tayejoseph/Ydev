@@ -35,9 +35,11 @@ const Footer = () => {
         <div className="grid--item">
           <h2>About Ydev</h2>
           <nav>
-            <NavLink to={AppRoutes.aboutUs}>About Us</NavLink>
+            <NavLink to={AppRoutes.aboutUs.ourStory}>About Us</NavLink>
             <NavLink to={AppRoutes.contactUs}>Contact Us</NavLink>
-            <NavLink to={AppRoutes.studentStories}>Student Stories</NavLink>
+            <NavLink to={AppRoutes.aboutUs.studentStories}>
+              Student Stories
+            </NavLink>
             <NavLink to={AppRoutes.events}>Events</NavLink>
             <NavLink to={AppRoutes.resources}>Resources</NavLink>
             <NavLink to={AppRoutes.faq}>FAQs</NavLink>
@@ -47,15 +49,19 @@ const Footer = () => {
         <div className="grid--item">
           <h2>Our Programs</h2>
           <nav>
-            <NavLink to={AppRoutes.aboutUs}>School of Design</NavLink>
-            <NavLink to={AppRoutes.contactUs}>
+            <NavLink to={AppRoutes.schools.designSchool}>
+              School of Design
+            </NavLink>
+            <NavLink to={AppRoutes.schools.dataSchool}>
               School of Data management
             </NavLink>
-            <NavLink to={AppRoutes.studentStories}>
+            <NavLink to={AppRoutes.schools.productSchool}>
               School of Product management
             </NavLink>
-            <NavLink to={AppRoutes.events}>School of DevOps</NavLink>
-            <NavLink to={AppRoutes.resources}>
+            <NavLink to={AppRoutes.schools.devOpsSchool}>
+              School of DevOps
+            </NavLink>
+            <NavLink to={AppRoutes.schools.softwareSchool}>
               School of Software Engineering
             </NavLink>
           </nav>
@@ -64,7 +70,7 @@ const Footer = () => {
           <h2>Enterprise</h2>
           <nav>
             <NavLink to={AppRoutes.hireGraduates}>Hire our graduate</NavLink>
-            <NavLink to={AppRoutes.corporateTraining}>
+            <NavLink to={AppRoutes.enterprise.corporateTraining}>
               Corporate training
             </NavLink>
           </nav>
