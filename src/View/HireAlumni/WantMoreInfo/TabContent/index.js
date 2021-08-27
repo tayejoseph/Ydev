@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Button } from '../../../../UI'
 import { IoMdClose } from 'react-icons/io'
 import { IoAddSharp } from 'react-icons/io5'
-import { HireAlumniContent } from '../../../../constants'
 import Container from './styles'
 
 const TabContent = ({ content }) => {

@@ -25,7 +25,7 @@ const Foundation = () => {
       </section>
       <section className="section--bottom">
         <header>
-          <h1 className="u--typo__title2">Our students are hired by</h1>
+          <h1 className="u--typo__title2">Our Partners</h1>
           <p>Global relevance and opportunities for all</p>
         </header>
         <CompanySponsors />
