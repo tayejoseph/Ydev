@@ -5,6 +5,16 @@ export default Styled.div`
     position: relative;
     padding: 3em 0px;
     padding-bottom: 5em;
+    h1 {
+        font-weight: 900;
+        font-size: 1.8rem;
+        margin: 0.5em 0px;
+    }
+    p {
+        font-size: 1.15rem;
+        letter-spacing: -0.02em;
+        color: #434343;
+    }
     &:after {
         content: "";
         position: absolute;
@@ -26,6 +36,7 @@ export default Styled.div`
             font-size: 5rem;
         }
         h1 {
+            margin: 0px;
             margin-bottom: 0.5em;
         }
         p {
@@ -34,12 +45,12 @@ export default Styled.div`
             margin: 0 auto;
         }
         button {
-            margin-top: 3em;
+            margin-top: 2em;
         }
     }
     div.grid--container {
         display: grid;
-        grid-gap: 3em;
+        grid-gap: 2em;
         margin-top: 4em;
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
         div.grid--header {
@@ -58,18 +69,17 @@ export default Styled.div`
             h1 {
                 margin-top: 0.8em;
                 font-size: 1.4rem;
-                /* margin-bottom: 2em */
-                ${minQuery('lg')} {
-                    margin-bottom: 2em;
-                    height: 3rem;
+                ${minQuery('md')} {
+                    height: 4rem;
                 }
-                font-weight: 600;
+                font-weight: 700;
+                line-height: 120%;
                 color: #292828;
             }
         }
         p {
             color: #555255;
-            font-size: 0.9rem;
+            font-size: 0.92rem;
         }
     }
 `

@@ -1,23 +1,24 @@
 import Styled from 'styled-components'
+import { rem } from 'polished'
 import { OurMission } from '../../../assets/svgImgs'
-import { maxQuery } from '../../../helpers'
+import { maxQuery, minQuery } from '../../../helpers'
 
 export default Styled.div`
     h1 {
-        font-weight: 900;
-        font-size: 2rem;
+        font-weight: 700;
+        font-size: 1.9rem;
         text-align: center;
         margin: 0.5em 0px;
     }
     p {
-        font-size: 1.15rem;
+        font-size: 1rem;
         line-height: 190%;
         letter-spacing: -0.02em;
         color: #434343;
     }
     section.section--jumbotron {
-        height: 40rem;
         position: relative;
+        height: ${rem('654px')};
         display: flex;
         align-items: center;
         &:after {
@@ -27,7 +28,11 @@ export default Styled.div`
             left: 50%;
             transform: translateX(-50%);
             width: 100vw;
-            background-image: linear-gradient(90.09deg, #000000 40.14%, rgba(0, 0, 0, 0) 99.92%), url(${OurMission});
+            background-image: 
+            linear-gradient(90.09deg, #000000 40.14%, rgba(0, 0, 0, 0) 99.92%),
+             url(${OurMission});
+             background-size: 100vw;
+             background-repeat: no-repeat;
             height: 100%;
             z-index: 1;
         }
@@ -43,13 +48,18 @@ export default Styled.div`
             text-align: left;
         }
         h1 {
-            font-weight: 800;
+            font-weight: 700;
             color: #fff;
             margin-top: 0.5em;
             line-height: 100%;
-            font-size: 3.5rem;
+            line-height: 120%;
+            font-size: 2.9rem;
             text-align: left;
             max-width: 34rem;
+            ${maxQuery('<lg')} {
+                max-width: 90%;
+            }
+            padding-bottom: 27%;
             span {
                 color: #97B5E2;
             }
@@ -131,7 +141,7 @@ export default Styled.div`
                     margin-bottom: 1em;
                     h2 {
                         font-size: 1.3rem;
-                        font-weight: 800;
+                        font-weight: 700;
                     }
                     svg {
                         font-size: 3rem;
@@ -139,7 +149,7 @@ export default Styled.div`
                 }
                 p {
                     padding-right: 2em;
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -149,7 +159,7 @@ export default Styled.div`
         padding-bottom: 0.5em;
         h1 {
             max-width: 30rem;
-            line-height: 140%;
+            line-height: 150%;
             margin: 0 auto;
         }
     }
@@ -161,8 +171,10 @@ export default Styled.div`
         }
         div.grid--container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
             grid-gap: 4em;
+            ${minQuery('md')} {
+                grid-template-columns: repeat(2, 1fr);
+            }
             margin-bottom: 7em;
             div.grid--item {
                 div.img--container {
@@ -170,6 +182,10 @@ export default Styled.div`
                     width: 12rem;
                     border-radius: 50%;
                     margin-bottom: 1.25em;
+                }
+                p {
+                    max-width: 90%;
+                    margin-top: 0.5em;
                 }
                 h1 {
                     text-align: left;

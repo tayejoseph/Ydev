@@ -1,4 +1,5 @@
 import Styled from 'styled-components'
+import { minQuery } from '../../../helpers'
 
 export default Styled.div`
     padding: 3em 0px;
@@ -24,14 +25,17 @@ export default Styled.div`
     div.grid--container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        grid-gap: 1em;
+        grid-gap: 2.5em;
+        ${minQuery('lg')} {
+            grid-gap: 1em;
+        }
         img {
             width: 387.63px;
             height: 343.15px;
         }
         div.grid--item {
             h1 {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 margin-top: 0.2em;
                 margin-bottom: 0.25em;
                 font-weight: 600;
@@ -47,5 +51,8 @@ export default Styled.div`
         align-items: center;
         justify-content: center;
         margin-top: 4em;
+        button {
+            border-color: #2298BB!important;
+        }
     }
 `

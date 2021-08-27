@@ -60,9 +60,8 @@ export default Styled.div`
         input {
             width: 100%;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             padding-left: 1.5em;
-            padding-right: 1em;
             padding-bottom: 0.5em;
             border: none;
             outline: none;

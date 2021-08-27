@@ -24,7 +24,7 @@ export default Styled.div`
                     font-size: 1.1rem;
                 }
                 &:last-of-type {
-                    font-weight: bold;
+                    font-weight: 600;
                     font-size: 1rem;
                 }
             }

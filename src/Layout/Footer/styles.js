@@ -44,7 +44,7 @@ export default Styled.div`
             }
             header {
                 svg {
-                    font-size: 9rem;
+                    font-size: 8rem;
                     height: 4rem;
                     margin-top: -0.1em;
                 }
@@ -55,21 +55,21 @@ export default Styled.div`
             h2 {
                 font-size: 1.1rem;
                 color: #fff;
-                font-weight: 600;
+                font-weight: 500;
                 margin-bottom: 1em;
             }
             div.socials {
                 margin-top: 1.5em;
                 p {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     color: #fff;
-                    font-weight: bold;
+                    font-weight: 500;
                 }
                 div.social--row {
                     display: flex;
                     align-items: center;
                     grid-gap: 1em;
-                    margin-top: 1em;
+                    margin-top: 0.3em;
                     svg {
                         font-size: 1.3rem;
                     }

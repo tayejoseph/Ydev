@@ -1,12 +1,12 @@
 import React from 'react'
-import { v4 as uuid } from 'uuid'
 import { aboutUsOurStoryContent } from '../../../constants'
-import { CompanySponsors } from '../../../component'
+import { CompanySponsors, ReadyStart } from '../../../component'
 import { LinkedIn2 } from '../../../assets/convertedSvgs'
 import { groupPhoto } from '../../../assets/svgImgs'
 import Container from './styles'
 
 const OurStory = () => {
+  console.log('Sdkdkdskdslk')
   return (
     <Container>
       <section className="section--jumbotron">
@@ -56,7 +56,7 @@ const OurStory = () => {
         </hgroup>
         <div className="grid--container">
           {aboutUsOurStoryContent.ourValues.map((item) => (
-            <div className="grid--item" key={uuid()}>
+            <div className="grid--item" key={item.key}>
               <header>
                 <h2>{item.title}</h2>
                 <item.icon />
@@ -74,7 +74,7 @@ const OurStory = () => {
         <h1>Meet our executive team</h1>
         <div className="grid--container">
           {aboutUsOurStoryContent.executives.map((item) => (
-            <div className="grid--item" key={uuid()}>
+            <div className="grid--item" key={item.key}>
               <div className="img--container">
                 <img src={item.image} alt={item.title} />
               </div>
@@ -93,13 +93,13 @@ const OurStory = () => {
         <h1>Meet our advisory board</h1>
         <div className="grid--container">
           {aboutUsOurStoryContent.adviseBoard.map((item) => (
-            <div className="grid--item" key={uuid()}>
+            <div className="grid--item" key={item.key}>
               <div className="img--container">
                 <img src={item.image} alt={item.title} />
               </div>
               <div>
                 <h1>{item.name}</h1>
-                <a href={item.linkedInLink}>
+                <a href={item.linkedInLink} target="_blank" rel="noreferrer">
                   <LinkedIn2 />
                 </a>
               </div>
@@ -108,6 +108,7 @@ const OurStory = () => {
           ))}
         </div>
       </section>
+      <ReadyStart {...{ content: 'Ready to learn with Ydev?' }} />
     </Container>
   )
 }

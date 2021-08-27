@@ -1,5 +1,4 @@
 import React from 'react'
-import { v4 as uuid } from 'uuid'
 import { Button } from '../../../UI'
 import { Blogs } from '../../../assets/convertedSvgs'
 import { HomeContent } from '../../../constants'
@@ -18,7 +17,7 @@ const BlogsContent = () => {
       </header>
       <div className="grid--container">
         {HomeContent.blogs.map((item) => (
-          <div className="grid--item" key={uuid()}>
+          <div className="grid--item" key={item.key}>
             <img src={item.img} alt={item.title} />
             <div className="content--container">
               <h1>{item.title}</h1>

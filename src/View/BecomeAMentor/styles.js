@@ -6,12 +6,12 @@ import {
   Lgrid,
   SquareBlock,
 } from '../../assets/svgImgs'
-import { minQuery } from '../../helpers'
+import { minQuery, maxQuery } from '../../helpers'
 
 export default Styled.div`
     h1 {
-        font-weight: 900;
-        font-size: 2rem;
+        font-weight: 700;
+        font-size: 1.7rem;
         margin: 0.5em 0px;
     }
     p {
@@ -26,9 +26,8 @@ export default Styled.div`
         position: relative;
         ${minQuery('lg')} {
             grid-template-columns: 1fr 1fr;
-            align-items: center;
-        }
-        ${minQuery('lg')} {
+            /* align-items: center; */
+            height: 35rem;
             &:after {
                 content: "";
                 position: absolute;
@@ -43,6 +42,7 @@ export default Styled.div`
             }
         }
         div.col--1 {
+            padding-top: 4em;
             h2 {
                 display: flex;
                 align-items: center;
@@ -57,8 +57,12 @@ export default Styled.div`
 
         }
         div.col--2 {
+            ${maxQuery('lg')} {
+                text-align: center;
+            }
             img {
                 width: 100%;
+                max-width: 30rem;
             }
         }
         div.action--group {
@@ -95,12 +99,17 @@ export default Styled.div`
         div.grid--container {
             display: grid;
             grid-template-columns: 15rem 1fr 15rem;
+            ${maxQuery('md')} {
+                grid-template-columns: 1fr 1fr;
+            }
             text-align: center;
             background: #FFFFFF;
             max-width: 50rem;
             width: 100%;
             margin: 0px auto;
-            border: 0.804938px solid #DDDDDD;
+            ${minQuery('lg')} {
+                border: 0.804938px solid #DDDDDD;
+            }
             div.grid--item {
                 display: flex;
                 padding: 1em 1.5em;
@@ -115,6 +124,9 @@ export default Styled.div`
                     border-right: 0.804938px solid #DDDDDD;
                     border-left: 0.804938px solid #DDDDDD;
                 }
+                ${maxQuery('lg')} {
+                    border: 0.804938px solid #DDDDDD;
+                }
             }
         }
     }
@@ -125,7 +137,7 @@ export default Styled.div`
         header {
             text-align: center;
             p {
-                font-size: 1.2rem;
+                font-size: 1.05rem;
             }
         }
         div.grid--container {
@@ -149,15 +161,16 @@ export default Styled.div`
                     margin-bottom: 1em;
                     justify-content: space-between;
                     h2 {
-                        font-weight: 800;
-                        font-size: 1.2rem;
+                        font-weight: 600;
+                        font-size: 1.1rem;
                     }
                     svg {
                         font-size: 2.5rem;
                     }
                 }
                 p {
-                    max-width: 90%;
+                    max-width: 85%;
+                    font-size: 1rem;
                 }
             }
         }

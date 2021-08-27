@@ -1,6 +1,6 @@
 import React from 'react'
-import { v4 as uuid } from 'uuid'
 import { Button } from '../../../UI'
+import { CompanySponsors } from '../../../component'
 import { aluminiContent } from '../../../constants'
 import Container from './styles'
 
@@ -16,8 +16,10 @@ const Hire = () => {
         </header>
         <div className="grid--container">
           {aluminiContent.skills.map((item) => (
-            <div className="grid--item" key={uuid()}>
-              <img src={item.img} alt={item.title} />
+            <div className="grid--item" key={item.key}>
+              <div className="img--container">
+                <img src={item.img} alt={item.title} />
+              </div>
               <h1>{item.title}</h1>
               <p>{item.details}</p>
             </div>
@@ -31,7 +33,7 @@ const Hire = () => {
       </section>
       <section className="section--hireProcess">
         {aluminiContent.hiringProcess.map((item) => (
-          <div className="grid--item">
+          <div className="grid--item" key={item.key}>
             <header>
               <hgroup>
                 <h1>{item.no}</h1>
@@ -45,7 +47,7 @@ const Hire = () => {
       </section>
       <section className="section--company">
         <h1>Some companies that have hired from Ydev academy</h1>
-        <div className="grid--container"></div>
+        <CompanySponsors />
       </section>
       <section className="section--hiring">
         <header>
@@ -57,7 +59,7 @@ const Hire = () => {
         </header>
         <div className="grid--container">
           {aluminiContent.recommendation.map((item) => (
-            <div className="grid--item">
+            <div className="grid--item" key={item.key}>
               <div className="img--container">
                 <img src={item.img} alt={item.name} />
               </div>

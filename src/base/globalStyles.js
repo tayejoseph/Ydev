@@ -20,8 +20,13 @@ export default createGlobalStyle`
       background: ${({ theme }) => theme.bgColor};    
       font-size: 1rem;
       font-weight: 300;
-      ${maxQuery('sm')} {
+
+
+      ${maxQuery('lg')} {
         font-size: 95%;
+      }
+      ${maxQuery('sm')} {
+        font-size: 80%;
       }
     }
     
@@ -65,9 +70,9 @@ export default createGlobalStyle`
     }
 
     .u--typo__title2 {
-      font-size: 2rem;
+      font-size: 1.9rem;
       color: #000000;
-      font-weight: 800;
+      font-weight: 700;
     }
     .centered--txt {
       text-align: center;

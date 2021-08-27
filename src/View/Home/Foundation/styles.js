@@ -10,28 +10,34 @@ export default Styled.div`
         ${minQuery('lg')} {
             grid-template-columns: 1fr 1fr;
             grid-gap: 3em;
-            align-items: center;
             img {
                 width: 30rem;
             }
         }
         div.col--2 {
-            max-width: 32rem;
+            ${minQuery('lg')} {
+                max-width: 32rem;
+            }
             h1 {
-                margin-bottom: 0.7em;
-                max-width: 16rem;
-                line-height: 120%;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                max-width: 17rem;
+                line-height: 150%;
+                font-size: 1.9rem!important;
             }
             p {
                 font-size: 1rem;
+                ${minQuery('lg')} {
+                    max-width: 80%;
+                }
+                color: #313131;
                 margin-bottom: 1.5em;
             }
         }
     }
     section.section--bottom {
         position: relative;
-        padding-top: 3.5em;
-        padding-bottom: 5em;
+        padding-top: 5em;
         &::after {
             position: absolute;
             top: 0px;
@@ -51,28 +57,15 @@ export default Styled.div`
         }
         header {
             text-align: center;
-            p {
-                font-size: 1rem;
-                margin-top: 1.5em;
-            }
-        }
-        div.grid--container {
-            display: grid;
-            grid-gap: 2em;
-            margin-top: 4.5em;
-            div {
-                height: 4rem;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                svg {
-                    font-size: 10rem;
+            h1 {
+                font-size: 2rem;
+                ${maxQuery('sm')} {
+                    text-align: left;
                 }
             }
-            grid-template-columns: repeat(4, 1fr);
-            ${maxQuery('md')} {
-                grid-template-columns: repeat(3, 1fr);
+            p {
+               font-size: 1rem;
+                margin-top: 1em;
             }
         }
     }

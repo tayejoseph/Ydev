@@ -1,6 +1,5 @@
 import React from 'react'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
-import { v4 as uuid } from 'uuid'
 import { Link } from 'react-router-dom'
 import { HelpForm, TitleWithDesign } from '../../component'
 import { AllMentors } from '../../assets/svgImgs'
@@ -15,7 +14,7 @@ import { Button } from '../../UI'
 import { AppRoutes } from '../../constants'
 import Container from './styles'
 
-const BecomeAnInstructor = () => {
+const BecomeAMentor = () => {
   return (
     <Container>
       <section className="section--jumbotron">
@@ -73,7 +72,7 @@ const BecomeAnInstructor = () => {
         </header>
         <div className="grid--container">
           {becomeAMentorContent.goodFit.map((item) => (
-            <div className="grid--item" key={uuid()}>
+            <div className="grid--item" key={item.key}>
               <header>
                 <h2>{item.title}</h2>
                 <item.icon />
@@ -135,4 +134,4 @@ const BecomeAnInstructor = () => {
   )
 }
 
-export default BecomeAnInstructor
+export default BecomeAMentor

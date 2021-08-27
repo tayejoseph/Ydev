@@ -1,3 +1,4 @@
+import { v4 as uuid } from 'uuid'
 import {
   Lego,
   Form,
@@ -19,18 +20,21 @@ const aliuminiContent = {
   skills: [
     {
       img: TopAlumin,
+      key: uuid(),
       title: 'Hire the top 3%',
       details:
         "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
     },
     {
       img: Flexible,
+      key: uuid(),
       title: 'Flexible placements',
       details:
         "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
     },
     {
       img: Support,
+      key: uuid(),
       title: 'Support services',
       details:
         "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
@@ -39,6 +43,7 @@ const aliuminiContent = {
   hiringProcess: [
     {
       no: '01',
+      key: uuid(),
       img: Lego,
       title: 'Fill the company needs assessment form',
       details:
@@ -47,12 +52,14 @@ const aliuminiContent = {
     {
       no: '02',
       img: Form,
+      key: uuid(),
       title: 'Drop your company name and contact details',
       details:
         'Drop your company name and details to enable us to reach out to you. While filling the form, you can indicate if you will like us to reach you via phone call, email or a physical meeting.',
     },
     {
       no: '03',
+      key: uuid(),
       img: Todo,
       title: 'Submit form',
       details: 'Upon completing the form, hit the submit button.',
@@ -61,6 +68,7 @@ const aliuminiContent = {
   recommendation: [
     {
       img: firstEng,
+      key: uuid(),
       detail:
         'Lorem ipsum dolor sit amet, elit. Nam auctor, nibh a vulputate pulvinar, sem ante tincidunt purus, ut aliquam nunc nisi vel sem. Vestibulum id magna sodales',
       name: 'Tobi Seemenow, Engineer',
@@ -68,6 +76,7 @@ const aliuminiContent = {
     },
     {
       img: secondEng,
+      key: uuid(),
       detail:
         'Lorem ipsum dolor sit amet, elit. Nam auctor, nibh a vulputate pulvinar, sem ante tincidunt purus, ut aliquam nunc nisi vel sem. Vestibulum id magna sodales',
       name: 'Rogie Seemenow, Designer',
@@ -75,6 +84,7 @@ const aliuminiContent = {
     },
     {
       img: thirdEng,
+      key: uuid(),
       detail:
         'Lorem ipsum dolor sit amet, elit. Nam auctor, nibh a vulputate pulvinar, sem ante tincidunt purus, ut aliquam nunc nisi vel sem. Vestibulum id magna sodales',
       name: 'Raminat Seemenow, DevOps',

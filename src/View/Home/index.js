@@ -5,6 +5,7 @@ import TestimonalImpact from './TestimonalImpact'
 import OurProcess from './OurProcess'
 import FrequentQuestions from './FrequentQuestions'
 import Foundation from './Foundation'
+import Immersive from './Immersive'
 import Blogs from './Blogs'
 import Container from './styles'
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Jumbotron />
       <Exclusive />
       <Foundation />
+      <Immersive />
       <TestimonalImpact />
       <OurProcess />
       <FrequentQuestions />

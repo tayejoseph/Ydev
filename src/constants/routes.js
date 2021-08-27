@@ -3,7 +3,7 @@ const routes = {
   faq: '/faq',
   termsandcondition: '/terms&condition',
   termsandagreement: '/terms&agreement',
-  privacypolicy: '/privacyPolicy',
+  privacyPolicy: '/privacyPolicy',
   hireAlumni: '/hireOurAlumni',
   curriculum: '/curriculum',
   aboutUs: {
@@ -26,13 +26,13 @@ const routes = {
   // aboutUs
   schools: {
     link: '/schools/:schoolName',
-    dataSchool: '/school/dataSchool',
-    designSchool: '/school/designSchool',
-    productSchool: '/school/productSchool',
-    devOpsSchool: '/school/devOpsSchool',
-    softwareSchool: '/school/softwareSchool',
-    qaSchool: '/school/qaSchool',
-    engineeringSchool: '/school/engineeringSchool',
+    dataSchool: '/schools/dataSchool',
+    designSchool: '/schools/designSchool',
+    productSchool: '/schools/productSchool',
+    devOpsSchool: '/schools/devOpsSchool',
+    softwareSchool: '/schools/softwareSchool',
+    qaSchool: '/schools/qaSchool',
+    engineeringSchool: '/schools/engineeringSchool',
   },
 }
 

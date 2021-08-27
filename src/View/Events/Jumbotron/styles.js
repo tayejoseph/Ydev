@@ -1,9 +1,12 @@
 import Styled from 'styled-components'
-import { minQuery } from '../../../helpers'
+import { minQuery, maxQuery } from '../../../helpers'
 
 export default Styled.div`
     display: grid;
     grid-gap: 1.5em;
+    ${maxQuery('<lg')} {
+        padding-top: 6em;
+    }
     ${minQuery('lg')} {
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -14,7 +17,9 @@ export default Styled.div`
             margin-bottom: 0.5em;
         }
         p {
-            max-width: 26em;
+            ${minQuery('>lg')} {
+                max-width: 26em;
+            }
             letter-spacing: -0.02em;
             color: #363535;
             line-height: 180%;

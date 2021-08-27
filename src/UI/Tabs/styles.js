@@ -1,50 +1,70 @@
 import Styled from 'styled-components'
-import { maxQuery } from '../../helpers'
+import { maxQuery, minQuery } from '../../helpers'
 
 export default Styled.div`
-    box-shadow: 0px 1px 10px #00000005;
-    width: 100%;
-    div.tab--header {
-    border-top: 1px solid #F1F1F1;
-    border-bottom: 1px solid #F1F1F1;
-      nav {
-        display: flex;
-        padding: 1.2em 0px;
-        max-width: 35rem;
-        margin: 0 auto;
-        div.tab--item {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          position: relative;
-          user-select: none;
-          a {
-            padding: 0px;
-            font-weight: 400;
-            font-size: 1rem;
-            text-decoration: none; 
-            ${maxQuery('sm')} {
-              font-size: 0.9rem;
-            }
-            color: #000000;
-            text-decoration: none;
-            text-transform: capitalize;
-            &.active {
-              color: ${({ theme }) => theme.primary};
-              &:after {
-                bottom: -1.3em;
-                left: 0px;
-                content: '';
-                position: absolute;
-                height: 2px;
-                background: ${({ theme }) => theme.primary};
-                width: 100%;
-              }
-            }
+display: grid;
+${minQuery('lg')} {
+  grid-template-columns: 15rem 1fr;
+}
+grid-gap: 1.2em;
+nav {
+  h3.title--txt {
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+  }
+  div.navigation--container {
+    display: flex;
+    flex-direction: column;
+    ${maxQuery('<lg')} {
+      flex-direction: row;
+      width: 90vw;
+      grid-gap: 2em;
+      align-items: center;
+      padding: 1em 0px;
+      ${({ theme }) => theme.mixins.hideScollbarHorizontal};
+    }
+    button {
+      background: transparent;
+      border: none;
+      color: #5C7787;
+      opacity: 0.8;
+      cursor: pointer;
+      flex-shrink: 0;
+      letter-spacing: -0.02em;
+      padding: 0.25em 1em;
+      font-size: 1rem;
+      margin-bottom: 0.8em;
+      display: flex;
+      align-items: center;
+      ${maxQuery('<lg')} {
+        display: inline-flex;
+        padding: 0px;
+        margin: 0px;
+      }
+      &.active--tab, &:hover, &:focus {
+        color: #051A26;
+        outline: none;
+        position: relative;
+        font-weight: 500;
+        ${minQuery('lg')} {
+          &:after {
+            content: "";
+            position: absolute;
+            width: 3px;
+            background-color: #234151;
+            left: 0px;
+            height: 80%;
           }
         }
       }
     }
+  }
+}
+
+div.tab--content {
+}
   
         
 `

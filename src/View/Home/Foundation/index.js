@@ -1,7 +1,6 @@
 import React from 'react'
-import { v4 as uuid } from 'uuid'
-import { HomeContent } from '../../../constants'
 import { Button } from '../../../UI'
+import { TitleWithDesign, CompanySponsors } from '../../../component'
 import { BeginFoundation } from '../../../assets/svgImgs'
 import Container from './styles'
 
@@ -13,7 +12,7 @@ const Foundation = () => {
           <img src={BeginFoundation} alt="Begin with a foundation" />
         </div>
         <div className="col--2">
-          <h1 className="u--typo__title2">Begin with a Solid foundation</h1>
+          <TitleWithDesign title="Begin with a Solid foundation" />
           <p>
             Enjoy a great and rewarding tech career with us, as our programs are
             designed to equip you with a solid foundation to fast track your
@@ -29,11 +28,7 @@ const Foundation = () => {
           <h1 className="u--typo__title2">Our students are hired by</h1>
           <p>Global relevance and opportunities for all</p>
         </header>
-        <div className="grid--container">
-          {HomeContent.parteners.map((item) => (
-            <div key={uuid()}>{item}</div>
-          ))}
-        </div>
+        <CompanySponsors />
       </section>
     </Container>
   )

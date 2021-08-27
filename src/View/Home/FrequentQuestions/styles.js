@@ -3,7 +3,8 @@ import Styled from 'styled-components'
 export default Styled.div`
     section.section--questions {
         padding: 3em 0px;
-        header {
+        padding-bottom: 5em;
+        header.question--header {
             text-align: center;
             svg {
                 font-size: 4rem;
@@ -12,16 +13,22 @@ export default Styled.div`
                 font-size: 2rem;
                 margin-top: 0.5em;
                 font-weight: 700;
-                margin-bottom: 0.5em;
             }
             p {
                 font-size: 1rem;
+                margin-bottom: 4.5em;
+                margin-top: -0.5em;
                 a {
                     text-decoration: none; 
                     color: ${({ theme }) => theme.primary};
                     &:hover, &:focus, &:active {
                         text-decoration: underline;
                     }
+                }
+                svg {
+                    transform: translateY(100%);
+                    fill: black;
+                    font-size: 3rem;
                 }
             }
         }

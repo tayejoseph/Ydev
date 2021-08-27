@@ -25,7 +25,7 @@ const Footer = () => {
             <p>Connect with us</p>
             <div className="social--row">
               {footerContent.socials.map((item) => (
-                <a href={item.link} key={uuid()}>
+                <a href={item.link} key={item.key}>
                   {item.icon}
                 </a>
               ))}
@@ -49,21 +49,15 @@ const Footer = () => {
         <div className="grid--item">
           <h2>Our Programs</h2>
           <nav>
-            <NavLink to={AppRoutes.schools.designSchool}>
-              School of Design
-            </NavLink>
-            <NavLink to={AppRoutes.schools.dataSchool}>
-              School of Data management
-            </NavLink>
-            <NavLink to={AppRoutes.schools.productSchool}>
-              School of Product management
-            </NavLink>
-            <NavLink to={AppRoutes.schools.devOpsSchool}>
-              School of DevOps
-            </NavLink>
+            <NavLink to={AppRoutes.schools.designSchool}>Design School</NavLink>
             <NavLink to={AppRoutes.schools.softwareSchool}>
-              School of Software Engineering
+              Software School
             </NavLink>
+            <NavLink to={AppRoutes.schools.dataSchool}>Data School</NavLink>
+            <NavLink to={AppRoutes.schools.productSchool}>
+              Product School
+            </NavLink>
+            <NavLink to={AppRoutes.schools.devOpsSchool}>DevOps School</NavLink>
           </nav>
         </div>
         <div className="grid--item">

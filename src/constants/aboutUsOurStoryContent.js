@@ -1,3 +1,4 @@
+import { v4 as uuid } from 'uuid'
 import {
   Microsoft,
   Ibm,
@@ -31,24 +32,28 @@ const aboutUsOurStoryContent = {
   ourValues: [
     {
       title: 'Learn',
+      key: uuid(),
       details:
         'Intentional about enhanced learning providing tailored education that suits the learning preference of our target audience.',
       icon: GraduationCap,
     },
     {
       title: 'Grow',
+      key: uuid(),
       details:
         'A culture that encourages continuous support for our students and alumni providing them with an enabling environment to support their growth.',
       icon: Grow,
     },
     {
       title: 'Explore',
+      key: uuid(),
       details:
         'The opportunity to connect with global opportunities across the world.',
       icon: Globe,
     },
     {
       title: 'Practice',
+      key: uuid(),
       details:
         'Providing multiple platforms that support talents in self-development and mastery.',
       icon: Target,
@@ -72,12 +77,14 @@ const aboutUsOurStoryContent = {
     {
       name: "Bernard O'bien",
       linkedInLink: 'https://www.linkedin.com/in/bernard-e-o-bien-247564172/',
+      key: uuid(),
       image: Bernard,
       details:
         'Bernard is a technology engineer who is passionate about education and the Sustainable Development Goals. He has a decade of experience in financial services, financial technology, telecommunications, SMEs and start-ups, to name a few.',
     },
     {
       name: 'Wilson Diamond',
+      key: uuid(),
       image: Wilson,
       linkedInLink: 'https://www.linkedin.com/in/wilson-diamond-01b39324/',
       details:
@@ -85,6 +92,7 @@ const aboutUsOurStoryContent = {
     },
     {
       name: 'Tomi Jaiyeola',
+      key: uuid(),
       image: Tomi,
       linkedInLink: 'https://www.linkedin.com/in/tomijaiyeola/',
       details:
@@ -92,6 +100,7 @@ const aboutUsOurStoryContent = {
     },
     {
       name: 'Debo Odunlami',
+      key: uuid(),
       image: Debo,
       linkedInLink: 'https://www.linkedin.com/in/debodunlami/',
       details:
@@ -99,6 +108,7 @@ const aboutUsOurStoryContent = {
     },
     {
       name: 'Adeola Haruna',
+      key: uuid(),
       image: Adeola,
       linkedInLink: 'https://www.linkedin.com/in/adeola-haruna-24490434/',
       details:
@@ -106,6 +116,7 @@ const aboutUsOurStoryContent = {
     },
     {
       name: 'Adebosayo Jackson',
+      key: uuid(),
       image: Adebosayo,
       linkedInLink:
         'https://www.linkedin.com/in/adebosayojackson/?originalSubdomain=ng',
@@ -116,6 +127,7 @@ const aboutUsOurStoryContent = {
   adviseBoard: [
     {
       name: 'Kiwako Sakamoto',
+      key: uuid(),
       image: Kiwako,
       linkedInLink: 'https://www.linkedin.com/in/kiwakosakamoto/',
       details:
@@ -123,6 +135,7 @@ const aboutUsOurStoryContent = {
     },
     {
       name: 'Jeff Katz',
+      key: uuid(),
       image: Jeff,
       linkedInLink: 'linkedin.com/in/adebosayojackson/?originalSubdomain=ng',
       details:

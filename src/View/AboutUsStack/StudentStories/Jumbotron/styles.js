@@ -1,5 +1,5 @@
 import Styled from 'styled-components'
-import { minQuery } from '../../../../helpers'
+import { minQuery, maxQuery } from '../../../../helpers'
 
 export default Styled.div`
     display: grid;
@@ -10,14 +10,20 @@ export default Styled.div`
         grid-gap: 2em;
         align-items: center;
     }
+    ${maxQuery('lg')} {
+        padding-top: 6em;
+    }
     div.col--1 {
-        * {
-            max-width: 30rem;
+        ${minQuery('>lg')} {
+            * {
+                max-width: 30rem;
+            }
         }
         h2 {
             color: #2E88DB;
             margin-bottom: 1.5em;
             font-size: 1rem;
+            font-weight: 600;
         }
         p {
             font-size: 1.1rem;
@@ -27,6 +33,16 @@ export default Styled.div`
         }
     }
     div.col--2 {
-        
+        ${maxQuery('>lg')} {
+            text-align: center;
+            img {
+                max-width: 25rem;
+            }
+        }
+        ${maxQuery('sm')} {
+            img {
+                width: 100%;
+            }
+        }
     }
 `

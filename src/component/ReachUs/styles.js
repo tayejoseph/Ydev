@@ -9,6 +9,7 @@ export default Styled.div`
         grid-template-columns: 1fr 1fr;
         height: 30rem;
         align-items: center;
+        padding-left: 10rem;
     }
     ${(props) =>
       props.withBackDrop === true &&
@@ -40,7 +41,6 @@ export default Styled.div`
         svg {
             font-size: 8rem;
             height: 3rem;
-            margin-bottom: 0.1em;
         }
         h1 {
             font-size: 1.9rem;
@@ -49,7 +49,7 @@ export default Styled.div`
         }
         p {
             line-height: 187.1%;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             letter-spacing: -0.04em;
             color: #606063;
             font-weight: 300;
@@ -60,7 +60,7 @@ export default Styled.div`
             display: flex;
             grid-gap: 2em;
             button:last-of-type {
-              background: #fff;
+              background: #fff!important;
             }
         }
       }

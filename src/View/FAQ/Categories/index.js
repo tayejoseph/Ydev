@@ -1,21 +1,62 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Tabs } from '../../../UI'
+import TabContent from './TabContent'
+import { HomeContent } from '../../../constants'
 import Container from './styles'
 
 const Categories = () => {
   return (
     <Container>
-      <div className="nav--container">
-        <h2>Categories</h2>
-        <nav>
-          <NavLink to="/">All questions</NavLink>
-          <NavLink to="/">Students</NavLink>
-          <NavLink to="/">Mentors</NavLink>
-          <NavLink to="/">Instructors</NavLink>
-          <NavLink to="/">Enterprise</NavLink>
-        </nav>
-      </div>
-      <div className="content--container"></div>
+      <Tabs
+        title="Categories"
+        tabs={[
+          {
+            title: 'All questions',
+            key: 'question',
+            component: () => (
+              <TabContent
+                {...{ content: HomeContent.frequentQuestions.question }}
+              />
+            ),
+          },
+          {
+            title: 'Students',
+            key: 'students',
+            component: () => (
+              <TabContent
+                {...{ content: HomeContent.frequentQuestions.question }}
+              />
+            ),
+          },
+          {
+            title: 'Mentors',
+            key: 'mentors',
+            component: () => (
+              <TabContent
+                {...{ content: HomeContent.frequentQuestions.question }}
+              />
+            ),
+          },
+          {
+            title: 'Instructors',
+            key: 'instructors',
+            component: () => (
+              <TabContent
+                {...{ content: HomeContent.frequentQuestions.question }}
+              />
+            ),
+          },
+          {
+            title: 'Enterprise',
+            key: 'enterprise',
+            component: () => (
+              <TabContent
+                {...{ content: HomeContent.frequentQuestions.question }}
+              />
+            ),
+          },
+        ]}
+      />
     </Container>
   )
 }

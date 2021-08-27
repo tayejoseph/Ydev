@@ -26,14 +26,14 @@ export default Styled.div`
     * {
         position: relative;
         z-index: 2;
-        max-width: 31.5rem;
+        max-width: 50%;
     }
     h1 {
         color: #fff;
-        font-size: 3rem;
+        font-size: 2.8rem;
         line-height: 120%;
         margin-bottom: 1em;
-        font-weight: 900;
+        font-weight: 800;
         span {
             color: #97B5E2;
         }
@@ -48,7 +48,6 @@ export default Styled.div`
     button {
         background: #fff;
         color: #4A4A4A;
-        font-weight: 800;
         &:after {
           border: 0.4px solid #fff;
         }

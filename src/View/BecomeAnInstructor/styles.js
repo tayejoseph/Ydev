@@ -1,15 +1,15 @@
 import Styled from 'styled-components'
 import { CountryMaps, LeftL } from '../../assets/svgImgs'
-import { minQuery } from '../../helpers'
+import { minQuery, maxQuery } from '../../helpers'
 
 export default Styled.div`
     h1 {
-        font-weight: 900;
-        font-size: 2rem;
+        font-weight: 600;
+        font-size: 1.7rem;
         margin: 0.5em 0px;
     }
     p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 190%;
         letter-spacing: -0.02em;
         color: #434343;
@@ -18,11 +18,13 @@ export default Styled.div`
         display: grid;
         grid-gap: 3em;
         position: relative;
+        ${maxQuery('<lg')} {
+            padding: 4em 0px;
+        }
         ${minQuery('lg')} {
             grid-template-columns: 1fr 1fr;
             align-items: center;
-        }
-        ${minQuery('lg')} {
+            height: 30rem;
             &:after {
                 content: "";
                 position: absolute;
@@ -37,6 +39,9 @@ export default Styled.div`
             }
         }
         div.col--1 {
+            ${minQuery('>lg')} {
+                max-width: 25rem;
+            }
             h2 {
                 display: flex;
                 align-items: center;
@@ -48,11 +53,18 @@ export default Styled.div`
                     margin-right: 0.25em;
                 }
             }
+            div.action--group {
+                margin-top: 2em;
+            }
 
         }
         div.col--2 {
+            ${maxQuery('lg')} {
+                text-align: center
+            }
             img {
                 width: 100%;
+                max-width: 30rem;
             }
         }
     }
@@ -76,7 +88,7 @@ export default Styled.div`
             position: relative;
             z-index: 2;
         }
-        div.grid--container {
+        /* div.grid--container {
             display: grid;
             grid-template-columns: 15rem 1fr 15rem;
             text-align: center;
@@ -100,7 +112,7 @@ export default Styled.div`
                     border-left: 0.804938px solid #DDDDDD;
                 }
             }
-        }
+        } */
     }
     section.section--goodfit {
         padding: 2em 0px;
@@ -108,7 +120,7 @@ export default Styled.div`
         header {
             text-align: center;
             p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
         div.grid--container {
@@ -132,7 +144,7 @@ export default Styled.div`
                     margin-bottom: 1em;
                     justify-content: space-between;
                     h2 {
-                        font-weight: 800;
+                        font-weight: 700;
                         font-size: 1.2rem;
                     }
                     svg {
@@ -141,6 +153,7 @@ export default Styled.div`
                 }
                 p {
                     max-width: 90%;
+                    font-size: 0.95rem;
                 }
             }
         }
@@ -176,7 +189,8 @@ export default Styled.div`
                     }
                 }
                 button {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
+                    font-weight: 600;
                 }
             }
         }
@@ -185,8 +199,9 @@ export default Styled.div`
         padding-bottom: 3em;
         margin-top: 7em;
         ${({ theme }) => theme.mixins.primaryBg};
-        header {
+        header.wantInfo--header {
             text-align: center;
+            margin-bottom: 4em;
             svg {
                 font-size: 5rem;
                 transform: translateY(-50%);
@@ -215,18 +230,19 @@ export default Styled.div`
         header {
             text-align: center;
             svg {
-                font-size: 5rem;
+                font-size: 4.5rem;
             }
             * {
                 max-width: 30rem;
                 margin: 0 auto;
             }
             h1 {
-                line-height: 120%;
-                margin-bottom: 0.25em;
+                line-height: 130%;
+                margin-top: 1em;
+                margin-bottom: 0.4em;
             }
             p {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
         }
     }

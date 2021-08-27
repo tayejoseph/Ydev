@@ -22,6 +22,17 @@ const mixins = {
     width: 90%;
     max-width: ${({ theme }) => theme.dimensions.maxWidth};
     margin: 0 auto;
+    /* overflow-x: hidden; */
+  `,
+  hideScollbarHorizontal: css`
+    & {
+      overflow-x: auto;
+      -ms-overflow-style: none; /* IE 11 */
+      scrollbar-width: none; /* Firefox 64 */
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
   `,
 
   primaryBg: css`

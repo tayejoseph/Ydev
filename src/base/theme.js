@@ -2,7 +2,7 @@ import mixins from './mixins'
 
 const dimensions = {
   navHeight: '6rem',
-  navHeightMobile: '8rem',
+  navHeightMobile: '4rem',
   maxWidth: '1100px',
   adminTopNavHeight: '4.5rem',
   footerHeight: '3.5rem',
@@ -21,7 +21,7 @@ const theme = () => ({
   textColor: '#050402;',
   mixins,
   dimensions,
-  fontFamily: 'Nunito Sans',
+  fontFamily: 'Poppins',
   secondary: '#051A26',
 })
 

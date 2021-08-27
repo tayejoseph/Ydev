@@ -86,7 +86,7 @@ const HelpForm = () => {
           <p>
             By selecting this, you agree to Ydev{' '}
             <Link to={AppRoutes.termsandcondition}> Terms</Link> and{' '}
-            <Link to={AppRoutes.privacypolicy}>Privacy Policy</Link>
+            <Link to={AppRoutes.privacyPolicy}>Privacy Policy</Link>
           </p>
           <Button type="submit">Apply now</Button>
         </footer>

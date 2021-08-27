@@ -29,8 +29,9 @@ export default Styled.div`
         height: 2rem;
     }
     h1 {
-        font-size: 2rem;
-        margin: 1em 0px;
+        font-size: 2.1rem;
+        margin: 0.5em 0px;
+        font-weight: 700;
     }
     p {
         font-size: 1rem;

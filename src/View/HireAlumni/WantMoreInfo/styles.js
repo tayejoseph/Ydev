@@ -18,7 +18,7 @@ export default Styled.div`
         position: relative;
         z-index: 2;
     }
-    header {
+    header.wantmore--header {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -34,6 +34,12 @@ export default Styled.div`
         p {
             font-size: 1rem;
             margin-top: 0.25em;
+            margin-bottom: 1em;
+            svg {
+                position: absolute;
+                font-size: 3rem;
+                bottom: -1em;
+            }
         }
         a {
             color: ${({ theme }) => theme.primary};
@@ -43,5 +49,8 @@ export default Styled.div`
                 text-decoration: underline;
             }
         }
+    }
+    div.info--tab__container {
+        margin-top: 4em;
     }
 `

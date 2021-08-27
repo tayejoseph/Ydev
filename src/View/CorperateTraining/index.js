@@ -54,7 +54,7 @@ const CorperateTraining = () => {
         </h1>
         <div className="grid--container">
           {corporateTrainingContent.help.map((item) => (
-            <div className="grid--item">
+            <div className="grid--item" key={item.key}>
               <div className="img--container">
                 <img src={item.image} alt={item.title} />
               </div>
@@ -161,7 +161,7 @@ const CorperateTraining = () => {
                 <p>
                   By selecting this, you agree to Ydev{' '}
                   <Link to={AppRoutes.termsandcondition}> Terms</Link> and{' '}
-                  <Link to={AppRoutes.privacypolicy}>Privacy Policy</Link>
+                  <Link to={AppRoutes.privacyPolicy}>Privacy Policy</Link>
                 </p>
                 <Button type="submit">Apply now</Button>
               </footer>

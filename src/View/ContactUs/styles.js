@@ -38,14 +38,15 @@ export default Styled.div`
         header {
             p {
                 margin: 2em 0px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: #75737D;
                 max-width: 30rem;
             }
         }
         form {
+            max-width: 30rem;
             label {
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 0.9rem;
             }
             input {
@@ -80,8 +81,8 @@ export default Styled.div`
             margin-top: 3em;
             padding-bottom: 6em;
             h1 {
-                font-weight: 800;
-                font-size: 1.3rem;
+                font-weight: 700;
+                font-size: 1.2rem;
             }
             div.grid--container {
                 margin-top: 1.5em;
@@ -101,12 +102,13 @@ export default Styled.div`
                         }
                     }
                     h2 {
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 1rem;
                     }
                     h3 {
                         color: #333333;
-                        font-weight: 400;
+                        font-weight: 300;
+                        color: #767676;
                         font-size: 0.95rem;
                     }
                     p {

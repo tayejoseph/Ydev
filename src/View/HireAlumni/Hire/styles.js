@@ -3,7 +3,12 @@ import { maxQuery } from '../../../helpers'
 
 export default Styled.div`
     h1 {
-        font-weight: 600;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 145%;
+    }
+    p {
+        font-size: 1.1rem;
     }
     section.section--skills {
         header {
@@ -12,9 +17,8 @@ export default Styled.div`
             align-items: center;
             padding: 3em 0px;
             h1 {
-                margin-bottom: 0.8em; 
+                margin-bottom: 0.6em; 
                 font-size: 2rem;
-                font-weight: 600;
             }
             p {
                 color: #4B4956;
@@ -27,6 +31,7 @@ export default Styled.div`
             justify-content: center;
             align-items: center;
             padding-bottom: 3em;
+            margin-top: 1em;
             grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
             div.grid--item {
                 max-width: 20rem;
@@ -35,20 +40,27 @@ export default Styled.div`
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                text-align: center;
+                div.img--container {
+                    width: 12rem;
+                    height: 12rem;
+                    border-radius: 50%;
+                    margin-bottom: 0.8em;
+                }
                 h1 {
                     margin-top: 0.5em;
                     margin-bottom: 0.5em;
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     color: #1C1B1B;
-                    font-weight: 700;
+                    font-weight: 600;
                     letter-spacing: -0.01em;
                 }
                 p {
-                    margin-top: 0.6em;
                     letter-spacing: -0.02em;
                     color: #2C2B2C;
                     font-size: 1rem;
+                    width: 90%;
+                    margin-top: 0.6em;
+                    margin: 0 auto;
                     line-height: 150%;
                 }
             }
@@ -63,11 +75,11 @@ export default Styled.div`
         justify-content: center;
         h1 {
             font-size: 2rem;
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
         }
         button {
             margin: 0 auto;
-            margin-top: 2em;
+            margin-top: 2.65em;
         }
     }
     section.section--hireProcess {
@@ -84,19 +96,20 @@ export default Styled.div`
                     display: flex;
                     grid-gap: 2em;
                     h1 {
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                         color: #A5A5A5;
-                        font-weight: 600;
+                        font-weight: 500;
                     }
                     svg {
                         font-size: 3rem;
                     }
                 }
                 h1.hire--title {
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     line-height: 130%;
                     height: 3rem;
-                    margin-bottom: 0.5em;
+                    font-weight: 600;
+                    margin-bottom: 0.8em;
                     margin-top: 1em;
                     ${maxQuery('sm')} {
                         margin-top: 2em;
@@ -105,12 +118,17 @@ export default Styled.div`
                 }
             }
             p {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
         }
 
     }
     section.section--company {
+        h1 {
+            text-align: center;
+            max-width: 30rem;
+            margin: 0 auto;
+        }
 
     }
     section.section--hiring {
@@ -118,12 +136,13 @@ export default Styled.div`
             padding: 2em 0px;
             text-align: center;
             display: flex;
-            max-width: 40rem;
             margin: 0 auto;
             flex-direction: column;
             h1 {
+                max-width: 30rem;
                 font-size: 2rem;
                 font-weight: 800;
+                margin: 0 auto;
                 margin-bottom: 0.5em;
             }
             p {
@@ -145,7 +164,11 @@ export default Styled.div`
                 flex-direction: column;
                 text-align: center;
                 div.img--container {
+                    margin: 0 auto;
                     margin-bottom: 1em;
+                    height: 5rem;
+                    width: 5rem;
+                    border-radius: 50%;
                 }
                 p {
                     font-size: 0.9rem;

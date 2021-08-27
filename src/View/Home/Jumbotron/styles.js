@@ -1,5 +1,5 @@
 import Styled from 'styled-components'
-import { minQuery } from '../../../helpers'
+import { minQuery, maxQuery } from '../../../helpers'
 import { homeJumbotronPattern } from '../../../assets/svgImgs'
 
 export default Styled.div`
@@ -11,6 +11,7 @@ export default Styled.div`
     ${minQuery('lg')} {
         grid-template-columns: 1fr 1fr;
     }
+    
     &:after {
         content: "";
         height: 100%;
@@ -25,14 +26,21 @@ export default Styled.div`
         background-position: bottom;
     }
     div.col--1 {
-        max-width: 25rem;
+        ${minQuery('lg')} {
+            max-width: 25rem;
+        }
+        ${maxQuery('<lg')} {
+            * {
+                max-width: 90%;
+            }
+        }
         p {
             font-size: 1rem;
             &:first-of-type {
                 font-size: 0.9rem;
                 display: flex;
                 align-items: center;
-                margin-bottom: 0.5em;
+                margin-bottom: 1.5em;
                 svg {
                     margin-right: 0.2em;
                     margin-bottom: 0.1em;

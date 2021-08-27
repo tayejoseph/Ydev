@@ -1,8 +1,9 @@
 import React from 'react'
-import { v4 as uuid } from 'uuid'
 import { Link } from 'react-router-dom'
 import { TitleWithDesign } from '../../component'
 import { Transform } from '../../assets/svgImgs'
+import { Tabs } from '../../UI'
+import TabContent from './TabContent'
 import { becomeAnInstructorContent } from '../../constants'
 import { Mentor, Palm, DoubleChat, Picture } from '../../assets/convertedSvgs'
 import { Button } from '../../UI'
@@ -52,7 +53,7 @@ const BecomeAMentor = () => {
         </header>
         <div className="grid--container">
           {becomeAnInstructorContent.joinYdev.map((item) => (
-            <div className="grid--item" key={uuid()}>
+            <div className="grid--item" key={item.key}>
               <header>
                 <h2>{item.title}</h2>
                 <item.icon />
@@ -69,7 +70,7 @@ const BecomeAMentor = () => {
         </header>
         <div className="content--container">
           {becomeAnInstructorContent.jobItems.map((item) => (
-            <div key={uuid()} className="job--item">
+            <div key={item.key} className="job--item">
               <p>
                 {item.title}
                 <span>{item.time}</span>
@@ -80,7 +81,7 @@ const BecomeAMentor = () => {
         </div>
       </section>
       <section className="section--wantInfo">
-        <header>
+        <header className="wantInfo--header">
           <DoubleChat />
           <h1>Want more info?</h1>
           <p>
@@ -88,6 +89,22 @@ const BecomeAMentor = () => {
             <Palm />
           </p>
         </header>
+        <Tabs
+          title="Categories"
+          tabs={[
+            {
+              title: 'Instructors',
+              key: 'instructors',
+              component: () => (
+                <TabContent
+                  {...{
+                    content: becomeAnInstructorContent.tabsContent.instructors,
+                  }}
+                />
+              ),
+            },
+          ]}
+        />
       </section>
       <section className="section--picture">
         <header>

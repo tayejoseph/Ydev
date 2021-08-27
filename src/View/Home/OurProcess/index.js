@@ -1,5 +1,4 @@
 import React from 'react'
-import { v4 as uuid } from 'uuid'
 import { Button } from '../../../UI'
 import { HomeContent } from '../../../constants'
 import Container from './styles'
@@ -14,7 +13,7 @@ const OurProcess = () => {
       </header>
       <div className="grid--container">
         {HomeContent.processLists.map((item) => (
-          <div className="grid--item" key={uuid()}>
+          <div className="grid--item" key={item.key}>
             <div className="grid--header">
               <div>
                 <h2>{item.count}</h2>

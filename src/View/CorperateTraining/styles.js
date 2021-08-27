@@ -10,8 +10,8 @@ import { minQuery } from '../../helpers'
 
 export default Styled.div`
     h1 {
-        font-weight: 900;
-        font-size: 2rem;
+        font-weight: 700;
+        font-size: 1.8rem;
         margin: 0.5em 0px;
     }
     p {
@@ -46,9 +46,13 @@ export default Styled.div`
                 grid-template-columns: 1fr 1fr;
             }
             h1 {
-                font-size: 2.6rem;
-                font-weight: 800;
-                max-width: 30rem;
+                margin: 0px;
+                padding: 0px;
+                margin-top: -0.8em;
+                max-width: 28rem;
+                line-height: 120%;
+                font-size: 2.3rem!important;
+                font-weight: 700!important;
             }
             p {
                 color: #6C6969;
@@ -78,7 +82,7 @@ export default Styled.div`
             }
         }
         div.img--container {
-            margin-top: 2em;
+            margin-top: 3em;
         }
     }
     section.section--help {
@@ -102,16 +106,16 @@ export default Styled.div`
             h2 {
                 font-weight: 700;
                 margin-top: 1em;
-                margin-bottom: 0.25em;
+                margin-bottom: 0.45em;
                 color: #1C1B1B;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
             p {
                 letter-spacing: -0.02em;
                 color: #1D1C1C;
-                font-size: 1rem;
-                line-height: 140%;
-                max-width: 24rem;
+                font-size: 0.9rem;
+                line-height: 160%;
+                max-width: 80%;
                 margin: 0 auto;
             }
         }
@@ -188,7 +192,6 @@ export default Styled.div`
         grid-gap: 2em;
         ${minQuery('lg')} {
             grid-template-columns: 1fr 1fr;
-            align-items: center;
             grid-gap: 8em;
         }
         div.col--1 {
@@ -206,12 +209,14 @@ export default Styled.div`
             }
             h1 {
                 line-height: 120%;
+                font-size: 2rem;
+                margin-bottom: 1em;
             }
             p {
                 max-width: 25rem;
                 margin-bottom: 2em;
-                font-size: 1.05rem;
-                line-height: 125%;
+                font-size: 1rem;
+                line-height: 145%;
                 margin-top: 1em;
                 color: #313131;
             }
