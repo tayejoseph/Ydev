@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { NavLink, Link, useHistory } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { Button } from '../../../UI'
@@ -50,15 +50,23 @@ const TopNav = () => {
               </span>
             </button>
             <div className="menu--lists">
-              <Link to={AppRoutes.schools.dataSchool}>Data School</Link>
-              <Link to={AppRoutes.schools.designSchool}>Design School</Link>
-              <Link to={AppRoutes.schools.productSchool}>Product School</Link>
-              <Link to={AppRoutes.schools.devOpsSchool}>DevOps School</Link>
-              <Link to={AppRoutes.schools.softwareSchool}>Software School</Link>
-              <Link to={AppRoutes.schools.qaSchool}>QA School</Link>
-              <Link to={AppRoutes.schools.engineeringSchool}>
+              <NavLink to={AppRoutes.schools.dataSchool}>Data School</NavLink>
+              <NavLink to={AppRoutes.schools.designSchool}>
+                Design School
+              </NavLink>
+              <NavLink to={AppRoutes.schools.productSchool}>
+                Product School
+              </NavLink>
+              <NavLink to={AppRoutes.schools.devOpsSchool}>
+                DevOps School
+              </NavLink>
+              <NavLink to={AppRoutes.schools.softwareSchool}>
+                Software School
+              </NavLink>
+              <NavLink to={AppRoutes.schools.qaSchool}>QA School</NavLink>
+              <NavLink to={AppRoutes.schools.engineeringSchool}>
                 Engineering School
-              </Link>
+              </NavLink>
             </div>
           </div>
           <div
@@ -77,10 +85,12 @@ const TopNav = () => {
               </span>
             </button>
             <div className="menu--lists">
-              <Link to={AppRoutes.aboutUs.ourStory}>Our Story</Link>
-              <Link to={AppRoutes.aboutUs.studentStories}>Student Stories</Link>
-              <Link to={AppRoutes.events}>Events</Link>
-              <Link to={AppRoutes.faq}>FAQs</Link>
+              <NavLink to={AppRoutes.aboutUs.ourStory}>Our Story</NavLink>
+              <NavLink to={AppRoutes.aboutUs.studentStories}>
+                Student Stories
+              </NavLink>
+              <NavLink to={AppRoutes.events}>Events</NavLink>
+              <NavLink to={AppRoutes.faq}>FAQs</NavLink>
             </div>
           </div>
           <div
@@ -99,10 +109,12 @@ const TopNav = () => {
               </span>
             </button>
             <div className="menu--lists">
-              <Link to={AppRoutes.enterprise.corporateTraining}>
+              <NavLink to={AppRoutes.enterprise.corporateTraining}>
                 Corporate Training
-              </Link>
-              <Link to={AppRoutes.enterprise.hireAlumni}>Hire Our Alumni</Link>
+              </NavLink>
+              <NavLink to={AppRoutes.enterprise.hireAlumni}>
+                Hire Our Alumni
+              </NavLink>
             </div>
           </div>
           <div
@@ -121,11 +133,11 @@ const TopNav = () => {
               </span>
             </button>
             <div className="menu--lists">
-              <Link to={AppRoutes.becomeAnInstructor}>
+              <NavLink to={AppRoutes.becomeAnInstructor}>
                 Become An Instructor
                 {/* - Job Details */}
-              </Link>
-              <Link to={AppRoutes.becomeAmentor}>Become A Mentor</Link>
+              </NavLink>
+              <NavLink to={AppRoutes.becomeAmentor}>Become A Mentor</NavLink>
             </div>
           </div>
           <Button

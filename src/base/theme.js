@@ -18,7 +18,7 @@ export const BREAKPOINTS = {
 const theme = () => ({
   primary: '#188DAF',
   bgColor: '#fff',
-  textColor: '#050402;',
+  textColor: '#363535',
   mixins,
   dimensions,
   fontFamily: 'Poppins',

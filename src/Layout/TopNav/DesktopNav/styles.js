@@ -82,7 +82,7 @@ export default Styled.div`
                         font-weight: 400;
                         font-size: 0.9rem;
                         transition: all 0.25s;
-                        &:hover, &:active, &:focus {
+                        &:hover, &:active, &:focus, &.active {
                             text-decoration: none;
                             color: ${({ theme }) => theme.primary};
                         }

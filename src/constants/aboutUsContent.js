@@ -11,6 +11,8 @@ import {
   CircleCi,
   DigitalOcean,
   GitHub,
+  ZenithBank,
+  UniversityOfLagos,
 } from '../assets/convertedSvgs'
 import { v4 as uuid } from 'uuid'
 import {
@@ -24,8 +26,8 @@ import {
 
 const aboutUsContent = {
   parteners: [
-    <Microsoft />,
-    <Ibm />,
+    <ZenithBank />,
+    <UniversityOfLagos />,
     <MongoDb />,
     <Google />,
     <Segment />,

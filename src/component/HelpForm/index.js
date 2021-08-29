@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Switch } from 'antd'
 import { Button, InputGroup } from '../../UI'
 import { AppRoutes } from '../../constants'
 import Container from './styles'
@@ -84,6 +85,7 @@ const HelpForm = () => {
         />
         <footer>
           <p>
+            <Switch defaultChecked onChange={console.log} />
             By selecting this, you agree to Ydev{' '}
             <Link to={AppRoutes.termsandcondition}> Terms</Link> and{' '}
             <Link to={AppRoutes.privacyPolicy}>Privacy Policy</Link>

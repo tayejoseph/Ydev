@@ -27,7 +27,7 @@ export default createGlobalStyle`
       }
       
       ${maxQuery('sm')} {
-        font-size: 82%;
+        font-size: 85%;
       }
     }
     
