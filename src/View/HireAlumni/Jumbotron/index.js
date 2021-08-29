@@ -1,8 +1,10 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { Button } from '../../../UI'
 import Container from './styles'
 
 const Jumbtron = () => {
+  const history = useHistory()
   return (
     <Container>
       <h1>
@@ -13,7 +15,9 @@ const Jumbtron = () => {
         geographical constraints. Ydev offers you top-vetted talents that
         produce results and bring greater value to your workplace.
       </p>
-      <Button primary>Hire Superheroes</Button>
+      <Button primary onClick={() => history.push('?modal=hire')}>
+        Hire Superheroes
+      </Button>
     </Container>
   )
 }

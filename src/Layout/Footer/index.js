@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { v4 as uuid } from 'uuid'
 import { AppRoutes } from '../../constants'
 import { footerContent } from '../../constants'
 import { FooterAppLogo } from '../../assets/convertedSvgs'
@@ -71,16 +70,20 @@ const Footer = () => {
         </div>
       </div>
       <footer>
-        <p>
-          Copyright ©2021 Ydev Academy. All Rights Reserved. The Ydev word mark
-          is a registered trademark of Harbor Incubator Technology Limited.{' '}
-        </p>
-        <nav>
-          <NavLink to="/">Cookies</NavLink>
-          <NavLink to={AppRoutes.termsandagreement}>
-            Terms and agreement
-          </NavLink>
-        </nav>
+        <hr />
+        <div className="footer--grid">
+          <p>
+            Copyright ©2021 Ydev Academy. All Rights Reserved. The Ydev word
+            mark is a registered trademark of Harbor Incubator Technology
+            Limited.{' '}
+          </p>
+          <nav>
+            <NavLink to="/">Cookies</NavLink>
+            <NavLink to={AppRoutes.termsandagreement}>
+              Terms and agreement
+            </NavLink>
+          </nav>
+        </div>
       </footer>
     </Container>
   )

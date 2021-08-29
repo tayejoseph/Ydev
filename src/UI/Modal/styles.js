@@ -54,7 +54,7 @@ export default Styled.div`
             align-items: center;
             h2.modal--title {
                 padding: 0.8em 1em;
-                font-weight: 700;
+                font-weight: 600;
                 color: #03232E;
                 font-size: 1.2rem;
             }

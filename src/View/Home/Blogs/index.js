@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button } from '../../../UI'
 import { Blogs } from '../../../assets/convertedSvgs'
 import { HomeContent } from '../../../constants'
+import { AppInfo } from '../../../constants'
 import Container from './styles'
 
 const BlogsContent = () => {
@@ -27,7 +27,9 @@ const BlogsContent = () => {
         ))}
       </div>
       <footer>
-        <Button secondary>Read more</Button>
+        <a href={AppInfo.mediumLink} target="_blank" rel="noreferrer">
+          Read more
+        </a>
       </footer>
     </Container>
   )

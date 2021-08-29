@@ -1,15 +1,20 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
+import { AppRoutes } from '../../../constants'
 import { Button } from '../../../UI'
 import { HomeContent } from '../../../constants'
 import Container from './styles'
 
 const OurProcess = () => {
+  const history = useHistory()
   return (
     <Container>
       <header>
         <h1>Our process in 4 steps</h1>
         <p>Here’s how to begin your journey changes stories for good</p>
-        <Button>Apply now</Button>
+        <Button onClick={() => history.push(AppRoutes.curriculum)}>
+          Apply now
+        </Button>
       </header>
       <div className="grid--container">
         {HomeContent.processLists.map((item) => (

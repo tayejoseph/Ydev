@@ -1,10 +1,13 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { Button } from '../../../UI'
+import { AppRoutes } from '../../../constants'
 import { TitleWithDesign, CompanySponsors } from '../../../component'
 import { BeginFoundation } from '../../../assets/svgImgs'
 import Container from './styles'
 
 const Foundation = () => {
+  const history = useHistory()
   return (
     <Container>
       <section className="section--top">
@@ -20,7 +23,9 @@ const Foundation = () => {
             relevant in-demand tech skills as you gain hands-on experience
             through our robust curriculum.
           </p>
-          <Button>Explore our curriculum</Button>
+          <Button onClick={() => history.push(AppRoutes.curriculum)}>
+            Explore our curriculum
+          </Button>
         </div>
       </section>
       <section className="section--bottom">

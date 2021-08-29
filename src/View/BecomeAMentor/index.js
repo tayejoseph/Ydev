@@ -3,7 +3,9 @@ import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { HelpForm, TitleWithDesign } from '../../component'
 import { AllMentors } from '../../assets/svgImgs'
-import { becomeAMentorContent } from '../../constants'
+import TabContent from './TabContent'
+import { Tabs, Carousel, CarouselItem } from '../../UI'
+import { becomeAMentorContent, HomeContent } from '../../constants'
 import {
   Mentor,
   MentorStatus,
@@ -115,13 +117,30 @@ const BecomeAMentor = () => {
         </div>
       </section>
       <section className="section--wantInfo">
-        <header>
+        <header className="wantInfo--header">
           <DoubleChat />
           <h1>Want more info?</h1>
           <p>
-            Check out our <Link to={AppRoutes.faq}>Mentors FAQ page</Link>
+            Check out our{' '}
+            <Link to={`${AppRoutes.faq}?tab=mentors`}>Mentors FAQ page</Link>
           </p>
         </header>
+        <Tabs
+          title="Categories"
+          tabs={[
+            {
+              title: 'Mentors',
+              key: 'mentors',
+              component: () => (
+                <TabContent
+                  {...{
+                    content: HomeContent.frequentQuestions.mentors,
+                  }}
+                />
+              ),
+            },
+          ]}
+        />
       </section>
       <section className="section--picture">
         <header>
@@ -129,6 +148,18 @@ const BecomeAMentor = () => {
           <h1>They say a picture is worth a thousand words</h1>
           <p>We captured a thousand pictures</p>
         </header>
+
+        <Carousel carouselLists={becomeAMentorContent.carousel}>
+          {({ activeIndex }) =>
+            becomeAMentorContent.carousel.map((item, index) => (
+              <CarouselItem {...{ index, activeIndex }}>
+                <div className="carousel--img__container">
+                  <img src={item} alt={'instructor'} />
+                </div>
+              </CarouselItem>
+            ))
+          }
+        </Carousel>
       </section>
     </Container>
   )

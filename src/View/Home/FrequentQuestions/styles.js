@@ -17,18 +17,13 @@ export default Styled.div`
             p {
                 font-size: 1rem;
                 margin-bottom: 4.5em;
-                margin-top: -0.5em;
+                margin-top: 1em;
                 a {
                     text-decoration: none; 
                     color: ${({ theme }) => theme.primary};
                     &:hover, &:focus, &:active {
                         text-decoration: underline;
                     }
-                }
-                svg {
-                    transform: translateY(100%);
-                    fill: black;
-                    font-size: 3rem;
                 }
             }
         }

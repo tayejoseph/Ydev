@@ -24,7 +24,7 @@ const Categories = () => {
             key: 'students',
             component: () => (
               <TabContent
-                {...{ content: HomeContent.frequentQuestions.question }}
+                {...{ content: HomeContent.frequentQuestions.students }}
               />
             ),
           },
@@ -33,7 +33,7 @@ const Categories = () => {
             key: 'mentors',
             component: () => (
               <TabContent
-                {...{ content: HomeContent.frequentQuestions.question }}
+                {...{ content: HomeContent.frequentQuestions.mentors }}
               />
             ),
           },
@@ -42,7 +42,7 @@ const Categories = () => {
             key: 'instructors',
             component: () => (
               <TabContent
-                {...{ content: HomeContent.frequentQuestions.question }}
+                {...{ content: HomeContent.frequentQuestions.instructors }}
               />
             ),
           },
@@ -51,7 +51,16 @@ const Categories = () => {
             key: 'enterprise',
             component: () => (
               <TabContent
-                {...{ content: HomeContent.frequentQuestions.question }}
+                {...{ content: HomeContent.frequentQuestions.enterprise }}
+              />
+            ),
+          },
+          {
+            title: 'Corporate training',
+            key: 'training',
+            component: () => (
+              <TabContent
+                {...{ content: HomeContent.frequentQuestions.training }}
               />
             ),
           },

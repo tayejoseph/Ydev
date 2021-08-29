@@ -53,8 +53,8 @@ export default Styled.div`
             background: #fff;
             overflow-y: auto;
             padding-bottom: 3em;
-            max-height: ${({ theme }) =>
-              `calc(100vh - ${theme.dimensions.navHeightMobile})`};
+            /* max-height: ${({ theme }) =>
+              `calc(100vh - ${theme.dimensions.navHeightMobile})`}; */
             div.menu--container {
                 margin-bottom: 1.5em;
                 button.menu--item {

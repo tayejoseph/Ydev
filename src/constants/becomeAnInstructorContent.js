@@ -1,4 +1,5 @@
 import { v4 as uuid } from 'uuid'
+import { instructor1, instructor2, instructor3 } from '../assets/svgImgs'
 import { Handshake, Money, Plane, Eye2 } from '../assets/convertedSvgs'
 
 const becomeAnInstructorContent = {
@@ -54,6 +55,7 @@ const becomeAnInstructorContent = {
       key: uuid(),
     },
   ],
+  carousel: [instructor1, instructor2, instructor3],
   tabsContent: {
     instructors: [
       {

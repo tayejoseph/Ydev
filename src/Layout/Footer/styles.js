@@ -28,6 +28,7 @@ export default Styled.div`
         justify-content: space-between;
         ${minQuery('xl')} {
             grid-template-columns: 20rem auto auto auto;
+            align-items: space-between;
         }
         ${maxQuery('xl')} {
             grid-template-columns: 1fr 1fr;
@@ -36,12 +37,6 @@ export default Styled.div`
             grid-template-columns: 1fr;
         }
         div.grid--item {
-            &:first-of-type {
-                min-width: 15rem;
-            }
-            &:nth-child(3) {
-                min-width: 15rem;
-            }
             header {
                 svg {
                     font-size: 8rem;
@@ -95,32 +90,40 @@ export default Styled.div`
         }
     }
     footer {
-        border-top: 1px solid #B4B4B4;
         margin-top: 4em;
-        padding-top: 1.5em;
-        display: grid;
-        grid-gap: 1.5em;
-        p {
-            color: #F4F4F4;
-            max-width: 35rem;
-            font-size: 0.9rem;
+        hr {
+            border: none;
+            border-top: 1px solid #B4B4B4;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        ${minQuery('lg')} {
-            align-items: flex-start;
-            grid-template-columns: 1fr auto;
-            justify-content: space-between;
-        }
-        nav {
-            grid-gap: 3em;
-            display: flex;
-            align-items: center;
-            a {
+        div.footer--grid {
+            padding-top: 1.5em;
+            display: grid;
+            grid-gap: 1.5em;
+            p {
+                color: #F4F4F4;
+                max-width: 35rem;
                 font-size: 0.9rem;
-                color: #808080;
-                text-decoration: none; 
-                &:hover, &:active, &:focus {
-                    text-decoration: underline;
-                    outline: none;
+            }
+            ${minQuery('lg')} {
+                align-items: flex-start;
+                grid-template-columns: 1fr auto;
+                justify-content: space-between;
+            }
+            nav {
+                grid-gap: 3em;
+                display: flex;
+                align-items: center;
+                a {
+                    font-size: 0.9rem;
+                    color: #808080;
+                    text-decoration: none; 
+                    &:hover, &:active, &:focus {
+                        text-decoration: underline;
+                        outline: none;
+                    }
                 }
             }
         }

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { Button } from '../../../UI'
 import { HomeContent } from '../../../constants'
-import { Union, LoveCode, HandPan } from '../../../assets/convertedSvgs'
+import { Union, LoveCode } from '../../../assets/convertedSvgs'
 import Container from './styles'
 
 const TestimonalImpact = () => {
@@ -80,7 +80,6 @@ const TestimonalImpact = () => {
         </header>
         <div className="grid--container">
           <div className="grid--item">
-            <HandPan />
             <h2>
               1,200+
               <br />
@@ -88,7 +87,6 @@ const TestimonalImpact = () => {
             </h2>
           </div>
           <div className="grid--item">
-            <HandPan />
             <h2>
               500+
               <br />
@@ -96,7 +94,6 @@ const TestimonalImpact = () => {
             </h2>
           </div>
           <div className="grid--item">
-            <HandPan />
             <h2>
               10+
               <br />
@@ -106,7 +103,6 @@ const TestimonalImpact = () => {
             </h2>
           </div>
           <div className="grid--item span--item">
-            <HandPan />
             <h2>
               <strong>500+</strong>
               <br />
@@ -114,7 +110,6 @@ const TestimonalImpact = () => {
             </h2>
           </div>
           <div className="grid--item">
-            <HandPan />
             <h2>
               500+
               <br />
@@ -122,8 +117,6 @@ const TestimonalImpact = () => {
             </h2>
           </div>
           <div className="grid--item">
-            <HandPan />
-
             <h2>
               11+
               <br />
@@ -131,7 +124,6 @@ const TestimonalImpact = () => {
             </h2>
           </div>
           <div className="grid--item">
-            <HandPan />
             <h2>
               50+
               <br />

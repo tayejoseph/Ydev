@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
 import { TopNav, Footer } from './Layout'
 import { IconContext } from 'react-icons'
 import { ThemeProvider } from 'styled-components'
+import { useQuery } from '../src/hooks'
 import {
   Home,
   FAQ,
@@ -20,6 +21,7 @@ import {
   Schools,
   BecomeAnInstructor,
 } from './View'
+import { HireForm, ApplyPopup } from '../src/component'
 import { AppRoutes } from './constants'
 import theme from './base/theme'
 import GlobalStyle from './base/globalStyles'
@@ -35,6 +37,7 @@ const ScrollToTop = () => {
 
 const App = () => {
   const location = useLocation()
+  const modal = useQuery().get('modal')
   let background = location.state && location.state.background
 
   return (
@@ -81,6 +84,8 @@ const App = () => {
           </Switch>
         </div>
         <Footer />
+        {modal === 'hire' && <HireForm />}
+        {modal === 'apply' && <ApplyPopup />}
         <ScrollToTop />
       </IconContext.Provider>
     </ThemeProvider>

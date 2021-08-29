@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tabs } from '../../../UI'
-import { DoubleChat, HandeRight } from '../../../assets/convertedSvgs'
+import { DoubleChat } from '../../../assets/convertedSvgs'
 import { Link } from 'react-router-dom'
 import { HireAlumniContent } from '../../../constants'
 import TabContent from './TabContent'
@@ -14,7 +14,6 @@ const WantMoreInfo = () => {
         <h1>Want more info?</h1>
         <p>
           Check out our <Link to="/">Enterprise FAQ page</Link>
-          <HandeRight />
         </p>
       </header>
       <div className="info--tab__container">

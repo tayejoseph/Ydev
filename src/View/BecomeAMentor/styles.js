@@ -266,13 +266,16 @@ export default Styled.div`
             }
         }
     }
+    
     section.section--wantInfo {
         padding-bottom: 3em;
+        margin-top: 7em;
         ${({ theme }) => theme.mixins.primaryBg};
-        header {
+        header.wantInfo--header {
             text-align: center;
+            margin-bottom: 3em;
             svg {
-                font-size: 6rem;
+                font-size: 5rem;
                 transform: translateY(-50%);
             }
             h1 {
@@ -306,6 +309,14 @@ export default Styled.div`
             p {
                 font-size: 1.1rem;
             }
+        }
+        div.carousel--img__container {
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 1.5em;
+                img {
+                    width: 33vw;
+                }
         }
     }
 

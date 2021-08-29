@@ -51,8 +51,15 @@ export default Styled.div`
         align-items: center;
         justify-content: center;
         margin-top: 4em;
-        button {
-            border-color: #2298BB!important;
+        a {
+            color: #000;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            padding: 0.6em 1.4em;
+            background: #FFFFFF;
+            border: 1.18081px solid #2298BB;
+            border-radius: 7px;
         }
     }
 `

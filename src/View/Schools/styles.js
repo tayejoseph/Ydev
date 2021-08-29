@@ -5,10 +5,10 @@ import { moreLeftSection, moreRightSection } from '../../assets/svgImgs'
 
 export default Styled.div`
     h1 {
-        font-weight: 800;
+        font-weight: 700;
     }
     p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 150%;
     }
     section.section--jumbotron {
@@ -35,7 +35,7 @@ export default Styled.div`
             } */
             h1 {
                 color: #fff;
-                font-size: 2.2rem;
+                font-size: 2rem;
                 margin-bottom: 0.7em;
             }
             p {
@@ -54,7 +54,7 @@ export default Styled.div`
                         margin-right: 1em;
                         font-size: 1.2rem;
                     }
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 1.1rem;
                     margin-bottom: 0.5em;
                 }
@@ -62,7 +62,6 @@ export default Styled.div`
             button {
                 background-color: #fff;
                 border-color: #fff;
-                font-weight: 700;
                 color: ${({ theme }) => theme.primary};
                 &:after {
                     border-color: #fff;
@@ -86,12 +85,13 @@ export default Styled.div`
         ${minQuery('lg')} {
             grid-template-columns: 1fr 15rem;
         }
+        h1 {
+            margin-bottom: 1em;
+            font-size: 1.5rem!important;
+            line-height: 150%;
+        }
         div.col--1 {
             max-width: 40rem;
-            h1 {
-                margin-bottom: 1em;
-                font-size: 2rem;
-            }
             p {
                 margin-bottom: 1em;
             }
@@ -99,7 +99,6 @@ export default Styled.div`
         div.col--2 {
             text-align: center;
             h1 {
-                font-size: 2rem;
                 margin-bottom: 0.5em;
             }
         }

@@ -21,7 +21,7 @@ export default Styled.div`
             button {
                 position: absolute;
                 top: 12rem;
-                z-index: 999;
+                z-index: 4;
                 background: #fff;
                 padding: 0.5em;
                 border-radius: 50%;

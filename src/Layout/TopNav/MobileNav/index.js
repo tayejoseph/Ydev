@@ -29,6 +29,15 @@ const MobileNav = () => {
   }
 
   useEffect(() => {
+    const body = document.body
+    if (showNavigation && !body.classList.contains('disable--scroll')) {
+      body.classList.add('disable--scroll')
+    } else if (!showNavigation && body.classList.contains('disable--scroll')) {
+      body.classList.remove('disable--scroll')
+    }
+  }, [showNavigation])
+
+  useEffect(() => {
     const handleClickEvent = () => {
       setDisplay(false)
     }

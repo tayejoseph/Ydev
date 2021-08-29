@@ -15,18 +15,19 @@ export default createGlobalStyle`
       padding: 0px;
     }
     html, body {
+      position: relative;
       font-family: ${({ theme }) => theme.fontFamily};
       color: ${({ theme }) => theme.textColor}!important; 
       background: ${({ theme }) => theme.bgColor};    
       font-size: 1rem;
       font-weight: 300;
 
-
-      ${maxQuery('lg')} {
+      ${maxQuery('xl')} {
         font-size: 95%;
       }
+      
       ${maxQuery('sm')} {
-        font-size: 80%;
+        font-size: 82%;
       }
     }
     

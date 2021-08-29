@@ -55,13 +55,17 @@ const Immersive = () => {
 
       <div className="col--2" ref={gridContainerRef}>
         {HomeContent.schoolLists.map((item, index) => (
-          <div className="pallet--item" key={item.key} id={`pallet-${index}`}>
+          <div className={`pallet--item`} key={item.key} id={`pallet-${index}`}>
             <div
-              className="img--container"
+              className={`img--container ${item.title
+                .replace(' ', '-')
+                .toLowerCase()}`}
               style={{ backgroundImage: `url(${item.img})` }}
-            />
-            <h2>{item.title}</h2>
-            <p>{item.details}</p>
+            ></div>
+            <div className="content--container">
+              <h2>{item.title}</h2>
+              <p>{item.details}</p>
+            </div>
           </div>
         ))}
       </div>

@@ -76,11 +76,11 @@ export default Styled.div`
         ${({ theme }) => theme.mixins.hideScollbarHorizontal};
         scroll-behavior: smooth;
         div.pallet--item {
-            width: 18rem;
+            width: 16rem;
             flex-shrink: 0;
-            padding: 1.5em;
             background: #0A212E;
             border-radius: 15px;
+            overflow: hidden;
             &:last-of-type {
                 margin-right: 2em;
             }
@@ -91,19 +91,44 @@ export default Styled.div`
                 height: 10rem;
                 margin-bottom: 1em;
                 background-size: contain;
+                background-position: center center;
+                background-size: 20rem;
                 background-repeat: no-repeat;
+                &.software-school {
+                    background-size: 15rem;
+                }
+                &.design-school {
+
+                    background-position: center 2rem;
+                    background-size: cover;
+                }
+                &.data-school, &.product-management, &.qa-school {
+                    background-size: 13rem;
+                }
+                
+                &.engineering {
+                    background-size: 12rem;
+                    background-position: center 2rem;
+                    background-color: white;
+                    /* background */
+                }
+                
             }
-            h2 {
-                letter-spacing: -0.01em;
-                color: #FFFFFF;
-                font-weight: 700;
-                margin-bottom: 0.5em;
-                font-size: 1.2rem;
-            }
-            p {
-                font-size: 0.85rem;
-                letter-spacing: -0.02em;
-                color: #ECE8E8;
+            div.content--container {
+                padding: 1.5em;
+                padding-top: 1em;
+                h2 {
+                    letter-spacing: -0.01em;
+                    color: #FFFFFF;
+                    font-weight: 700;
+                    margin-bottom: 0.5em;
+                    font-size: 1.1rem;
+                }
+                p {
+                    font-size: 0.85rem;
+                    letter-spacing: -0.02em;
+                    color: #ECE8E8;
+                }
             }
         }
     }

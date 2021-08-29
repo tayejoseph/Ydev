@@ -77,13 +77,13 @@ export default Styled.div`
             margin-top: 1.2em;
         }
     }
-    section.section--outStory {
+    section.section--ourStory {
         padding-bottom: 3em;
         p {
             margin-bottom: 2em;
             span {
                 display: block;
-                font-weight: 600;
+                font-weight: 500;
                 margin-top: 1em;
                 color: ${({ theme }) => theme.primary};
             }

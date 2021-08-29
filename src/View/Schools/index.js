@@ -16,17 +16,16 @@ import Container from './styles'
 
 const School = () => {
   const { schoolName } = useParams()
-  const {
-    jumbotron,
-    secondSection,
-    thirdSection,
-    fourthSection,
-  } = schoolsContent[schoolName] ? schoolsContent[schoolName] : {}
+  const { thirdSection, fourthSection } = schoolsContent.generalContent
+  const { jumbotron, secondSection } = schoolsContent[schoolName]
+    ? schoolsContent[schoolName]
+    : {}
   const [formData, setFormState] = useState({
     email: '',
     fullName: '',
   })
 
+  console.log(schoolName, 'Sdjksdsdkj')
   const handleInput = ({ value, name }) => {
     setFormState((s) => ({
       ...s,

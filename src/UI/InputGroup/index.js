@@ -4,6 +4,7 @@ import Container from './styles'
 const InputGroup = ({
   children,
   onChange,
+  className = '',
   label,
   hasRequired = false,
   type,
@@ -11,7 +12,7 @@ const InputGroup = ({
 }) => {
   const errorRef = useRef(null)
   return (
-    <Container className="input--group">
+    <Container className={`input--group ${className}`}>
       {children ? (
         children
       ) : (

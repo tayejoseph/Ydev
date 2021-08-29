@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { TitleWithDesign } from '../../component'
 import { Transform } from '../../assets/svgImgs'
-import { Tabs } from '../../UI'
+import { Tabs, Carousel, CarouselItem } from '../../UI'
 import TabContent from './TabContent'
-import { becomeAnInstructorContent } from '../../constants'
-import { Mentor, Palm, DoubleChat, Picture } from '../../assets/convertedSvgs'
+import { becomeAnInstructorContent, HomeContent } from '../../constants'
+import { Mentor, DoubleChat, Picture } from '../../assets/convertedSvgs'
 import { Button } from '../../UI'
 import { AppRoutes } from '../../constants'
 import Container from './styles'
 
-const BecomeAMentor = () => {
+const BecomeAnInstructor = () => {
   return (
     <Container>
       <section className="section--jumbotron">
@@ -85,8 +85,10 @@ const BecomeAMentor = () => {
           <DoubleChat />
           <h1>Want more info?</h1>
           <p>
-            Check out our <Link to={AppRoutes.faq}>Mentors FAQ page</Link>
-            <Palm />
+            Check out our{' '}
+            <Link to={`${AppRoutes.faq}?tab=instructors`}>
+              Instructors FAQ page
+            </Link>
           </p>
         </header>
         <Tabs
@@ -98,7 +100,7 @@ const BecomeAMentor = () => {
               component: () => (
                 <TabContent
                   {...{
-                    content: becomeAnInstructorContent.tabsContent.instructors,
+                    content: HomeContent.frequentQuestions.instructors,
                   }}
                 />
               ),
@@ -112,9 +114,20 @@ const BecomeAMentor = () => {
           <h1>They say a picture is worth a thousand words</h1>
           <p>We captured a thousand pictures</p>
         </header>
+        <Carousel carouselLists={becomeAnInstructorContent.carousel}>
+          {({ activeIndex }) =>
+            becomeAnInstructorContent.carousel.map((item, index) => (
+              <CarouselItem {...{ index, activeIndex }}>
+                <div className="carousel--img__container">
+                  <img src={item} alt={'instructor'} />
+                </div>
+              </CarouselItem>
+            ))
+          }
+        </Carousel>
       </section>
     </Container>
   )
 }
 
-export default BecomeAMentor
+export default BecomeAnInstructor

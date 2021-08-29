@@ -24,6 +24,11 @@ export default Styled.div`
         background-image: url(${homeJumbotronPattern});
         background-repeat: no-repeat;
         background-position: bottom;
+        z-index: 1;
+    }
+    * {
+        position: relative;
+        z-index: 3;
     }
     div.col--1 {
         ${minQuery('lg')} {

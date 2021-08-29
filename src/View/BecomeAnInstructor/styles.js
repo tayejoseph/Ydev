@@ -4,7 +4,7 @@ import { minQuery, maxQuery } from '../../helpers'
 
 export default Styled.div`
     h1 {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.7rem;
         margin: 0.5em 0px;
     }
@@ -144,7 +144,7 @@ export default Styled.div`
                     margin-bottom: 1em;
                     justify-content: space-between;
                     h2 {
-                        font-weight: 700;
+                        font-weight: 600;
                         font-size: 1.2rem;
                     }
                     svg {
@@ -201,7 +201,7 @@ export default Styled.div`
         ${({ theme }) => theme.mixins.primaryBg};
         header.wantInfo--header {
             text-align: center;
-            margin-bottom: 4em;
+            margin-bottom: 3em;
             svg {
                 font-size: 5rem;
                 transform: translateY(-50%);
@@ -210,17 +210,11 @@ export default Styled.div`
                 margin-top: -1em;
             }
             p {
-                position: relative;
                 a {
                     color: ${({ theme }) => theme.primary};
                     &:hover, &:focus, &:active {
                         text-decoration: underline;
                     }
-                }
-                svg {
-                    font-size: 1.8rem;
-                    position: absolute;
-                    top: 160%;
                 }
             }
         }
@@ -244,6 +238,15 @@ export default Styled.div`
             p {
                 font-size: 1rem;
             }
+        }
+
+        div.carousel--img__container {
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 1.5em;
+                img {
+                    width: 33vw;
+                }
         }
     }
 

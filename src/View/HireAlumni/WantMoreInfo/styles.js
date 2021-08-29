@@ -35,11 +35,6 @@ export default Styled.div`
             font-size: 1rem;
             margin-top: 0.25em;
             margin-bottom: 1em;
-            svg {
-                position: absolute;
-                font-size: 3rem;
-                bottom: -1em;
-            }
         }
         a {
             color: ${({ theme }) => theme.primary};

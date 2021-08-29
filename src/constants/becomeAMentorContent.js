@@ -1,4 +1,5 @@
 import { v4 as uuid } from 'uuid'
+import { mentor1, mentor2, mentor3 } from '../assets/svgImgs'
 import { Eye, Love, Time, Tie } from '../assets/convertedSvgs'
 
 const becomeAMentorContent = {
@@ -32,6 +33,7 @@ const becomeAMentorContent = {
       icon: Eye,
     },
   ],
+  carousel: [mentor1, mentor2, mentor3],
 }
 
 export default becomeAMentorContent
