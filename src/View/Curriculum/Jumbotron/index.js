@@ -8,9 +8,9 @@ const Jumbotron = () => {
     <Container>
       <div className="col--1">
         <h1>
-          Welcome to Ydev Academy,
+          Welcome to Ydev Academy
           <br />
-          <span className="outlined">course outlines.</span>
+          course outlines
         </h1>
         <p>
           Our curriculum is designed to shape you to be the best you can be in

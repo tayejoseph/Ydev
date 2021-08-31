@@ -23,13 +23,17 @@ export default Styled.div`
         h3 {
             font-size: 1rem;
             font-weight: 600;
+            ${({ theme }) => theme.mixins.lineClamp(1)};
         }
         h4 {
             font-size: 0.9rem;
+            ${({ theme }) => theme.mixins.lineClamp(1)};
+
         }
         p {
             margin-top: 0.5em;
             font-size: 0.9rem;
+            ${({ theme }) => theme.mixins.lineClamp(5)};
         }
     }
     `

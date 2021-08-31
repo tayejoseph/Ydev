@@ -35,6 +35,13 @@ const mixins = {
     }
   `,
 
+  lineClamp: (lineNo) => css`
+    display: -webkit-box;
+    -webkit-line-clamp: ${lineNo};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  `,
+
   primaryBg: css`
     position: relative;
     &:after {
@@ -58,9 +65,9 @@ const mixins = {
       overflow-y: overlay;
       scrollbar-width: thin;
       scrollbar-color: #eaeaea;
-      margin-right: 0.3em;
+      /* margin-right: 0.3em;
       margin-top: 0.5em;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.5em; */
     }
     &::-webkit-scrollbar {
       width: 8px;

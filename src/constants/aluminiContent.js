@@ -23,21 +23,21 @@ const aliuminiContent = {
       key: uuid(),
       title: 'Hire the top 3%',
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
+        'Get access to a pool of well trained and vetted African tech talents to work with your team and deliver efficiently',
     },
     {
       img: Flexible,
       key: uuid(),
       title: 'Flexible placements',
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
+        'Whether you are hiring for short-term, part-time or full time, we’ve got you covered. Hire fast, hire flexibly.',
     },
     {
       img: Support,
       key: uuid(),
       title: 'Support services',
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
+        'We help you structture all your internal hiring & onboarding processes with help of dedicated professional recruiters on our team.',
     },
   ],
   hiringProcess: [

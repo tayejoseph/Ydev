@@ -65,7 +65,7 @@ const OurStory = () => {
         </div>
       </section>
       <section className="section--sponsors">
-        <h1>Some companies that have hired from Ydev academy</h1>
+        <h1>Our partners</h1>
         <CompanySponsors />
       </section>
       <section className="section--executive">

@@ -9,6 +9,7 @@ import {
   Todo,
   CustomBox,
 } from '../../assets/convertedSvgs'
+import { AppRoutes } from '../../constants'
 import { TitleWithDesign } from '../../component'
 import { Button, InputGroup } from '../../UI'
 import { schoolsContent } from '../../constants'
@@ -174,8 +175,9 @@ const School = () => {
             />
             <footer>
               <p>
-                By selecting this, you agree to Ydev <Link to="/">Terms</Link>{' '}
-                and <Link to="/">Privacy Policy</Link>
+                By selecting this, you agree to Ydev{' '}
+                <Link to={AppRoutes.termsandcondition}>Terms</Link> and{' '}
+                <Link to={AppRoutes.privacyPolicy}>Privacy Policy</Link>
               </p>
               <div className="action--container">
                 <Button>Apply now</Button>

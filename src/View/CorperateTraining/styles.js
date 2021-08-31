@@ -68,9 +68,16 @@ export default Styled.div`
                      color: #000000;
                      margin-top: 0.5em;
                      grid-gap: 1.5em;
-                    a {
+                    button {
                         text-decoration: underline;
                         color: #000000;
+                        background: transparent;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        &:hover, &:focus {
+                            color: ${({ theme }) => theme.primary};
+                        }
                     }
                      p {
                         display: flex;

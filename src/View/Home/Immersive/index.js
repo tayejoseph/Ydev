@@ -23,7 +23,7 @@ const Immersive = () => {
   return (
     <Container>
       <div className="col--1">
-        <h1>Ydev immersive Curriculum</h1>
+        <h1>Ydev Immersive Curriculum</h1>
         <p>
           Browse through a carefully created curriculum tailored specifically to
           your needs. Our curriculum meets global standards putting you in the

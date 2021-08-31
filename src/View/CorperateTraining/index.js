@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { CompanySponsors, TitleWithDesign, ReachUs } from '../../component'
 import { coperateTraining } from '../../assets/svgImgs'
@@ -8,6 +8,7 @@ import { AppRoutes, corporateTrainingContent } from '../../constants'
 import Container from './styles'
 
 const CorperateTraining = () => {
+  const formRef = useRef()
   const [formData, setFormDate] = useState({
     fullName: '',
     email: '',
@@ -17,6 +18,14 @@ const CorperateTraining = () => {
     role: '',
     help: '',
   })
+
+  const handleScrollToForm = () => {
+    window.scrollTo({
+      top: formRef.current.offsetTop - 110,
+      behavior: 'smooth',
+    })
+  }
+
   const handleInput = ({ target: { name, value } }) => {
     setFormDate((s) => ({ ...s, [name]: value }))
   }
@@ -34,9 +43,9 @@ const CorperateTraining = () => {
               customizable training solutions designed to transform your team.
             </p>
             <div className="row">
-              <p>
-                <Link to="/">Schedule consultation</Link>
-              </p>
+              <button onClick={handleScrollToForm}>
+                Schedule consultation
+              </button>
               <p>
                 <Cusion />
                 Request more info
@@ -88,10 +97,10 @@ const CorperateTraining = () => {
             Ydev has partnered with the most innovative companies in Africa for
             various workforce and talent transformation programs
           </p>
-          <Button>Apply now</Button>
+          <Button onClick={handleScrollToForm}>Apply now</Button>
         </div>
       </section>
-      <section className="section--ready">
+      <section className="section--ready" ref={formRef}>
         <h1>Ready to Empower your WorkForce?</h1>
         <div className="section--row">
           <div className="col--1">

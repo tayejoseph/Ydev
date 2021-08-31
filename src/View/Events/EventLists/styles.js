@@ -8,8 +8,10 @@ export default Styled.div`
         border-bottom: 1.2855px solid #CCCCCC;
         header {
             display: grid;
+            grid-gap: 1.5em;
             ${minQuery('lg')} {
                 grid-template-columns: 10rem 1fr auto;
+                grid-gap: 0px;
             }
             align-items: center;
             padding: 3em 0px;
@@ -23,9 +25,14 @@ export default Styled.div`
                     font-weight: 400;
                     font-size: 1.1rem;
                 }
-                &:last-of-type {
-                    font-weight: 600;
-                    font-size: 1rem;
+            }
+
+            a {
+                font-size: 1.1rem;
+                color: #7C8FF7;
+                font-weight: 400;
+                &:hover {
+                    text-decoration: underline;
                 }
             }
             div.title--container {

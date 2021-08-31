@@ -12,3 +12,4 @@ export { default as becomeAnInstructorContent } from './becomeAnInstructorConten
 export { default as schoolsContent } from './schools'
 export { default as HireAlumniContent } from './hireAluminContent'
 export { default as AppInfo } from './appInfos'
+export { default as parteners } from './parteners'

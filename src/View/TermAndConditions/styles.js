@@ -14,7 +14,7 @@ export default Styled.div`
         padding-bottom: 3em;
         h1 {
             font-weight: 700;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             margin-top: 1em;
             margin-bottom: 0.2em;
         }

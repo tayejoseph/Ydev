@@ -9,10 +9,10 @@ export default Styled.div`
     padding-top: 4em;
     header.title--header {
         h1 {
-            font-size: 1.8rem;
+            font-size: 2rem!important;
             letter-spacing: -0.01em;
             color: #1C1B1B;
-            font-weight: 800;
+            font-weight: 700;
         }
         margin-bottom: 4em;
     }
@@ -37,25 +37,31 @@ export default Styled.div`
                 grid-gap: 1.5em;
                 margin-bottom: 1em;
                 h1 {
-                    font-size: 1.9rem;
-                    font-weight: 800;
+                    font-size: 2rem;
+                    font-weight: 700;
                 }
                 div {
                     h2 {
                         font-size: 1.2rem;
                         letter-spacing: -0.02em;
-                        font-weight: 800;
+                        font-weight: 700;
                         color: #2C2B2C;
                         margin-bottom: 0.15em;
                     }
                     button {
                         display: flex;
                         align-items: center;
-                        font-weight: 800;
+                        font-weight: 700;
+                        color: ${({ theme }) => theme.primary};
                         font-size: 1rem;
                         .icon {
                             font-size: 2rem;
                             margin-left: -0.1em;
+                        }
+                        &:hover, &:active, &:focus {
+                            &, .icon {
+                            text-decoration: underline;
+                            }
                         }
                     }
                 }

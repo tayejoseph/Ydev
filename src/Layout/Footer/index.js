@@ -48,15 +48,19 @@ const Footer = () => {
         <div className="grid--item">
           <h2>Our Programs</h2>
           <nav>
-            <NavLink to={AppRoutes.schools.designSchool}>Design School</NavLink>
-            <NavLink to={AppRoutes.schools.softwareSchool}>
-              Software School
-            </NavLink>
             <NavLink to={AppRoutes.schools.dataSchool}>Data School</NavLink>
+            <NavLink to={AppRoutes.schools.designSchool}>Design School</NavLink>
             <NavLink to={AppRoutes.schools.productSchool}>
               Product School
             </NavLink>
             <NavLink to={AppRoutes.schools.devOpsSchool}>DevOps School</NavLink>
+            <NavLink to={AppRoutes.schools.softwareSchool}>
+              Software School
+            </NavLink>
+            <NavLink to={AppRoutes.schools.qaSchool}>QA School</NavLink>
+            <NavLink to={AppRoutes.schools.engineeringSchool}>
+              Engineering School
+            </NavLink>
           </nav>
         </div>
         <div className="grid--item">

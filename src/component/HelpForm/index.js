@@ -85,7 +85,7 @@ const HelpForm = () => {
         />
         <footer>
           <p>
-            <Switch defaultChecked onChange={console.log} />
+            {/* <Switch defaultChecked onChange={console.log} /> */}
             By selecting this, you agree to Ydev{' '}
             <Link to={AppRoutes.termsandcondition}> Terms</Link> and{' '}
             <Link to={AppRoutes.privacyPolicy}>Privacy Policy</Link>

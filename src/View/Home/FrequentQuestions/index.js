@@ -35,7 +35,7 @@ const FrequentQuestions = () => {
               key: 'students',
               component: () => (
                 <TabContent
-                  {...{ content: HomeContent.frequentQuestions.question }}
+                  {...{ content: HomeContent.frequentQuestions.students }}
                 />
               ),
             },
@@ -44,7 +44,7 @@ const FrequentQuestions = () => {
               key: 'mentors',
               component: () => (
                 <TabContent
-                  {...{ content: HomeContent.frequentQuestions.question }}
+                  {...{ content: HomeContent.frequentQuestions.mentors }}
                 />
               ),
             },
@@ -53,7 +53,7 @@ const FrequentQuestions = () => {
               key: 'instructors',
               component: () => (
                 <TabContent
-                  {...{ content: HomeContent.frequentQuestions.question }}
+                  {...{ content: HomeContent.frequentQuestions.instructors }}
                 />
               ),
             },
@@ -62,7 +62,7 @@ const FrequentQuestions = () => {
               key: 'enterprise',
               component: () => (
                 <TabContent
-                  {...{ content: HomeContent.frequentQuestions.question }}
+                  {...{ content: HomeContent.frequentQuestions.enterprise }}
                 />
               ),
             },

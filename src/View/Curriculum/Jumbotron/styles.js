@@ -33,6 +33,7 @@ export default Styled.div`
     div.col--1 {
         h1 {
             font-size: 2.5rem;
+            line-height: 120%;
             font-weight: 800;
         }
         span {

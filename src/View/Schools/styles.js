@@ -180,7 +180,6 @@ export default Styled.div`
                 grid-template-columns: repeat(3, 1fr);
             }
             div.timeline--item {
-                background: pink;
                 margin: 0px auto;
                 background: #FFFFFF;
                 padding: 1.5em;

@@ -24,6 +24,7 @@ import {
   EcoVc,
   OneHealth,
   Leave,
+  ProductSchool3,
 } from '../assets/convertedSvgs'
 import {
   wireframing,
@@ -32,8 +33,7 @@ import {
   EngineeringSchool2,
   QASchool2,
   SoftWareEngineering,
-  ProductManagement,
-  ProductSchool2,
+  productSchool,
   DevOps,
   DesignSchool2,
   DataSchool,
@@ -80,43 +80,43 @@ const HomeContent = {
       img: SoftWareEngineering,
       key: uuid(),
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
+        'Start your journey to becoming a full-stack developer. Learn how to write different kinds of code for complex frontend and backend tasks.',
     },
     {
       title: 'Data School',
       img: DataSchool,
       key: uuid(),
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future.",
+        'Learn how to gain insights from complex data and the basics needed to transition into a career in data science and machine learning.',
     },
     {
       title: 'Design School',
       img: DesignSchool2,
       key: uuid(),
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future.",
+        'Gain the basic knowledge to help you build a career in Design and grow through fundamental user-centred approaches to stunning user-interfaces.',
     },
     {
       title: 'Product School',
-      img: ProductSchool2,
+      img: ProductSchool3,
       key: uuid(),
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future.",
+        'Set yourself up for success and a rewarding career with our product school..',
     },
     {
       title: 'DevOps School',
       key: uuid(),
       img: DevOps,
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future.",
+        'Learn to design and deploy infrastructure as code, build and monitor CI/CD pipelines for different deployment strategies, and deploy scalable microservices',
     },
-    {
-      title: 'Product Management',
-      img: ProductManagement,
-      key: uuid(),
-      details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future.",
-    },
+    // {
+    //   title: 'Product Management',
+    //   img: ProductSchool2,
+    //   key: uuid(),
+    //   details:
+    //     "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future.",
+    // },
     {
       title: 'QA School',
       img: QASchool2,
@@ -313,7 +313,7 @@ const HomeContent = {
       image: Dami,
       key: uuid(),
       detail:
-        'YDev provided a solid foundation for me to understand the basics about data science. It also grew my curiosity about the applicability of data to my work and the various ways to which I could use and apply those learnings in different scenarios. The tutors were also very patient and understanding and will work with you based on your level of understanding. I would absolutely recommend YDev to any one who wants to learn, grow or develop a path in data science.',
+        'Ydev provided a solid foundation for me to understand the basics about data science. It also grew my curiosity about the applicability of data to my work and the various ways to which I could use and apply those learnings in different scenarios. The tutors were also very patient and understanding and will work with you based on your level of understanding. I would absolutely recommend Ydev to any one who wants to learn, grow or develop a path in data science.',
       name: 'Dami Thompson',
       company: <EcoVc />,
     },
@@ -329,7 +329,7 @@ const HomeContent = {
       image: Chika2,
       key: uuid(),
       detail:
-        'YDev has amazing instructors who take their time to drive home each curriculum. They always follow up projects to test your understanding and capabilities of the curriculum taught.  I can certainly boast that my objectives were met and goals achieved.',
+        'Ydev has amazing instructors who take their time to drive home each curriculum. They always follow up projects to test your understanding and capabilities of the curriculum taught.  I can certainly boast that my objectives were met and goals achieved.',
       name: 'Chika	Ezedunukwe, Research Analyst, Spurt',
       company: <Leave style={{ fontSize: '2rem' }} />,
     },
@@ -345,7 +345,7 @@ const HomeContent = {
       image: Chika2,
       key: uuid(),
       detail:
-        'YDev has amazing instructors who take their time to drive home each curriculum. They always follow up projects to test your understanding and capabilities of the curriculum taught.  I can certainly boast that my objectives were met and goals achieved.',
+        'Ydev has amazing instructors who take their time to drive home each curriculum. They always follow up projects to test your understanding and capabilities of the curriculum taught.  I can certainly boast that my objectives were met and goals achieved.',
       name: 'Chika	Ezedunukwe, Research Analyst, Spurt',
       company: <Leave style={{ fontSize: '2rem' }} />,
     },

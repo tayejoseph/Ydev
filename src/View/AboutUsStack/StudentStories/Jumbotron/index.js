@@ -10,7 +10,7 @@ const Jumbotron = () => {
         <h2>TESTIMONIALS</h2>
         <TitleWithDesign title="Student Stories" />
         <p>
-          We know YDev is life-changing because we hear it from our students and
+          We know Ydev is life-changing because we hear it from our students and
           alumni every day. Watch our alumni share their story on how YDev
           helped them start new careers in tech and get ready to rewrite your
           own story.{' '}

@@ -4,8 +4,11 @@ export default Styled.div`
     div.modal--container {
         width: 40rem;
         form {
-            padding: 1.5em 0px;
-            max-width: 90%;
+            padding: 1.5em 2em;
+            /* max-width: 90%; */
+            max-height: 60vh;
+            overflow-y: auto;
+            ${({ theme }) => theme.mixins.scrollbar};
             margin: 0 auto;
             div.select--container {
                 h3 {

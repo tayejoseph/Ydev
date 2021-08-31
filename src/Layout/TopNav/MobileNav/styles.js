@@ -51,7 +51,7 @@ export default Styled.div`
         div.navigation--container {
             padding: 1em 1.5em;
             background: #fff;
-            overflow-y: auto;
+            /* overflow-y: auto; */
             padding-bottom: 3em;
             /* max-height: ${({ theme }) =>
               `calc(100vh - ${theme.dimensions.navHeightMobile})`}; */
@@ -64,7 +64,7 @@ export default Styled.div`
                     background: transparent;
                     padding: 0.5em 0px;
                     width: 100%;
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     span {
                         border: 1px solid #DADADA;
                         margin-left: 0.5em;
@@ -89,7 +89,7 @@ export default Styled.div`
                     a {
                         display: block;
                         padding: 0.5em 0px;
-                        font-size: 0.9rem;
+                        font-size: 1rem;
                         color: #050402;
                         &:not(:last-of-type) {
                             margin-bottom: 0.25em;

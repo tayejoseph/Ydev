@@ -14,14 +14,13 @@ const EventLists = () => {
   return (
     <Container>
       {upcomingEventContent.eventLists.map((item) => (
-        <div
-          className="event--item"
-          key={item.id}
-          onClick={() => handleToggle(item.id)}
-        >
+        <div className="event--item" key={item.id}>
           <header role="button">
             <h3>{item.date}</h3>
-            <div className="title--container">
+            <div
+              className="title--container"
+              onClick={() => handleToggle(item.id)}
+            >
               <h1>{item.title}</h1>
               {item.content && (
                 <MdKeyboardArrowRight
@@ -29,7 +28,14 @@ const EventLists = () => {
                 />
               )}
             </div>
-            <h3>Register</h3>
+            <a
+              href={item.content.link}
+              target="_blank"
+              rel="noreferrer"
+              className="register--link"
+            >
+              Register
+            </a>
           </header>
           {activeDisplay.includes(item.id) && (
             <>

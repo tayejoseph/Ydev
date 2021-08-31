@@ -2,6 +2,12 @@ import React, { useState } from 'react'
 import { Button, InputGroup, Modal } from '../../UI'
 import Container from './styles'
 
+const checkedVal = [
+  'I want candidates for a full-time hire.',
+  'I want candidates for a short-term contract.',
+  "I want to explore a partnership opportunity with Ydev Academy I don't know yet. Send me more information.",
+  'Other',
+]
 const HelpForm = () => {
   const [formData, setFormDate] = useState({
     fullName: '',
@@ -10,11 +16,23 @@ const HelpForm = () => {
     companyNameUrl: '',
     phoneNo: '',
     role: '',
+    supportHelp: [],
     help: '',
   })
   const handleInput = ({ target: { name, value } }) => {
     setFormDate((s) => ({ ...s, [name]: value }))
   }
+  console.log(formData, 'sdsdlsdklk')
+  const handleCheckInput = ({ target: { value, checked } }) => {
+    console.log(checked, value, 'sdkjsdjsdkj')
+    setFormDate((s) => ({
+      ...s,
+      supportHelp: !checked
+        ? s.supportHelp.filter((s) => s !== value)
+        : [...s.supportHelp, value],
+    }))
+  }
+
   const handleSubmit = () => {}
   return (
     <Container>
@@ -66,24 +84,25 @@ const HelpForm = () => {
                 How Can Ydev support your talent needs? <br />
                 Select All That apply.
               </h3>
-              <label>
-                <input type="checkbox" />I want candidates for a full-time hire.
-              </label>
-              <label>
-                <input type="checkbox" />I want candidates for a short-term
-                contract.{' '}
-              </label>
-              <label>
-                <input type="checkbox" />I want to explore a partnership
-                opportunity with Ydev Academy I don't know yet. Send me more
-                information.
-              </label>
-              <label>
-                <input type="checkbox" />
-                Other
-              </label>
+              {checkedVal.map((item, index) => (
+                <label key={`checked--${index}`}>
+                  <input
+                    type="checkbox"
+                    value={item}
+                    checked={formData.supportHelp.includes(item)}
+                    onChange={handleCheckInput}
+                  />
+                  {item}
+                </label>
+              ))}
             </InputGroup>
           </div>
+          {formData.supportHelp.includes('Other') && (
+            <InputGroup>
+              <label>Other: Tell us how we can partner with you.</label>
+              <textarea />
+            </InputGroup>
+          )}
         </form>
       </Modal>
     </Container>

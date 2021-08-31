@@ -1,10 +1,12 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { Button } from '../../../UI'
 import { CompanySponsors } from '../../../component'
 import { aluminiContent } from '../../../constants'
 import Container from './styles'
 
 const Hire = () => {
+  const history = useHistory()
   return (
     <Container>
       <section className="section--skills">
@@ -29,7 +31,9 @@ const Hire = () => {
       <section className="section--process">
         <h1>Our hiring Process</h1>
         <p>Your journey to finding the best talents start here</p>
-        <Button>Start Hiring</Button>
+        <Button onClick={() => history.push('?modal=hire')}>
+          Start Hiring
+        </Button>
       </section>
       <section className="section--hireProcess">
         {aluminiContent.hiringProcess.map((item) => (

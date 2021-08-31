@@ -36,7 +36,7 @@ const generalContent = {
         title: 'Introduction to Design',
         details: [
           '📚 Read Elements and Principles of Design',
-          '📺 Perform Good Design and User Empathy',
+          '📺 Explore Good Design and User Empathy',
           '🔭 Interact Typography & Color Theory test',
           '📌 Review Product Design process from start to finish',
           '📺 Watch Case Study: Redesign of Instagram, Importance of Type Netflix)',
@@ -50,7 +50,7 @@ const generalContent = {
           '📌 Perform User Research',
           '🎨 Create Ideal Customer Profiles',
           '🏗 Build Ideal User flows and journeys',
-          '📌 Workshop Create Low Fidelity prototypes of a specific user action',
+          '📌 Workshop: Create Low Fidelity prototypes of a specific user action',
         ],
       },
       {
