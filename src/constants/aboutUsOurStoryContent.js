@@ -23,9 +23,9 @@ import {
   Debo,
   Adeola,
   Jeff,
-  Adebosayo,
-  Kiwako,
-} from '../assets/svgImgs'
+  Jackson,
+  Kiwasko,
+} from '../assets/png'
 
 const aboutUsOurStoryContent = {
   ourValues: [
@@ -105,26 +105,27 @@ const aboutUsOurStoryContent = {
         'Adeola Haruna is the program director and cofounder of GirlCode Academy. She also works full-time at Onepipe.io as a Product Manager where she supports cutting-edge payment solutions. She is a strong believer in personal growth, independence and innovation.',
     },
     {
-      name: 'Adebosayo Jackson',
-      image: Adebosayo,
+      name: 'Jackson Jackson',
+      image: Jackson,
       linkedInLink:
-        'https://www.linkedin.com/in/adebosayojackson/?originalSubdomain=ng',
+        'https://www.linkedin.com/in/Jacksonjackson/?originalSubdomain=ng',
       details:
-        'Adebosayo is a tech enthusiast with a keen interest in organizational effectiveness. She is the Chief Operating Officer for Harbor Inc. where she oversees the organization’s procedures and maintains control of diverse business operations.',
+        'Jackson is a tech enthusiast with a keen interest in organizational effectiveness. She is the Chief Operating Officer for Harbor Inc. where she oversees the organization’s procedures and maintains control of diverse business operations.',
     },
   ],
   adviseBoard: [
     {
-      name: 'Kiwako Sakamoto',
-      image: Kiwako,
-      linkedInLink: 'https://www.linkedin.com/in/kiwakosakamoto/',
+      name: 'Kiwasko Sakamoto',
+      image: Kiwasko,
+      linkedInLink: 'https://www.linkedin.com/in/Kiwaskosakamoto/',
       details:
-        "Kiwako Sakamoto is a Data Scientist, she served on the Big Data and Analytics Team with the World Bank's Innovation Labs, providing technical support to big data projects across various operations areas such as Energy, Transportation, and regional strategy in fragile states.",
+        "Kiwasko Sakamoto is a Data Scientist, she served on the Big Data and Analytics Team with the World Bank's Innovation Labs, providing technical support to big data projects across various operations areas such as Energy, Transportation, and regional strategy in fragile states.",
     },
     {
       name: 'Jeff Katz',
       image: Jeff,
-      linkedInLink: 'linkedin.com/in/adebosayojackson/?originalSubdomain=ng',
+      linkedInLink:
+        'https://www.linkedin.com/in/Jacksonjackson/?originalSubdomain=ng',
       details:
         "Jeff Katz is the founder of Jigsaw Labs, a data engineering and machine learning school. He has taught and developed data science and web development curricula. He's taught over 350 students to code, with some of them going on to work for Microsoft, LinkedIn, and BlackRock.",
     },

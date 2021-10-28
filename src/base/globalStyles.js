@@ -35,6 +35,7 @@ export default createGlobalStyle`
       }
       p {
         line-height: 140%;
+        font-size: 1.15rem;
       }
       hr {
         border: none;
@@ -44,7 +45,16 @@ export default createGlobalStyle`
         max-width: 100%;
         max-height: 100%;
       }
+      h2 {
+        font-size: 1.2rem;
+        font-weight:600;
+      }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
       div.app--content {
+
         width: 90%;
         padding-top: ${({ theme }) => theme.dimensions.navHeight};
         ${maxQuery('lg')} {
@@ -58,16 +68,17 @@ export default createGlobalStyle`
 
     /* utilities */
     .u--typo__title {
-      font-size: 3rem;
+      font-size: 3rem!important;
       line-height: 110%;
       color: #000000;
-      font-weight: 800;
+      font-weight: 900;
     }
 
     .u--typo__title2 {
       font-size: 2rem;
       color: #000000;
-      font-weight: 800;
+      line-height: 120%;
+      font-weight: 900!important;
     }
     .centered--txt {
       text-align: center;

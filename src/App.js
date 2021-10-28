@@ -18,6 +18,7 @@ import {
   BecomeAMentor,
   JobDetails,
   BecomeAnInstructor,
+  University,
 } from './View'
 import { AppRoutes } from './constants'
 import theme from './base/theme'
@@ -47,30 +48,34 @@ const App = () => {
               <Redirect to={AppRoutes.home} />
             </Route>
             <Route path={AppRoutes.home} component={Home} />
-            <Route path={AppRoutes.faq} component={FAQ} />
+            <Route path={AppRoutes.aboutUs.faq} component={FAQ} />
             <Route
               path={AppRoutes.termsandagreement}
               component={TermAndConditions}
             />
             <Route path={AppRoutes.privacypolicy} component={PrivacyPolicy} />
-            <Route path={AppRoutes.hireAlumni} component={HireAlumni} />
+            <Route
+              path={AppRoutes.enterprise.corportateTraining}
+              component={CorperateTraining}
+            />
+            <Route
+              path={AppRoutes.enterprise.hireOurAlumni}
+              component={HireAlumni}
+            />
             <Route path={AppRoutes.curriculum} component={Curriculum} />
             <Route
               path={AppRoutes.aboutUs.studentStories}
               component={StudentStories}
             />
             <Route path={AppRoutes.aboutUs.ourStory} component={OurStories} />
-            <Route path={AppRoutes.events} component={Events} />
-            <Route
-              path={AppRoutes.corporateTraining}
-              component={CorperateTraining}
-            />
+            <Route path={AppRoutes.aboutUs.events} component={Events} />
             <Route path={AppRoutes.contactUs} component={ContactUs} />
-            <Route path={AppRoutes.becomeAmentor} component={BecomeAMentor} />
+            <Route path={AppRoutes.career.mentor} component={BecomeAMentor} />
             <Route
-              path={AppRoutes.becomeAnInstructor}
+              path={AppRoutes.career.instructor}
               component={BecomeAnInstructor}
             />
+            <Route path={AppRoutes.university} component={University} />
             <Route path={AppRoutes.jobDetails} component={JobDetails} />
             {/* <Route path={AppRoutes.hireGraduates} component={} /> */}
           </Switch>

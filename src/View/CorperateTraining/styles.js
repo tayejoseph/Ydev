@@ -15,25 +15,13 @@ export default Styled.div`
         margin: 0.5em 0px;
     }
     p {
-        font-size: 1.1rem;
-        line-height: 190%;
+        font-size: 1.2rem;
+        line-height: 150%;
         letter-spacing: -0.02em;
         color: #434343;
     }
     section.section--jumbotron {
         padding-top: 4em;
-        position: relative;
-        &:after {
-            content: "";
-            position: absolute;
-            top: ${({ theme }) => `-${theme.dimensions.navHeight}`};
-            height: 100%;
-            width: 100vw;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 4;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.81%, #FFFFFF 41.51%), url(${honeycombPattern});
-        }
         * {
             position: relative;
             z-index: 5;
@@ -52,7 +40,7 @@ export default Styled.div`
             }
             p {
                 color: #6C6969;
-                font-size: 1.05rem;
+                /* font-size: 1.05rem; */
             }
             div.col--2 {
                 max-width: 25rem;
@@ -109,7 +97,7 @@ export default Styled.div`
             p {
                 letter-spacing: -0.02em;
                 color: #1D1C1C;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 line-height: 140%;
                 max-width: 24rem;
                 margin: 0 auto;

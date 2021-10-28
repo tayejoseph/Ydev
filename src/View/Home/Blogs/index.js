@@ -9,7 +9,7 @@ const BlogsContent = () => {
     <Container>
       <header>
         <Blogs />
-        <h1>Our blog and news</h1>
+        <h1 className="u--typo__title2">Our blog and news</h1>
         <p>
           Stay up-to-date with the latest news and trendy information about our
           programs, alumni spotlights and information around the tech world
@@ -18,11 +18,15 @@ const BlogsContent = () => {
       <div className="grid--container">
         {HomeContent.blogs.map((item) => (
           <div className="grid--item">
-            <img src={item.img} alt={item.title} />
-            <div className="content--container">
-              <h1>{item.title}</h1>
-              <p>{item.detail}</p>
-            </div>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              <div className="img--container">
+                <img src={item.imgAddress} alt={item.title} />
+              </div>
+              <div className="content--container">
+                <h1>{item.title}</h1>
+                <p>{item.details}</p>
+              </div>
+            </a>
           </div>
         ))}
       </div>

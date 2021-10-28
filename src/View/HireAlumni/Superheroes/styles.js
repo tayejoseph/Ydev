@@ -31,9 +31,11 @@ export default Styled.div`
     h1 {
         font-size: 2rem;
         margin: 1em 0px;
+        margin-bottom: 0.5em;
     }
     p {
-        font-size: 1rem;
-        margin-bottom: 1.5em;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 1.2em;
     }
 `

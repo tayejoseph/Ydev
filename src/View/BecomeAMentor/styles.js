@@ -15,7 +15,7 @@ export default Styled.div`
         margin: 0.5em 0px;
     }
     p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 190%;
         letter-spacing: -0.02em;
         color: #434343;
@@ -43,6 +43,7 @@ export default Styled.div`
             }
         }
         div.col--1 {
+            max-width: 30rem;
             h2 {
                 display: flex;
                 align-items: center;
@@ -158,6 +159,8 @@ export default Styled.div`
                 }
                 p {
                     max-width: 90%;
+                    line-height: 145%;
+
                 }
             }
         }

@@ -26,15 +26,14 @@ export default Styled.div`
             font-size: 5rem;
         }
         h1 {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.4em;
         }
         p {
-            font-size: 1rem;
             max-width: 30rem;
             margin: 0 auto;
         }
         button {
-            margin-top: 3em;
+            margin-top: 1.5em;
         }
     }
     div.grid--container {
@@ -52,24 +51,23 @@ export default Styled.div`
                 h2 {
                     color: #A5A5A5;
                     font-weight: 600;
-                    font-size: 1.5rem;
                 }
             }
             h1 {
                 margin-top: 0.8em;
-                font-size: 1.4rem;
+                font-weight: 800;
+                line-height: 130%;
+                font-size: 1.5rem;
                 /* margin-bottom: 2em */
                 ${minQuery('lg')} {
                     margin-bottom: 2em;
-                    height: 3rem;
+                    height: 2rem;
                 }
-                font-weight: 600;
                 color: #292828;
             }
         }
         p {
             color: #555255;
-            font-size: 0.9rem;
         }
     }
 `

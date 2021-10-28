@@ -50,7 +50,7 @@ export default Styled.div`
                 }
             }
             p {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             h2 {
                 font-size: 1.1rem;
@@ -85,7 +85,7 @@ export default Styled.div`
                         margin-bottom: 0.5em;
                     }
                     color: #C7C7C7;
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                     &:hover, &:active, &:focus {
                         outline: none;
                         text-decoration: underline;

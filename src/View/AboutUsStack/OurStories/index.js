@@ -1,7 +1,7 @@
 import React from 'react'
 import { v4 as uuid } from 'uuid'
 import { aboutUsOurStoryContent } from '../../../constants'
-import { CompanySponsors } from '../../../component'
+import { CompanySponsors, ReadyStart } from '../../../component'
 import { LinkedIn2 } from '../../../assets/convertedSvgs'
 import { groupPhoto } from '../../../assets/svgImgs'
 import Container from './styles'
@@ -30,21 +30,19 @@ const OurStory = () => {
       <section className="section--outStory">
         <h1>Our Story</h1>
         <p>
-          Looking at how the world has rapidly changed, we realized that the
-          traditional education in Africa is not enough to equip graduates for
-          the opportunities of this new era. Today’s digital economy requires
-          certain skill sets and combination of qualities; advanced technical
-          skills, a high level of collaboration, and adaptability. This inspired
-          the founding of Ydev Academy to address this disparity. Our mission is
-          to equip our graduates with the necessary in demand and future skills
-          to match the quality of talent in the global market. We aim to build a
-          community of skilled problem solvers, creating solutions to Africa’s
-          problems through technology. At Ydev Academy, we are committed to
-          delivering quality education that transforms lives through in-depth
-          curriculums, accelerated learning, communities, job placements, and
-          mentorship; ensuring our students succeed in the path they have
-          chosen. Technology is the solution to a better Africa. We intend to
-          lead that change.
+          In today's digital economy, specific skill sets and traits are
+          required, including adaptability and an ability to learn new concepts.
+          We looked at how quickly the world is evolving and realized that
+          traditional education in Africa is not preparing graduates for the
+          prospects of this new era. This realization prompted the establishment
+          of Ydev Academy, whose aim is to rectify that imbalance and provide
+          our graduates with the required in-demand and future capabilities to
+          compete in the global market. We create a community of problem solvers
+          who use technology to address Africa's issues. Our excellent training
+          styles transforms lives through in-depth curriculums, accelerated
+          learning, communities, job placements, and mentorship- ensuring our
+          students succeed in whatever path they choose. We invite everyone to
+          join us in leading that change.
           <span className="u--color__primary">We're in this together</span>
         </p>
         <img src={groupPhoto} alt="we're in this together" />
@@ -67,7 +65,7 @@ const OurStory = () => {
         </div>
       </section>
       <section className="section--sponsors">
-        <h1>Some companies that have hired from Ydev academy</h1>
+        <h1>Some companies that have hired/trained from Ydev Academy</h1>
         <CompanySponsors />
       </section>
       <section className="section--executive">
@@ -80,7 +78,7 @@ const OurStory = () => {
               </div>
               <div>
                 <h1>{item.name}</h1>
-                <a href={item.linkedInLink}>
+                <a href={item.linkedInLink} rel="noreferrer" target="_blank">
                   <LinkedIn2 />
                 </a>
               </div>
@@ -99,7 +97,7 @@ const OurStory = () => {
               </div>
               <div>
                 <h1>{item.name}</h1>
-                <a href={item.linkedInLink}>
+                <a href={item.linkedInLink} rel="noreferrer" target="_blank">
                   <LinkedIn2 />
                 </a>
               </div>
@@ -108,6 +106,7 @@ const OurStory = () => {
           ))}
         </div>
       </section>
+      <ReadyStart {...{ title: 'Ready to learn with Ydev?' }} />
     </Container>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs } from 'antd'
+import { Tabs } from '../../../../UI'
 import TabContent from '../TabContent'
 import Container from './styles'
 
@@ -10,7 +10,7 @@ const OurStories = () => {
     <Container>
       <h1>Our Student Stories</h1>
       <div className="tab--container">
-        <Tabs defaultActiveKey="1" onChange={console.log} tabPosition={'left'}>
+        {/* <Tabs>
           {[
             'All grads',
             'Product Design',
@@ -23,7 +23,7 @@ const OurStories = () => {
               <TabContent />
             </TabPane>
           ))}
-        </Tabs>
+        </Tabs> */}
       </div>
     </Container>
   )

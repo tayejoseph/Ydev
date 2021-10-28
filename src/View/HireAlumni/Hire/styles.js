@@ -9,12 +9,11 @@ export default Styled.div`
             align-items: center;
             padding: 3em 0px;
             h1 {
-                margin-bottom: 0.8em; 
+                margin-bottom: 0.4em; 
                 font-size: 2rem;
             }
             p {
                 color: #4B4956;
-                font-size: 1rem;
             }
         }
         div.grid--container {
@@ -34,17 +33,16 @@ export default Styled.div`
                 text-align: center;
                 h1 {
                     margin-top: 0.5em;
-                    margin-bottom: 0.5em;
+                    margin-bottom: 0.2em;
                     font-size: 1.5rem;
                     color: #1C1B1B;
                     font-weight: 700;
                     letter-spacing: -0.01em;
                 }
                 p {
-                    margin-top: 0.6em;
+                    margin-top: 0.2em;
                     letter-spacing: -0.02em;
                     color: #2C2B2C;
-                    font-size: 1rem;
                     line-height: 150%;
                 }
             }
@@ -92,7 +90,7 @@ export default Styled.div`
                     font-size: 1.3rem;
                     line-height: 130%;
                     height: 3rem;
-                    margin-bottom: 0.5em;
+                    margin-bottom: 0.8em;
                     margin-top: 1em;
                     ${maxQuery('sm')} {
                         margin-top: 2em;
@@ -107,6 +105,8 @@ export default Styled.div`
 
     }
     section.section--company {
+        margin: 3em 0px;
+        margin-bottom: 6em;
 
     }
     section.section--hiring {
@@ -134,7 +134,9 @@ export default Styled.div`
             div.grid--item {
                 max-width: 20rem;
                 margin: auto;
+                min-height: 22rem;
                 display: flex;
+                justify-content: space-between;
                 background: #F2FCFF;
                 padding: 1em;
                 padding-bottom: 0px;
@@ -144,13 +146,14 @@ export default Styled.div`
                     margin-bottom: 1em;
                 }
                 p {
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                     line-height: 160%;
                     font-weight: 300;
                     margin-bottom: 1em;
                 }
                 h3 {
                     font-size: 1rem;
+                    font-weight: 700;
                 }
                 svg {
                     font-size: 6rem;

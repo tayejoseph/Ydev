@@ -27,22 +27,13 @@ export default Styled.div`
         z-index: 2;
     }
     div.title--container {
-        margin-bottom: 4em;
-        svg {
-            top: 0.25em;
-            left: -0.2em;
-        }
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            max-width: 25rem;
-            line-height: 150%;
-            text-align: center;
-        }
+        max-width: 30rem;
+        text-align: center;
     }
     form {
         position: relative;
         width: 22rem;
+        margin-top: 4em;
         background: #fff;
         button {
             background: transparent;

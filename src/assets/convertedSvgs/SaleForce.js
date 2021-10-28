@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgSaleForce(props) {
   return (
@@ -10,7 +10,7 @@ function SvgSaleForce(props) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <rect width={261} height={111} rx={7} fill="#F8F9FB" />
+      <rect width={261} height={111} rx={7} />
       <path
         d="M122.05 30.98c2.949-3.072 7.055-4.978 11.595-4.978 6.036 0 11.302 3.366 14.106 8.362a19.5 19.5 0 017.973-1.695c10.886 0 19.712 8.903 19.712 19.885 0 10.982-8.826 19.885-19.712 19.885-1.304 0-2.605-.129-3.883-.387-2.469 4.405-7.175 7.381-12.577 7.381-2.261 0-4.4-.522-6.304-1.45C130.457 83.87 124.624 88 117.826 88c-7.079 0-13.112-4.48-15.428-10.761a15.085 15.085 0 01-3.136.327C90.832 77.566 84 70.662 84 62.146c0-5.708 3.07-10.692 7.631-13.358a17.652 17.652 0 01-1.461-7.053C90.17 31.94 98.122 24 107.93 24a17.736 17.736 0 0114.12 6.98z"
         fill="#00A1E0"
@@ -24,7 +24,7 @@ function SvgSaleForce(props) {
         fill="#fff"
       />
     </svg>
-  );
+  )
 }
 
-export default SvgSaleForce;
+export default SvgSaleForce

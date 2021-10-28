@@ -1,6 +1,7 @@
 import React from 'react'
 import { v4 as uuid } from 'uuid'
 import { Button } from '../../../UI'
+import { CompanyHire } from '../../../component'
 import { aluminiContent } from '../../../constants'
 import Container from './styles'
 
@@ -9,7 +10,7 @@ const Hire = () => {
     <Container>
       <section className="section--skills">
         <header>
-          <h1>Hire for the skills you need</h1>
+          <h1 className="u--typo__title">Hire for the skills you need</h1>
           <p>
             Find qualified talents that meet the needs of your team and company.
           </p>
@@ -17,7 +18,9 @@ const Hire = () => {
         <div className="grid--container">
           {aluminiContent.skills.map((item) => (
             <div className="grid--item" key={uuid()}>
-              <img src={item.img} alt={item.title} />
+              <div className="img--container">
+                <img src={item.img} alt={item.title} />
+              </div>
               <h1>{item.title}</h1>
               <p>{item.details}</p>
             </div>
@@ -25,7 +28,7 @@ const Hire = () => {
         </div>
       </section>
       <section className="section--process">
-        <h1>Our hiring Process</h1>
+        <h1 className="u--typo__title2">Our hiring Process</h1>
         <p>Your journey to finding the best talents start here</p>
         <Button>Start Hiring</Button>
       </section>
@@ -35,7 +38,9 @@ const Hire = () => {
             <header>
               <hgroup>
                 <h1>{item.no}</h1>
-                <item.img />
+                <div className="img--container">
+                  <item.img />
+                </div>
               </hgroup>
               <h1 className="hire--title">{item.title}</h1>
             </header>
@@ -44,12 +49,16 @@ const Hire = () => {
         ))}
       </section>
       <section className="section--company">
-        <h1>Some companies that have hired from Ydev academy</h1>
-        <div className="grid--container"></div>
+        <CompanyHire
+          title="Some companies that have hired/trained from Ydev Academy
+"
+        />
       </section>
       <section className="section--hiring">
         <header>
-          <h1>What hiring managers say about Ydev alumni</h1>
+          <h1 className="u--typo__title2">
+            What hiring managers say about Ydev alumni
+          </h1>
           <p>
             The truth speaks volumes. Hear what hiring managers are saying about
             our talents
@@ -58,14 +67,18 @@ const Hire = () => {
         <div className="grid--container">
           {aluminiContent.recommendation.map((item) => (
             <div className="grid--item">
-              <div className="img--container">
-                <img src={item.img} alt={item.name} />
+              <div>
+                <div className="img--container">
+                  <img src={item.img} alt={item.name} />
+                </div>
+                <p>{item.detail}</p>
               </div>
-              <p>{item.detail}</p>
-              <h3>{item.name}</h3>
-              <span className="svg--container">
-                <item.company />
-              </span>
+              <div>
+                <h3>{item.name}</h3>
+                <span className="svg--container">
+                  <item.company />
+                </span>
+              </div>
             </div>
           ))}
         </div>

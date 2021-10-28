@@ -1,6 +1,6 @@
 import Styled from 'styled-components'
 import { CountryMaps, LeftL } from '../../assets/svgImgs'
-import { minQuery } from '../../helpers'
+import { minQuery, maxQuery } from '../../helpers'
 
 export default Styled.div`
     h1 {
@@ -37,6 +37,7 @@ export default Styled.div`
             }
         }
         div.col--1 {
+            max-width: 25rem;
             h2 {
                 display: flex;
                 align-items: center;
@@ -48,9 +49,16 @@ export default Styled.div`
                     margin-right: 0.25em;
                 }
             }
+            p {
+                margin-bottom: 1.2em;
+                line-height: 150%;
+            }
 
         }
         div.col--2 {
+            ${maxQuery('md')} {
+                width: 30rem;
+            }
             img {
                 width: 100%;
             }

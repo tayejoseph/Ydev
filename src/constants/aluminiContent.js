@@ -5,7 +5,11 @@ import {
   Google2,
   CircleCi2,
   Cowrywise,
+  Mach,
+  Tecto,
+  Nutm,
 } from '../assets/convertedSvgs'
+import { Tolu } from '../assets/png'
 import {
   TopAlumin,
   Flexible,
@@ -21,19 +25,19 @@ const aliuminiContent = {
       img: TopAlumin,
       title: 'Hire the top 3%',
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
+        'Get access to a pool of well trained and vetted African tech talents to work with your team and deliver efficiently',
     },
     {
       img: Flexible,
       title: 'Flexible placements',
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
+        'Whether you are hiring for short-term, part-time or full time, we’ve got you covered. Hire fast, hire flexibly.',
     },
     {
       img: Support,
       title: 'Support services',
       details:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future coding challenges you'll be tasked with.",
+        'We help you structure all your internal hiring & onboarding processes with help of dedicated professional recruiters on our team.',
     },
   ],
   hiringProcess: [
@@ -62,23 +66,22 @@ const aliuminiContent = {
     {
       img: firstEng,
       detail:
-        'Lorem ipsum dolor sit amet, elit. Nam auctor, nibh a vulputate pulvinar, sem ante tincidunt purus, ut aliquam nunc nisi vel sem. Vestibulum id magna sodales',
-      name: 'Tobi Seemenow, Engineer',
-      company: Google2,
+        'I enjoyed working with the YDev team. They care about student learning and know how to deliver a good learning experience.',
+      name: 'Debo Odunlanmi, Nigerian University of Technology and Management.',
+      company: Nutm,
     },
     {
-      img: secondEng,
+      img: Tolu,
       detail:
-        'Lorem ipsum dolor sit amet, elit. Nam auctor, nibh a vulputate pulvinar, sem ante tincidunt purus, ut aliquam nunc nisi vel sem. Vestibulum id magna sodales',
-      name: 'Rogie Seemenow, Designer',
-      company: CircleCi2,
+        'Service was very excellent, going far above and beyond on all requirements. Customer service level is top notch and professionalism is displayed by all. Your go-to guys.',
+      name: 'Toluwaleke Odunuga, Tectonic Oil Tools Limited.',
+      company: Tecto,
     },
     {
       img: thirdEng,
-      detail:
-        'Lorem ipsum dolor sit amet, elit. Nam auctor, nibh a vulputate pulvinar, sem ante tincidunt purus, ut aliquam nunc nisi vel sem. Vestibulum id magna sodales',
-      name: 'Raminat Seemenow, DevOps',
-      company: Cowrywise,
+      detail: 'Very Impressive and Professional. I will keep on coming back.',
+      name: 'Emeka Okwusi, IMach Consult Limited.',
+      company: Mach,
     },
   ],
 }

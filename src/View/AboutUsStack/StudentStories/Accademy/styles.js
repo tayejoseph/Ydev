@@ -26,7 +26,7 @@ export default Styled.div`
     h1 {
         max-width: 40rem;
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 130%;
     }
 

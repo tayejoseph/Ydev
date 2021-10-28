@@ -3,12 +3,10 @@ import { HireJumbotron } from '../../../assets/svgImgs'
 import { rem } from 'polished'
 
 export default Styled.div`
-    height: ${rem('843px')};
+    height: ${rem('543px')};
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 3em;
+    justify-content: center;
     flex-direction: column;
     &:after {
         content: "";
@@ -30,12 +28,24 @@ export default Styled.div`
     }
     h1 {
         color: #fff;
+        font-weight: 800;
         font-size: 3rem;
         margin-bottom: 1em;
+        
+        span {
+            color: rgb(151, 181, 226);
+        }
     }
     p {
         color: #B7B2B2;
         font-size: 1.2rem;
         margin-bottom: 2em;
+    }
+    button {
+        background: #fff;
+        color: black;
+        &:after {
+              border: 0.4px solid #fff;
+        }
     }
 `

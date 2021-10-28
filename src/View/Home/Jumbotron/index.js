@@ -23,7 +23,6 @@ const Jumbotron = () => {
         </p>
         <div className="action--group">
           <Button>Get Started</Button>
-          <button>Learn more</button>
         </div>
       </div>
       <div className="col--2">

@@ -5,6 +5,7 @@ export default Styled.div`
         font-weight: bold;
         font-size: 1.8rem;
         margin-bottom: 0.5em;
+        text-align: center;
     }
     div.tab--container {
     }

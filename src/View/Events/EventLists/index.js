@@ -23,25 +23,24 @@ const EventLists = () => {
             <h3>{item.date}</h3>
             <div className="title--container">
               <h1>{item.title}</h1>
-              {item.content && (
+              {item.details && (
                 <MdKeyboardArrowRight
                   className={activeDisplay.includes(item.id) ? 'active' : ''}
                 />
               )}
             </div>
-            <h3>Register</h3>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              Register
+            </a>
           </header>
           {activeDisplay.includes(item.id) && (
             <>
-              {item.content && (
+              {item.details && (
                 <div
                   className={`content--container
                 `}
                 >
-                  <p>{item.content.detail}</p>
-                  {item.content.img && (
-                    <img src={item.content.img} alt={item.title} />
-                  )}
+                  <p>{item.details}</p>
                 </div>
               )}
             </>

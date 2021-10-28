@@ -27,9 +27,7 @@ export default Styled.div`
     div.col--1 {
         max-width: 25rem;
         p {
-            font-size: 1rem;
             &:first-of-type {
-                font-size: 0.9rem;
                 display: flex;
                 align-items: center;
                 margin-bottom: 0.5em;
@@ -46,14 +44,6 @@ export default Styled.div`
         div.action--group {
             display: flex;
             grid-gap: 1em;
-            button:last-of-type {
-                text-decoration: underline;
-                margin-left: 0.8em;
-                background: transparent;
-                border: none;
-                cursor: pointer;
-                font-size: 1rem;
-            }
         }
         ${minQuery('lg')} {
             display: flex;

@@ -2,7 +2,7 @@ import React from 'react'
 import { v4 as uuid } from 'uuid'
 import { Link } from 'react-router-dom'
 import { TitleWithDesign } from '../../component'
-import { Transform } from '../../assets/svgImgs'
+import { group } from '../../assets/png'
 import { becomeAnInstructorContent } from '../../constants'
 import { Mentor, Palm, DoubleChat, Picture } from '../../assets/convertedSvgs'
 import { Button } from '../../UI'
@@ -29,18 +29,14 @@ const BecomeAMentor = () => {
           </div>
         </div>
         <div className="col--2">
-          <img src={Transform} alt="All mentors" />
+          <img src={group} alt="All mentors" />
         </div>
       </section>
       <section className="section--world">
         <h1>Our Misson</h1>
         <p>
-          Ydev is one of Africa’s leading online tech-education firms valued at
-          over $10 million that aims to solve the tech talent gap worldwide
-          through its market leading products. Since inception the entity has
-          over 80,000 registered users and has facilitated 4590+ placements in
-          over 500 companies. In the last 12 months alone, Ydev has placed more
-          students in FAANG companies than all IITs combined.
+          To help Africans reach their highest potential through a world class
+          education.{' '}
         </p>
       </section>
       <section className="section--goodfit">
@@ -85,7 +81,6 @@ const BecomeAMentor = () => {
           <h1>Want more info?</h1>
           <p>
             Check out our <Link to={AppRoutes.faq}>Mentors FAQ page</Link>
-            <Palm />
           </p>
         </header>
       </section>

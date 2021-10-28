@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgMicrosoft(props) {
   return (
@@ -10,7 +10,7 @@ function SvgMicrosoft(props) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <rect width={261} height={111} rx={7} fill="#F8F9FB" />
+      <rect width={261} height={111} rx={7} />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -42,7 +42,7 @@ function SvgMicrosoft(props) {
         fill="#FB0"
       />
     </svg>
-  );
+  )
 }
 
-export default SvgMicrosoft;
+export default SvgMicrosoft

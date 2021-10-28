@@ -5,7 +5,7 @@ import { maxQuery } from '../../../helpers'
 export default Styled.div`
     h1 {
         font-weight: 900;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
         margin: 0.5em 0px;
     }
@@ -16,7 +16,7 @@ export default Styled.div`
         color: #434343;
     }
     section.section--jumbotron {
-        height: 40rem;
+        height: 30rem;
         position: relative;
         display: flex;
         align-items: center;
@@ -49,7 +49,7 @@ export default Styled.div`
             line-height: 100%;
             font-size: 3.5rem;
             text-align: left;
-            max-width: 34rem;
+            max-width: 36rem;
             span {
                 color: #97B5E2;
             }
@@ -164,6 +164,9 @@ export default Styled.div`
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 4em;
             margin-bottom: 7em;
+            ${maxQuery('md')} {
+                grid-template-columns: 1fr;
+            }
             div.grid--item {
                 div.img--container {
                     height: 12rem;
@@ -179,6 +182,9 @@ export default Styled.div`
                 svg {
                     font-size: 1.25rem;
                     margin-bottom: 0.35em;
+                }
+                a {
+                    cursor: pointer;
                 }
             }
         }

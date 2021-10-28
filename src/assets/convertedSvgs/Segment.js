@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgSegment(props) {
   return (
@@ -10,7 +10,7 @@ function SvgSegment(props) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <rect width={261} height={111} rx={7} fill="#F8F9FB" />
+      <rect width={261} height={111} rx={7} />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -48,7 +48,7 @@ function SvgSegment(props) {
         fill="#93C8A2"
       />
     </svg>
-  );
+  )
 }
 
-export default SvgSegment;
+export default SvgSegment

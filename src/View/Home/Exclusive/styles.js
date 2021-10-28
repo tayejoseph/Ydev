@@ -11,7 +11,7 @@ export default Styled.div`
         position: absolute;
         height: 100%;
         top: 0px;
-        background-color: #D0EAF9;
+        background-color: rgb(242, 252, 255);
         width: 100vw;
         left: 50%;
         z-index: 1;
@@ -29,13 +29,16 @@ export default Styled.div`
         max-width: 30rem;
         margin: 0 auto;
         p {
-            font-size: 1rem;
             margin-top: 0.5em;
+            font-size: 1.1rem;
         }
     }
     div.grid--container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        ${maxQuery('md')} {
+            grid-template-columns: 1fr;
+        }
         grid-gap: 2em;
         margin: 0 auto;
         margin-top: 3em;
@@ -57,7 +60,7 @@ export default Styled.div`
                 justify-content: space-between;
                 h1 {
                     font-weight: 700;
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                 }
                 svg {
                     margin-top: 0.5em;
@@ -67,7 +70,7 @@ export default Styled.div`
             p {
                 margin-top:0.5em;
                 max-width: 25rem;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 color: #2C2B2C;
             }
         }

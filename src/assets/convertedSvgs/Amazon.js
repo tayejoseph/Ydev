@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgAmazon(props) {
   return (
@@ -10,7 +10,7 @@ function SvgAmazon(props) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <rect width={261} height={111} rx={7} fill="#F8F9FB" />
+      <rect width={261} height={111} rx={7} />
       <g
         clipPath="url(#Amazon_svg__clip0)"
         fillRule="evenodd"
@@ -39,7 +39,7 @@ function SvgAmazon(props) {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
-export default SvgAmazon;
+export default SvgAmazon

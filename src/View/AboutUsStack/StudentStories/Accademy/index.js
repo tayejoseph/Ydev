@@ -6,7 +6,7 @@ import Container from './styles'
 const Accademy = () => {
   return (
     <Container>
-      <h1>Ydev academy grads are hired by companies of all sizes</h1>
+      <h1>Some companies that have hired/trained from Ydev Academy</h1>
       <div className="grid--container">
         {aboutUsContent.parteners.map((item) => (
           <div key={uuid()}>{item}</div>

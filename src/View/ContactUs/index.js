@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { TitleWithDesign } from '../../component'
 import { Button, InputGroup } from '../../UI'
-import { AppRoutes } from '../../constants'
+import { AppRoutes, contacts } from '../../constants'
 import Container from './styles'
 
 const ContactUs = () => {
@@ -100,7 +100,7 @@ const ContactUs = () => {
           <div className="grid--container">
             <div className="grid--item">
               <h2>Our office</h2>
-              <p>1A Hughes Ave, Yaba, Lagos State</p>
+              <p>{contacts.address}</p>
             </div>
             <div className="grid--item">
               <h2>Our business hours</h2>
@@ -116,9 +116,9 @@ const ContactUs = () => {
             <div className="grid--item">
               <h2>Contact Information</h2>
               <p>
-                <a href="tel:+234 816 662 6000">+234 816 662 6000</a>
+                <a href={`tel:+${contacts.phoneNo}`}>{contacts.phoneNo}</a>
                 <br />
-                <a href="mailto:info@ydev.academy">info@ydev.academy</a>
+                <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
               </p>
             </div>
           </div>

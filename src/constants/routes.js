@@ -6,10 +6,31 @@ const routes = {
   privacypolicy: '/privacyPolicy',
   hireAlumni: '/hireOurAlumni',
   curriculum: '/curriculum',
+  university: '/university',
   aboutUs: {
     initial: '/aboutUs',
     studentStories: '/aboutUs/studentStories',
     ourStory: '/aboutUs/ourStory',
+    events: '/aboutUs/events',
+    faq: '/aboutUs/faq',
+  },
+  enterprise: {
+    corportateTraining: '/enterprise/corportateTraining',
+    hireOurAlumni: '/enterprise/hireOurAlumni',
+  },
+  career: {
+    instructor: '/career/instructor',
+    mentor: '/career/mentor',
+  },
+  programs: {
+    designSchool: '/programs/designSchool',
+    softwareSchool: '/programs/softwareSchool',
+    dataSchool: '/programs/dataSchool',
+    productSchool: '/programs/productSchool',
+    devOpsSchool: '/programs/devOpsSchool',
+    qaSchool: '/programs/qaSchool',
+    cloudSchool: '/programs/cloudEngSchool',
+    salesForceSchool: '/programs/saleForceSchools',
   },
   events: '/events',
   corporateTraining: '/corporateTraining',
@@ -18,8 +39,6 @@ const routes = {
   resources: '/resources',
   blog: '/blog',
   hireGraduates: '/hireOurGraduates',
-  becomeAmentor: '/becomeAMentor',
-  becomeAnInstructor: '/becomeAnInstructor',
   jobDetails: '/jobDetails',
   // aboutUs
 }

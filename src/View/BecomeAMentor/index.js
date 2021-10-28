@@ -3,7 +3,7 @@ import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 import { v4 as uuid } from 'uuid'
 import { Link } from 'react-router-dom'
 import { HelpForm, TitleWithDesign } from '../../component'
-import { AllMentors } from '../../assets/svgImgs'
+import { GroupBenald } from '../../assets/png'
 import { becomeAMentorContent } from '../../constants'
 import {
   Mentor,
@@ -35,14 +35,14 @@ const BecomeAnInstructor = () => {
           </div>
         </div>
         <div className="col--2">
-          <img src={AllMentors} alt="All mentors" />
+          <img src={GroupBenald} alt="All mentors" />
         </div>
       </section>
       <section className="section--world">
         <div className="grid--container">
           <div className="grid--item">
             <p>
-              8,000+ <br />
+              500+ <br />
               registered mentees
               <br />
               worldwide

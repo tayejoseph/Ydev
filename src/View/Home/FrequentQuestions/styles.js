@@ -5,17 +5,16 @@ export default Styled.div`
         padding: 3em 0px;
         header {
             text-align: center;
+            margin-bottom: 4em;
             svg {
                 font-size: 4rem;
             }
             h1 {
-                font-size: 2rem;
                 margin-top: 0.5em;
                 font-weight: 700;
                 margin-bottom: 0.5em;
             }
             p {
-                font-size: 1rem;
                 a {
                     text-decoration: none; 
                     color: ${({ theme }) => theme.primary};
@@ -50,7 +49,6 @@ export default Styled.div`
             font-size: 6rem;
         }
         h1 {
-            font-size: 2.5em;
             font-weight: 700;
             margin-top: -0.6em;
             margin-bottom: 0.9em;

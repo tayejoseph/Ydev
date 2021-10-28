@@ -4,6 +4,7 @@ import { minQuery } from '../../../helpers'
 export default Styled.div`
     display: grid;
     grid-gap: 1.5em;
+    grid-template-columns: 1fr;
     ${minQuery('lg')} {
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -18,7 +19,7 @@ export default Styled.div`
             letter-spacing: -0.02em;
             color: #363535;
             line-height: 180%;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
     }
     div.col--2 {

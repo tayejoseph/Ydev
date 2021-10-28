@@ -14,19 +14,21 @@ export default Styled.div`
             align-items: center;
             padding: 3em 0px;
             cursor: pointer;
+
+            a {
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: 500;
+                &:hover, &:focus {
+                    text-decoration: underline;
+                }
+            }
             h3 {
+                line-height: 145.7%;
+                letter-spacing: -0.03em;
+                color: #7C8FF7;
+                font-weight: 400;
                 font-size: 1.2rem;
-                &:first-of-type {
-                    line-height: 145.7%;
-                    letter-spacing: -0.03em;
-                    color: #7C8FF7;
-                    font-weight: 400;
-                    font-size: 1.1rem;
-                }
-                &:last-of-type {
-                    font-weight: bold;
-                    font-size: 1rem;
-                }
             }
             div.title--container {
                 display: flex;
@@ -40,6 +42,7 @@ export default Styled.div`
                     font-weight: 300;
                     line-height: 150%;
                     display: flex;
+                    user-select: none;
                 }
                 .icon {
                     margin-top: 0.4rem;
@@ -62,7 +65,7 @@ export default Styled.div`
             max-width: 42rem;
             padding-bottom: 3em;
             p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 line-height: 180%;
                 letter-spacing: -0.03em;
                 color: #212121;

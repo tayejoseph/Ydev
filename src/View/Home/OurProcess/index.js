@@ -7,7 +7,7 @@ const OurProcess = () => {
   return (
     <Container>
       <header>
-        <h1>Our process in 4 steps</h1>
+        <h1 className="u--typo__title2">Our process in 4 steps</h1>
         <p>Here’s how to begin your journey changes stories for good</p>
         <Button>Apply now</Button>
       </header>

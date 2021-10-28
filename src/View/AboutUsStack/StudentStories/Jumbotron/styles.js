@@ -1,5 +1,5 @@
 import Styled from 'styled-components'
-import { minQuery } from '../../../../helpers'
+import { minQuery, maxQuery } from '../../../../helpers'
 
 export default Styled.div`
     display: grid;
@@ -27,6 +27,10 @@ export default Styled.div`
         }
     }
     div.col--2 {
+        display: flex;
+        ${maxQuery('lg')} {
+            justify-content: center;
+        }
         
     }
 `
