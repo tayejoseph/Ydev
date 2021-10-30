@@ -7,7 +7,7 @@ const Jumbotron = () => {
   return (
     <Container>
       <div className="col--1">
-        <h1>
+        <h1 className="u--typo__title">
           Welcome to Ydev Academy,
           <br />
           <span className="outlined">course outlines.</span>

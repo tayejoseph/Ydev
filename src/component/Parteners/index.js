@@ -63,12 +63,12 @@ const hires = [
   },
 ]
 
-const Partners = ({ title }) => {
+const Partners = ({ title, details }) => {
   return (
     <Container>
       <header>
-        <h1 className="u--typo__title2">Our Partners</h1>
-        <p>Global relevance and opportunities for all</p>
+        <h1 className="u--typo__title2">{title || 'Our Partners'}</h1>
+        <p>{details || 'Global relevance and opportunities for all'}</p>
       </header>
       <div className="grid--container">
         {hires.map((item) => (

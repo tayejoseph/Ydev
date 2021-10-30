@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { contacts } from '../../../constants'
-import { Button, Tabs } from '../../../UI'
+import { Button, Tabs, PalletOpen } from '../../../UI'
 import { Questions, AppLogo } from '../../../assets/convertedSvgs'
 import Container from './styles'
 
@@ -167,7 +167,12 @@ const FrequentQuestions = () => {
             <Link to="/">Know more</Link> about our programs
           </p>
         </header>
-        <Tabs tabs={tabContent} title={'Categories'} />
+        <Tabs tabs={tabContent} title={'Categories'}>
+          {(item) => {
+            const { title, content } = item ? item : {}
+            return content && content.map((item) => <PalletOpen {...item} />)
+          }}
+        </Tabs>
       </section>
       <section className="section--ready">
         <AppLogo />

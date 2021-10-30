@@ -3,6 +3,7 @@ import Styled from 'styled-components'
 export default Styled.div`
     section.section--questions {
         padding: 3em 0px;
+        padding-bottom: 7em;
         header {
             text-align: center;
             margin-bottom: 4em;

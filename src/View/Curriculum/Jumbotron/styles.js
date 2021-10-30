@@ -32,15 +32,10 @@ export default Styled.div`
     }
     div.col--1 {
         h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-        }
-        span {
-            color: white;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 2.6rem!important;
         }
         p {
-            margin-top: 2.5em;
+            margin-top: 2.25em;
             margin-bottom: 2em;
             max-width: 25rem;
             font-size: 1.1rem;

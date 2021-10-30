@@ -40,15 +40,26 @@ export default Styled.div`
                     font-weight: 500;
                     background: transparent;
                     svg {
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         transition: all 1s;
                         flex-shrink: 0;
                     }
-                    &:hover, &:focus {
+                    /* &:hover, &:focus {
                         color: ${({ theme }) => theme.primary};
                         svg {
                             transform: rotate(180deg);
                         }
+                    } */
+                }
+                &.active--menu {
+                    &:after {
+                        content: "";
+                        position: fixed;
+                        background: transparent;
+                        top: 0px;
+                        left: 0px;
+                        width: 100vw;
+                        height: 100vh;
                     }
                 }
                 div.menu--lists {

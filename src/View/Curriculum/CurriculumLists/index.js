@@ -1,6 +1,7 @@
 import React from 'react'
 import { v4 as uuid } from 'uuid'
 import { RiArrowDropRightLine } from 'react-icons/ri'
+import { TitleWithDesign } from '../../../component'
 import { Button } from '../../../UI'
 import { curriculumContent } from '../../../constants'
 import Container from './styles'
@@ -9,7 +10,7 @@ const CurriculumLists = () => {
   return (
     <Container>
       <header className="title--header">
-        <h1>All available courses</h1>
+        <TitleWithDesign title="All available courses" />
       </header>
       {curriculumContent.allCourses.map((item, index) => (
         <section className={`section--${index + 1}`} key={uuid()}>

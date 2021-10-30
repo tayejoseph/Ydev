@@ -1,4 +1,6 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
+import { AppRoutes } from '../../../constants'
 import { Button } from '../../../UI'
 import { Bulb } from '../../../assets/convertedSvgs'
 import { homeJumbotron } from '../../../assets/svgImgs'
@@ -6,6 +8,7 @@ import { TitleWithDesign } from '../../../component'
 import Container from './styles'
 
 const Jumbotron = () => {
+  const history = useHistory()
   return (
     <Container>
       <div className="col--1">
@@ -22,7 +25,9 @@ const Jumbotron = () => {
           relevant skills needed to launch a successful career
         </p>
         <div className="action--group">
-          <Button>Get Started</Button>
+          <Button onClick={() => history.push(AppRoutes.curriculum)}>
+            Get Started
+          </Button>
         </div>
       </div>
       <div className="col--2">

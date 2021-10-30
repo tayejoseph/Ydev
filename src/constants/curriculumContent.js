@@ -15,42 +15,42 @@ const curriculumContent = {
       no: '01',
       title: 'Design school',
       detail:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future. Lorem ipsum lasum",
+        'Gain the basic knowledge to help you build a career in Design and grow through fundamental user-centred approaches to stunning user-interfaces.',
       img: designSchool,
       curicula: [
-        { no: '30', details: 'Weeks of immersive training in product design' },
-        { no: '63', details: 'Carefully crafted topics in curriculum' },
-        { no: '12', details: 'Lorem Ipsum masun Ippo' },
+        { no: '8', details: 'Weeks of immersive training in product design' },
+        { no: '30+', details: 'Carefully crafted topics in curriculum' },
+        { no: '300+', details: 'Hours of pratical learning' },
       ],
     },
     {
       no: '02',
       title: 'Software school',
       detail:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future. Lorem ipsum lasum",
+        'Start your journey to becoming a full-stack developer. Learn how to write different kinds of code for complex frontend and backend tasks.',
       img: softwareSchool,
       curicula: [
         {
-          no: '33',
+          no: '24',
           details: 'Weeks of immersive training in software development',
         },
-        { no: '70', details: 'Carefully crafted topics in curriculum' },
-        { no: '14', details: 'Lorem Ipsum masun Ippo' },
+        { no: '70+', details: 'Carefully crafted topics in curriculum' },
+        { no: '500+', details: 'Hours of pratical learning' },
       ],
     },
     {
       no: '03',
       title: 'Product school',
       detail:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future. Lorem ipsum lasum",
+        'Set yourself up for success and a rewarding career with our product school.',
       img: productSchool,
       curicula: [
         {
-          no: '32',
+          no: '8',
           details: 'Weeks of immersive training in products',
         },
-        { no: '81', details: 'Carefully crafted topics in curriculum' },
-        { no: '11', details: 'Lorem Ipsum masun Ippo' },
+        { no: '30+', details: 'Carefully crafted topics in curriculum' },
+        { no: '200+', details: 'Hours of pratical learning' },
       ],
     },
     {
@@ -61,71 +61,71 @@ const curriculumContent = {
       img: devOpsSchool,
       curicula: [
         {
-          no: '30',
-          details: 'Weeks of immersive training in devops',
+          no: '20',
+          details: 'Weeks of immersive training in Devops',
         },
-        { no: '63', details: 'Carefully crafted topics in curriculum' },
-        { no: '12', details: 'Lorem Ipsum masun Ippo' },
+        { no: '20+', details: 'Carefully crafted topics in curriculum' },
+        { no: '300+', details: 'Hours of pratical learning' },
       ],
     },
     {
       no: '05',
-      title: 'Product management school',
+      title: 'Salesforce School',
       detail:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future. Lorem ipsum lasum",
+        'Set yourself up for success and a rewarding career with our Salesforce school.',
       img: productManagementSchool,
       curicula: [
         {
-          no: '30',
-          details: 'Weeks of immersive training in product design',
+          no: '10',
+          details: 'Weeks of immersive training in Salesforce',
         },
-        { no: '63', details: 'Carefully crafted topics in curriculum' },
-        { no: '12', details: 'Lorem Ipsum masun Ippo' },
+        { no: '40+', details: 'Carefully crafted topics in curriculum' },
+        { no: '200+', details: 'Hours of pratical learning' },
       ],
     },
     {
       no: '06',
-      title: 'QA school',
+      title: 'QA/Software Testing school',
       detail:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future. Lorem ipsum lasum",
+        'A program that is designed to equip you with the required skills you need to take on quality assurance and software testing roles',
       img: qaSchool,
       curicula: [
         {
-          no: '30',
-          details: 'Weeks of immersive training in product design',
+          no: '8',
+          details: 'Weeks of immersive training in Software Testing',
         },
-        { no: '63', details: 'Carefully crafted topics in curriculum' },
-        { no: '12', details: 'Lorem Ipsum masun Ippo' },
+        { no: '40+', details: 'Carefully crafted topics in curriculum' },
+        { no: '100+', details: 'Hours of pratical learning' },
       ],
     },
     {
       no: '07',
-      title: 'Engineering school',
+      title: 'Cloud Engineering school',
       detail:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future. Lorem ipsum lasum",
+        'Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.',
       img: engineeringSchool,
       curicula: [
         {
-          no: '30',
-          details: 'Weeks of immersive training in product design',
+          no: '12',
+          details: 'Weeks of immersive training in Cloud Engineering',
         },
-        { no: '63', details: 'Carefully crafted topics in curriculum' },
-        { no: '12', details: 'Lorem Ipsum masun Ippo' },
+        { no: '40+', details: 'Carefully crafted topics in curriculum' },
+        { no: '76+', details: 'Hours of pratical learning' },
       ],
     },
     {
       no: '08',
       title: 'Data school',
       detail:
-        "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future. Lorem ipsum lasum",
+        'Learn how to gain insights from complex data and the basics needed to transition into a career in data science and machine learning.',
       img: dataSchool,
       curicula: [
         {
-          no: '30',
-          details: 'Weeks of immersive training in product design',
+          no: '8',
+          details: 'Weeks of immersive training in Data',
         },
-        { no: '63', details: 'Carefully crafted topics in curriculum' },
-        { no: '12', details: 'Lorem Ipsum masun Ippo' },
+        { no: '30+', details: 'Carefully crafted topics in curriculum' },
+        { no: '100+', details: 'Hours of pratical learning' },
       ],
     },
   ],

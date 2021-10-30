@@ -19,6 +19,7 @@ import {
   JobDetails,
   BecomeAnInstructor,
   University,
+  School,
 } from './View'
 import { AppRoutes } from './constants'
 import theme from './base/theme'
@@ -77,6 +78,11 @@ const App = () => {
             />
             <Route path={AppRoutes.university} component={University} />
             <Route path={AppRoutes.jobDetails} component={JobDetails} />
+
+            <Route
+              path={`${AppRoutes.programs.initial}/:schoolName`}
+              component={School}
+            />
             {/* <Route path={AppRoutes.hireGraduates} component={} /> */}
           </Switch>
         </div>

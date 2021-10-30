@@ -23,6 +23,7 @@ const routes = {
     mentor: '/career/mentor',
   },
   programs: {
+    initial: '/programs',
     designSchool: '/programs/designSchool',
     softwareSchool: '/programs/softwareSchool',
     dataSchool: '/programs/dataSchool',

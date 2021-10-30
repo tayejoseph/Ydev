@@ -4,32 +4,51 @@ import { maxQuery } from '../../helpers'
 export default Styled.div`
   display: grid;
   grid-template-columns: 10rem 1fr;
-  nav {
+  ${maxQuery('md')} {
+    grid-template-columns: 1fr;
+  }
+  grid-gap: 2em;
+  nav.tab--nav {
     h3.nav--title {
       color: #050402;
-      margin-bottom: 0.8em;
+      margin-bottom: 1em;
       font-size: 1.1rem;
       font-weight: 600;
     }
-    a {
-      display: block;
-      font-size: 1.1rem;
-      color: #5C7787;
-      font-weight: 500;
-      padding-left: 1em;
-      margin-bottom: 1em;
-      &.active {
-        color: #051A26;
-        position: relative;
-        &:before {
-          content: "";
-          position: absolute;
-          width: 0.25rem;
-          background: #051A26;
-          height: 80%;
-          top: 50%;
-          transform: translateY(-50%);
-          left: 0px;
+    div.nav--lists {
+      ${maxQuery('md')} {
+        display: flex;
+        overflow-x: auto;
+      }
+      button {
+        display: block;
+        background: transparent;
+        border: none;
+        flex-shrink: 0;
+        width: fit-content;
+        cursor: pointer;
+        padding: 0px;
+        font-size: 1.1rem;
+        color: #5C7787;
+        font-weight: 500;
+        padding-left: 1em;
+        margin-bottom: 1em;
+        &.active {
+          color: #051A26;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 0.25rem;
+            background: #051A26;
+            height: 80%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0px;
+            ${maxQuery('md')} {
+              
+            }
+          }
         }
       }
     }

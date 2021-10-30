@@ -9,10 +9,10 @@ export default Styled.div`
     padding-top: 4em;
     header.title--header {
         h1 {
-            font-size: 1.8rem;
+            font-size: 2.1rem!important;
             letter-spacing: -0.01em;
             color: #1C1B1B;
-            font-weight: 800;
+            font-weight: 900!important;
         }
         margin-bottom: 4em;
     }
@@ -38,14 +38,14 @@ export default Styled.div`
                 margin-bottom: 1em;
                 h1 {
                     font-size: 1.9rem;
-                    font-weight: 800;
+                    font-weight: 900;
                 }
                 div {
                     h2 {
                         font-size: 1.2rem;
                         letter-spacing: -0.02em;
                         font-weight: 800;
-                        color: #2C2B2C;
+                        color: #2C2B2C;d
                         margin-bottom: 0.15em;
                     }
                     button {
@@ -53,6 +53,7 @@ export default Styled.div`
                         align-items: center;
                         font-weight: 800;
                         font-size: 1rem;
+                        color: ${({ theme }) => theme.primary};
                         .icon {
                             font-size: 2rem;
                             margin-left: -0.1em;
@@ -61,7 +62,7 @@ export default Styled.div`
                 }
             }
             p {
-                font-size: 1.05rem;
+                font-size: 1.08rem;
                 color: #3A383A;
             }
             img {
@@ -71,17 +72,19 @@ export default Styled.div`
         div.col--2 {
             div {
                 display: flex;
-                /* grid-gap: 1.5em; */
+                grid-gap: 3em;
+                align-items: center;
+                /* grid-template-columns: 8rem auto; */
                 margin-bottom: 2em;
                 h1 {
                     font-size: 2.8rem;
                     width: 5rem;
                     color: #2C2B2C;
-                    font-weight: 800;
+                    font-weight: 900;
                 }
                 p {
                     max-width: 12rem;
-                    font-size: 1.05rem;
+                    font-size: 1.08rem;
                 }
             }
         }

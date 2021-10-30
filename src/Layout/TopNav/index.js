@@ -63,33 +63,31 @@ const menus = [
 
 const TopNav = () => {
   const history = useHistory()
-  const popupTimeout = useRef(null)
   const [activePopup, setDisplay] = useState(false)
 
   const menuList = ({ link, title, menu }) => {
     return (
       <div
-        className="menu--container"
-        // onBlur={() => {
-        //   popupTimeout.current = setTimeout(() => {
-        //     setDisplay(false)
-        //   })
-        // }}
-        // onFocus={(e) => {
-        //   clearTimeout(popupTimeout)
-        // }}
+        className={`menu--container ${
+          title === activePopup ? 'active--menu' : ''
+        }`}
+        onClick={() => {
+          setDisplay(title === activePopup ? false : activePopup)
+        }}
       >
-        <button type="button" onClick={() => setDisplay(title)}>
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation()
+            setDisplay(title)
+          }}
+        >
           {title} <IoIosArrowDropdown />
         </button>
         {activePopup === title && (
           <div className="menu--lists">
             {menu.map((item) => (
-              <NavLink
-                key={item.title}
-                onClick={() => history.push(item.link)}
-                to={item.link}
-              >
+              <NavLink key={item.title} to={item.link}>
                 {item.title}
               </NavLink>
             ))}
