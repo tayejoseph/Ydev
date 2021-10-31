@@ -68,7 +68,7 @@ export default createGlobalStyle`
 
     /* utilities */
     .u--typo__title {
-      font-size: 3rem!important;
+      font-size: 2.8rem!important;
       line-height: 110%;
       color: #000000;
       font-weight: 900;

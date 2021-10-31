@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="grid--item">
           <h2>About Ydev</h2>
           <nav>
-            <NavLink to={AppRoutes.aboutUs}>About Us</NavLink>
+            <NavLink to={AppRoutes.aboutUs.studentStories}>About Us</NavLink>
             <NavLink to={AppRoutes.contactUs}>Contact Us</NavLink>
             <NavLink to={AppRoutes.studentStories}>Student Stories</NavLink>
             <NavLink to={AppRoutes.events}>Events</NavLink>
@@ -47,26 +47,55 @@ const Footer = () => {
         <div className="grid--item">
           <h2>Our Programs</h2>
           <nav>
-            <NavLink to={AppRoutes.aboutUs}>School of Design</NavLink>
-            <NavLink to={AppRoutes.contactUs}>
-              School of Data management
-            </NavLink>
-            <NavLink to={AppRoutes.studentStories}>
-              School of Product management
-            </NavLink>
-            <NavLink to={AppRoutes.events}>School of DevOps</NavLink>
-            <NavLink to={AppRoutes.resources}>
-              School of Software Engineering
-            </NavLink>
+            {[
+              { title: 'Design School', link: AppRoutes.programs.designSchool },
+              {
+                title: 'Software School',
+                link: AppRoutes.programs.softwareSchool,
+              },
+              { title: 'Data School', link: AppRoutes.programs.dataSchool },
+              {
+                title: 'Product School',
+                link: AppRoutes.programs.productSchool,
+              },
+              { title: 'DevOps School', link: AppRoutes.programs.devOpsSchool },
+              {
+                title: 'QA/Software Testing School',
+                link: AppRoutes.programs.qaSchool,
+              },
+              {
+                title: 'Cloud Eng School',
+                link: AppRoutes.programs.cloudSchool,
+              },
+              {
+                title: 'Salesforce School',
+                link: AppRoutes.programs.salesForceSchool,
+              },
+            ].map((item) => (
+              <NavLink key={item.title} to={item.link}>
+                {item.title}
+              </NavLink>
+            ))}
           </nav>
         </div>
         <div className="grid--item">
           <h2>Enterprise</h2>
           <nav>
-            <NavLink to={AppRoutes.hireGraduates}>Hire our graduate</NavLink>
-            <NavLink to={AppRoutes.corporateTraining}>
-              Corporate training
-            </NavLink>
+            {[
+              {
+                title: 'Corporate Training',
+                link: AppRoutes.enterprise.corportateTraining,
+              },
+              {
+                title: 'Hire Our Alumni',
+                link: AppRoutes.enterprise.hireOurAlumni,
+              },
+              { title: 'Higher Education', link: AppRoutes.enterprise.hiredEd },
+            ].map((item) => (
+              <NavLink key={item.title} to={item.link}>
+                {item.title}
+              </NavLink>
+            ))}
           </nav>
         </div>
       </div>

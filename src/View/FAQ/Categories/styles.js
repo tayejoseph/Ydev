@@ -18,32 +18,5 @@ export default Styled.div`
         position: relative;
         z-index: 2;
     }
-    div.nav--container {
-        h2 {
-            font-weight: 600;
-            font-size: 1.3rem;
-            margin-bottom: 0.5em;
-        }
-        nav {
-            a {
-                text-decoration: none; 
-                display: block;
-                width: fit-content;
-                padding: 0.3em 0px;
-                color: #5C7787;
-                font-weight: 300;
-                font-size: 1rem;
-                &:not(:last-of-type) {
-                    margin-bottom: 0.25em;
-                }
-                &:active {
-                    color: ${({ theme }) => theme.primary};
-                }
-            }
-        }
-    }
-    div.content--container {
-
-    }
     
 `

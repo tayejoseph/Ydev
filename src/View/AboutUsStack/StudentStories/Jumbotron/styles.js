@@ -4,7 +4,9 @@ import { minQuery, maxQuery } from '../../../../helpers'
 export default Styled.div`
     display: grid;
     grid-gap: 2em;
+    padding-top: 5em;
     ${minQuery('lg')} {
+        padding-top: 0px;
         grid-template-columns: 1fr 1fr;
         height: 30rem;
         grid-gap: 2em;
@@ -30,6 +32,13 @@ export default Styled.div`
         display: flex;
         ${maxQuery('lg')} {
             justify-content: center;
+
+        }
+        iframe {
+            ${maxQuery('615px')} {
+                width: 100%;
+                height: 15rem;
+            }
         }
         
     }

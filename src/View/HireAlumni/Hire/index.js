@@ -10,7 +10,7 @@ const Hire = () => {
     <Container>
       <section className="section--skills">
         <header>
-          <h1 className="u--typo__title">Hire for the skills you need</h1>
+          <h1 className="u--typo__title2">Hire for the skills you need</h1>
           <p>
             Find qualified talents that meet the needs of your team and company.
           </p>

@@ -50,6 +50,7 @@ const menus = [
         link: AppRoutes.enterprise.corportateTraining,
       },
       { title: 'Hire Our Alumni', link: AppRoutes.enterprise.hireOurAlumni },
+      { title: 'Higher Education', link: AppRoutes.enterprise.hiredEd },
     ],
   },
   {

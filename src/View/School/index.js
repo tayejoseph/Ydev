@@ -18,7 +18,6 @@ const School = () => {
   const {
     params: { schoolName },
   } = useRouteMatch()
-  console.log(useRouteMatch(), 'Mathc')
   const {
     jumbotron,
     secondContent,

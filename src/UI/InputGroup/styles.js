@@ -47,6 +47,7 @@ export default styled.div.attrs({
     color: #2c2b2c;
     font-size: 1rem;
     display: flex;
+    font-weight: 400;
     align-items: center;
     line-height: ${rem('20px')};
     margin-bottom: 0.5em;

@@ -6,7 +6,6 @@ const routes = {
   privacypolicy: '/privacyPolicy',
   hireAlumni: '/hireOurAlumni',
   curriculum: '/curriculum',
-  university: '/university',
   aboutUs: {
     initial: '/aboutUs',
     studentStories: '/aboutUs/studentStories',
@@ -17,6 +16,7 @@ const routes = {
   enterprise: {
     corportateTraining: '/enterprise/corportateTraining',
     hireOurAlumni: '/enterprise/hireOurAlumni',
+    hiredEd: '/enterprise/hiredEd',
   },
   career: {
     instructor: '/career/instructor',
@@ -31,7 +31,7 @@ const routes = {
     devOpsSchool: '/programs/devOpsSchool',
     qaSchool: '/programs/qaSchool',
     cloudSchool: '/programs/cloudEngSchool',
-    salesForceSchool: '/programs/saleForceSchools',
+    salesForceSchool: '/programs/salesForceSchool',
   },
   events: '/events',
   corporateTraining: '/corporateTraining',

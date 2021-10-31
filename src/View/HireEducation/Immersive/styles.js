@@ -43,7 +43,7 @@ export default Styled.div`
                 display: flex;
                 grid-gap: 1em;
                 button {
-                    background: #fff;
+                    background: #185E87;
                     border-radius: 50%;
                     border: none;
                     outline: none;
@@ -57,6 +57,7 @@ export default Styled.div`
                     .icon {
                         font-size: 1.8rem;
                         stroke-width: 1rem;
+                        color: #fff;
                     }
                 }
             }
@@ -92,8 +93,8 @@ export default Styled.div`
                         margin: 0.5em 0px;
                     }
                     p {
-                        font-size: 1rem;
-                        color: #ECE8E8;
+                        font-size: 0.95rem;
+                        color: rgba(255, 255, 255, 0.78);
                         line-height: 140%;
                     }
                 }

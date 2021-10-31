@@ -12,3 +12,4 @@ export { default as becomeAnInstructorContent } from './becomeAnInstructorConten
 export { default as contacts } from './contacts'
 export { default as carouselContent } from './carouselContent'
 export { default as SchoolsLists } from './SchoolsLists'
+export { default as hireEdContent } from './higerEdContent'

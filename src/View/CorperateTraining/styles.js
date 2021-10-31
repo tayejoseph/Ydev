@@ -6,7 +6,7 @@ import {
   whyChooseDev,
 } from '../../assets/svgImgs'
 import { lighten } from 'polished'
-import { minQuery } from '../../helpers'
+import { minQuery, maxQuery } from '../../helpers'
 
 export default Styled.div`
     h1 {
@@ -242,6 +242,9 @@ export default Styled.div`
 
             }
             div.col--2 {
+                ${maxQuery('md')} {
+                    display: none;
+                }
                 justify-self: center;
                 ${minQuery('lg')} {
                     padding-top: 3em;

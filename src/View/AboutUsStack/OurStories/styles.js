@@ -1,5 +1,5 @@
 import Styled from 'styled-components'
-import { OurMission } from '../../../assets/svgImgs'
+import { OurStory } from '../../../assets/png'
 import { maxQuery } from '../../../helpers'
 
 export default Styled.div`
@@ -27,7 +27,10 @@ export default Styled.div`
             left: 50%;
             transform: translateX(-50%);
             width: 100vw;
-            background-image: linear-gradient(90.09deg, #000000 40.14%, rgba(0, 0, 0, 0) 99.92%), url(${OurMission});
+            background-image: linear-gradient(90.09deg, #000000 40.14%, rgba(0, 0, 0, 0) 99.92%), url(${OurStory});
+            background-size: 100vw;
+            background-repeat: no-repeat;
+            background-position: center;
             height: 100%;
             z-index: 1;
         }

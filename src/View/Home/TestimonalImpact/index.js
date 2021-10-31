@@ -9,7 +9,7 @@ const palletLists = [
   '485+ \n learning hours',
   '290+ \n alumni',
   '7+ \n in-demand \n certifications',
-  '3620+ \n stundent trained',
+  '3620+ \n student trained',
   '11+ \n countries presence',
   '50+ \n onsite tech training',
 ]

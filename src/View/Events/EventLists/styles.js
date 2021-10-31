@@ -39,7 +39,7 @@ export default Styled.div`
                 h1 {
                     font-size: 1.7rem;
                     max-width: 32rem;
-                    font-weight: 300;
+                    font-weight: 500;
                     line-height: 150%;
                     display: flex;
                     user-select: none;

@@ -13,14 +13,18 @@ export default Styled.div`
         }
         p {
             font-size: 1.2rem;
+            width: 80%;
+            max-width: 50rem;
+            margin: 0 auto;
             margin-top: 1em;
+            line-height: 140%;
         }
     }
     div.grid--container {
         display: grid;
         grid-gap: 2em;
         margin-bottom: 3em;
-        margin-top: 3em;
+        margin-top: 4em;
         div {
             height: 4rem;
             overflow: hidden;

@@ -27,7 +27,7 @@ const palletLists = [
   {
     title: 'Self-paced learning',
     details:
-      'We offer a rewarding compensation for your time and commitment being a part of our winning team.',
+      'We offer a rewarding compensation (both locally and internationally) for your time and commitment being a part of our winning team.',
     icon: MoneyBag,
   },
   {
@@ -43,7 +43,7 @@ const palletLists = [
     icon: Eye2,
   },
 ]
-const University = () => {
+const HireEducation = () => {
   return (
     <Container>
       <section className="section--jumbotron">
@@ -54,12 +54,9 @@ const University = () => {
           </h3>
           <h1>Education should be better aligned with outcomes</h1>
           <p>
-            The workplace future have shifted. Despite this, many students
-            graduate without the relevant in-demand skills required in today's
-            world. This is heartbreaking, and it affects us all greatly! That is
-            why we are on a mission to change that by offering accelerator
-            programs in partnership with universities that prepare the next
-            generation to succeed in the digital economy.
+            We partner with the world’s leading institutions to help companies
+            bridge the skills gap by preparing, placing, and supporting people
+            into life-changing careers{' '}
           </p>
           <Button>Schedule consultation</Button>
         </hgroup>
@@ -71,10 +68,12 @@ const University = () => {
             <span className="u--color__primary">Ydev Academy?</span>
           </h1>
           <p>
-            With partnerships both locally and internationally, we are trusted
-            and have delivered top-notch training that have upskilled students
-            for a better and more rewarding future. We uphold strong values and
-            an undying commitment that puts students first in all that we do.
+            Transforming higher education isn’t something we can do alone. To
+            move education into the digital age, we blend a purpose-driven goal
+            with a student-focused culture at Ydev. This is why we collaborate
+            glocal-ly with strategic partners and collaborators who share our
+            mission and are dedicated to changing lives through the use of
+            education technology.{' '}
           </p>
         </header>
         <div className="grid--container">
@@ -178,17 +177,17 @@ const University = () => {
 
       <Parteners
         title="Some of Our Partners"
-        details="We partner with the world’s leading institutions to help companies bridge the skills gap."
+        details="We understand the importance of service year to serve and prepare for an amazing career ahead. We have partnered with local, global companies to help train and place  corp members"
       />
 
       <section className="section--universities">
         <div className="col--1">
-          <h1 className="u--typo__title2">Become a University Partner</h1>
+          <h1 className="u--typo__title2">Become a Higher Education Partner</h1>
           <form>
             <InputGroup hasRequired label="Full Name" />
             <InputGroup hasRequired label="Email" type="email" />
-            <InputGroup hasRequired label="Company Name" />
-            <InputGroup hasRequired label="Company Website Url" type="url" />
+            <InputGroup hasRequired label="Higher education name" />
+            <InputGroup hasRequired label="Higher education Url" type="url" />
             <InputGroup hasRequired label="Your Role" />
             <InputGroup hasRequired label="Phone Number" type="tel" />
             <InputGroup
@@ -219,4 +218,4 @@ const University = () => {
   )
 }
 
-export default University
+export default HireEducation

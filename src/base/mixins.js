@@ -23,7 +23,12 @@ const mixins = {
     max-width: ${({ theme }) => theme.dimensions.maxWidth};
     margin: 0 auto;
   `,
-
+  lineClamp: (lineNo) => css`
+    display: -webkit-box;
+    -webkit-line-clamp: ${lineNo};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  `,
   primaryBg: css`
     position: relative;
     &:after {

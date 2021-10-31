@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 import { Button } from '../../../UI'
-import { carouselContent } from '../../../constants'
+import { hireEdContent } from '../../../constants'
 import Container from './styles'
 
 const Immersive = () => {
@@ -9,7 +9,7 @@ const Immersive = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const handleCarouselNavigation = (direction) => {
-    if (direction === 'next' && activeIndex < carouselContent.length) {
+    if (direction === 'next' && activeIndex < hireEdContent.length) {
       setActiveIndex(activeIndex + 1)
     } else if (direction === 'previous' && activeIndex !== 0) {
       setActiveIndex(activeIndex - 1)
@@ -25,7 +25,7 @@ const Immersive = () => {
   return (
     <Container>
       <div className="col--1">
-        <h1>More on our school programs</h1>
+        <h1>More on our Higher Education programs</h1>
         <Button>View more info</Button>
         <div className="action--container">
           <button
@@ -38,7 +38,7 @@ const Immersive = () => {
           <button
             arial-label="go forward"
             onClick={() => handleCarouselNavigation('next')}
-            disabled={activeIndex === carouselContent.length}
+            disabled={activeIndex === hireEdContent.length}
           >
             <IoIosArrowForward />
           </button>
@@ -46,7 +46,7 @@ const Immersive = () => {
       </div>
 
       <div className="col--2" id="carousel--container">
-        {carouselContent.map((item, index) => (
+        {hireEdContent.map((item, index) => (
           <div
             className="carousel--item"
             key={item.title}

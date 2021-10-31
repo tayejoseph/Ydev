@@ -27,7 +27,7 @@ export default Styled.div`
         grid-gap: 3em;
         justify-content: space-between;
         ${minQuery('xl')} {
-            grid-template-columns: 20rem auto auto auto;
+            grid-template-columns: 20rem 10rem 10rem 10rem;
         }
         ${maxQuery('xl')} {
             grid-template-columns: 1fr 1fr;

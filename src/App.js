@@ -18,7 +18,7 @@ import {
   BecomeAMentor,
   JobDetails,
   BecomeAnInstructor,
-  University,
+  HireEducation,
   School,
 } from './View'
 import { AppRoutes } from './constants'
@@ -55,6 +55,8 @@ const App = () => {
               component={TermAndConditions}
             />
             <Route path={AppRoutes.privacypolicy} component={PrivacyPolicy} />
+
+            {/* Enterprise */}
             <Route
               path={AppRoutes.enterprise.corportateTraining}
               component={CorperateTraining}
@@ -63,6 +65,11 @@ const App = () => {
               path={AppRoutes.enterprise.hireOurAlumni}
               component={HireAlumni}
             />
+            <Route
+              path={AppRoutes.enterprise.hiredEd}
+              component={HireEducation}
+            />
+
             <Route path={AppRoutes.curriculum} component={Curriculum} />
             <Route
               path={AppRoutes.aboutUs.studentStories}
@@ -76,7 +83,6 @@ const App = () => {
               path={AppRoutes.career.instructor}
               component={BecomeAnInstructor}
             />
-            <Route path={AppRoutes.university} component={University} />
             <Route path={AppRoutes.jobDetails} component={JobDetails} />
 
             <Route

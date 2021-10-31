@@ -92,6 +92,12 @@ export default Styled.div`
             div.detail--container {
                 font-size: 1.1rem;
             }
+
+            ul {
+                margin: 0px;
+                padding: 0px;
+                list-style-position: inside;
+            }
         }
         div.col--2 {
             text-align: center;

@@ -3,7 +3,7 @@ import { maxQuery } from '../../helpers'
 
 export default Styled.div`
   display: grid;
-  grid-template-columns: 10rem 1fr;
+  grid-template-columns: 12rem 1fr;
   ${maxQuery('md')} {
     grid-template-columns: 1fr;
   }
@@ -18,7 +18,12 @@ export default Styled.div`
     div.nav--lists {
       ${maxQuery('md')} {
         display: flex;
+        width: 90vw;
         overflow-x: auto;
+        ${({ theme }) => theme.mixins.hideScrollBar};
+      }
+      div.tab--item {
+        flex-shrink: 0;
       }
       button {
         display: block;
