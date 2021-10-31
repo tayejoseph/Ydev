@@ -1,7 +1,10 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { NavLink, Link, useHistory } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
-import { IoIosArrowDropdown } from 'react-icons/io'
+import { useMediaQuery } from 'react-responsive'
+import { BREAKPOINTS } from '../../base/theme'
+import { MdKeyboardArrowDown } from 'react-icons/md'
+import { HiOutlineMenu } from 'react-icons/hi'
 import { AppRoutes } from '../../constants'
 import { Button } from '../../UI'
 import { AppLogo } from '../../assets/convertedSvgs'
@@ -18,7 +21,7 @@ const menus = [
       { title: 'DevOps School', link: AppRoutes.programs.devOpsSchool },
       {
         title: 'QA/Software Testing School',
-        link: AppRoutes.programs.devOpsSchool,
+        link: AppRoutes.programs.qaSchool,
       },
       {
         title: 'Cloud Eng School',
@@ -63,7 +66,13 @@ const menus = [
 
 const TopNav = () => {
   const history = useHistory()
-  const [activePopup, setDisplay] = useState(false)
+  const isMobile = useMediaQuery({ maxWidth: BREAKPOINTS.xl })
+
+  const [{ activePopup, showMenu }, setDisplay] = useState({
+    activePopup: false,
+    showMenu: false,
+  })
+  console.log({ activePopup, showMenu }, 'Props Now Props')
 
   const menuList = ({ link, title, menu }) => {
     return (
@@ -71,23 +80,42 @@ const TopNav = () => {
         className={`menu--container ${
           title === activePopup ? 'active--menu' : ''
         }`}
-        onClick={() => {
-          setDisplay(title === activePopup ? false : activePopup)
+        onClick={(e) => {
+          if (!isMobile) {
+            setDisplay((s) => ({
+              ...s,
+              activePopup: title === s.activePopup ? false : title,
+            }))
+          }
         }}
       >
         <button
           type="button"
+          className="btn--link"
           onClick={(e) => {
             e.stopPropagation()
-            setDisplay(title)
+            setDisplay((s) => ({
+              ...s,
+              activePopup: title === s.activePopup ? false : title,
+            }))
           }}
         >
-          {title} <IoIosArrowDropdown />
+          {title}{' '}
+          <span>
+            <MdKeyboardArrowDown />
+          </span>
         </button>
         {activePopup === title && (
           <div className="menu--lists">
             {menu.map((item) => (
-              <NavLink key={item.title} to={item.link}>
+              <NavLink
+                key={item.title}
+                to={item.link}
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setDisplay({})
+                }}
+              >
                 {item.title}
               </NavLink>
             ))}
@@ -98,7 +126,7 @@ const TopNav = () => {
   }
   return (
     <Container>
-      <div className="content--container">
+      <div className="content--container nav--desktop">
         <Link to="/" className="brand--logo">
           <AppLogo />
         </Link>
@@ -108,6 +136,36 @@ const TopNav = () => {
             Contact us <FiArrowRight />
           </Button>
         </nav>
+      </div>
+
+      <div className="content--container nav--mobile">
+        <div className="top--section">
+          <Link to="/" className="brand--logo">
+            <AppLogo />
+          </Link>
+          <button
+            onClick={() => {
+              setDisplay((s) => ({
+                showMenu: !s.showMenu,
+              }))
+            }}
+          >
+            <HiOutlineMenu />
+          </button>
+        </div>
+        <div
+          className={`nav--cover ${showMenu ? 'display--menu' : 'hide--menu'}`}
+        >
+          <nav>
+            {menus.map((item) => menuList(item))}
+            <Button
+              className="contact--btn"
+              onClick={() => history.push(AppRoutes.contactUs)}
+            >
+              Contact us <FiArrowRight />
+            </Button>
+          </nav>
+        </div>
       </div>
     </Container>
   )

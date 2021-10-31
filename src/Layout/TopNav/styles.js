@@ -1,4 +1,6 @@
 import Styled from 'styled-components'
+import { rgba } from 'polished'
+import { maxQuery, minQuery } from '../../helpers'
 
 export default Styled.div`
     position: fixed;
@@ -7,7 +9,10 @@ export default Styled.div`
     align-items: center;
     width: 100vw;
     background: #fff;
-    z-index: 4;
+    z-index: 999;
+    ${maxQuery('<lg')} {
+        height: ${({ theme }) => theme.dimensions.navHeightMobile};
+    }
     div.content--container {
         ${({ theme }) => theme.mixins.maxWidth};
         margin: auto;
@@ -25,9 +30,10 @@ export default Styled.div`
             }
         }
         nav {
-            display: flex;
-            grid-gap: 2em;
-            align-items: center;
+            ${minQuery('>lg')} {
+                display: flex;
+                grid-gap: 2em;
+                align-items: center;
             div.menu--container {
                 position: relative;
                 button {
@@ -39,17 +45,24 @@ export default Styled.div`
                     font-size: 1rem;
                     font-weight: 500;
                     background: transparent;
-                    svg {
-                        font-size: 1.2rem;
-                        transition: all 1s;
+                    span {
+                        border: 1px solid rgb(218, 218, 218);
+                        margin-left: 0.5em;
                         flex-shrink: 0;
-                    }
-                    /* &:hover, &:focus {
-                        color: ${({ theme }) => theme.primary};
+                        width: 1.2rem;
+                        height: 1.2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
                         svg {
-                            transform: rotate(180deg);
+                            font-size: 1.2rem;
+                            transition: all 1s;
+                            flex-shrink: 0;
+                            margin: 0px;
+                            margin-top: 0.1em;
                         }
-                    } */
+                    }
                 }
                 &.active--menu {
                     &:after {
@@ -61,10 +74,13 @@ export default Styled.div`
                         width: 100vw;
                         height: 100vh;
                     }
+                    svg {
+                        transform: rotate(180deg);
+                    }
                 }
                 div.menu--lists {
                     position: absolute;
-                    width: 12rem;
+                    width: 13rem;
                     transform: translateX(-50%);
                     left: 50%;
                     border-radius: 4px;
@@ -75,14 +91,15 @@ export default Styled.div`
                     a {
                         padding: 0.5em;
                         display: block;
-                        font-weight: 400;
-                        font-size: 0.9rem;
-                        &:hover, &:focus {
+                        font-weight: 500;
+                        font-size: 1rem;
+                        &.active, &:hover, &:focus {
                             color: ${({ theme }) => theme.primary};
                         }
                     }
                 }
             }
+        }
             a {
                 text-decoration: none; 
                 color: #050402;
@@ -94,6 +111,103 @@ export default Styled.div`
                 .icon {
                     margin-left: 0.5em;
                     font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    div.nav--desktop {
+        ${maxQuery('<lg')} {
+            display: none;
+        }
+    }
+    div.nav--mobile {
+        ${minQuery('<lg')} {
+            display: none;
+        }
+        div.top--section {
+            display: flex;
+            align-items: center;
+            z-index: 999;
+            position: relative;
+            position: relative;
+            height: 100%;
+            justify-content: space-between;
+            flex: 1;
+            a.brand--logo {
+                padding-left: 2em;
+                svg {
+                }
+            }
+            button {
+                cursor: pointer;
+                background: transparent;
+                border: none;
+                .icon {
+                    font-size: 2rem;
+                }
+            }
+        }
+        div.nav--cover {
+            display: block;
+            background: #fff;
+            width: 100vw;
+            left: 50%;
+            padding-bottom: 4em;
+            transform: translateX(-50%);
+            position: fixed;
+            z-index: ;
+            transition: all 1s;
+            top: ${({ theme }) => theme.dimensions.navHeightMobile};
+            &:after {
+                content: "";
+                background: ${rgba('#000000', 0.1)};
+                height: 100vh;
+                position: absolute;
+                top: 0px;
+                width: 100vw;
+                z-index: 0;
+            }
+            &.hide--menu {
+                background: blue;
+                transform: translate(-50%, -200%);
+                opacity: 0;
+            }
+            nav {
+                background: #fff;
+                padding: 1em 5%;
+                padding-bottom: 5em;
+                padding-top: 2em;
+                /* ${({ theme }) => theme.mixins.maxWidth}; */
+                button.btn--link {
+                    width: 100%;
+                    display: flex;
+                    border: none;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    background: transparent;
+                    justify-content: space-between;
+                    /* &:not(:last-of-type) { */
+                        margin-bottom: 2em!important;
+                    /* } */
+                    svg {
+                        font-size: 1.4rem;
+                    }
+                }
+                div.menu--lists {
+                    margin-bottom: 2.5em;
+                    margin-top: -0.5em;
+                    a {
+                        display: block;
+                        margin-bottom: 1em;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        &.active {
+                            color: ${({ theme }) => theme.primary};
+                        }
+                    }
+                }
+                button.contact--btn {
+                    margin-top: 5em;
                 }
             }
         }

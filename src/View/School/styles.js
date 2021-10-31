@@ -153,7 +153,7 @@ export default Styled.div`
                     margin-bottom: 1em;
                     height: 5rem;
                     h2 {
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                         line-height: 110%;
                         &:first-of-type {
                             font-size: 1.4rem;
@@ -172,7 +172,12 @@ export default Styled.div`
                         display: flex;
                         grid-gap: 0.5em;
                         &:not(:last-of-type) {
-                            margin-bottom: 1em;
+                            margin-bottom: 0.5em;
+                                border-bottom: 1
+px
+ solid rgb(241, 241, 241);
+ padding-bottom: 0.5em;
+
                         }
                     }
                 }
@@ -286,12 +291,15 @@ export default Styled.div`
 
         }
         div.col--2 {
-            ${maxQuery('<lg')} {
-                display: none;
-            }
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
             text-align: center;
             svg {
                 font-size: 18rem;
+            }
+            ${maxQuery('<lg')} {
+                display: none;
             }
         }
     }

@@ -1,4 +1,5 @@
 import Styled from 'styled-components'
+import { minQuery } from '../../../helpers'
 
 export default Styled.div`
     padding: 3em 0px;
@@ -133,7 +134,16 @@ export default Styled.div`
             display: grid;
             margin-top: 3em;
             padding-bottom: 3em;
-            grid-template-columns: repeat(4, 1fr);
+            flex-wrap: wrap;
+            ${minQuery('sm')} {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            ${minQuery('md')} {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            ${minQuery('lg')} {
+                grid-template-columns: repeat(4, 1fr);
+            }
             div.pallet--item {
                 white-space: pre;
                 text-align: center;

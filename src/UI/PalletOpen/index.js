@@ -7,9 +7,13 @@ const PalletOpen = ({ title, details }) => {
   const [openTab, setDisplay] = useState(false)
   return (
     <Container>
-      <header onClick={() => setDisplay(!openTab)}>
+      <header
+        onClick={() => {
+          if (details) setDisplay(!openTab)
+        }}
+      >
         <h2>{title}</h2>
-        {!openTab ? <MdAdd /> : <IoClose />}
+        {details && <>{!openTab ? <MdAdd /> : <IoClose />}</>}
       </header>
       {openTab && <div className="detail--container">{details}</div>}
     </Container>

@@ -3,6 +3,7 @@ import Styled from 'styled-components'
 export default Styled.div`
     position: relative;
     padding: 2em 0px;
+    padding-bottom: 5em;
     &:after {
         content: "";
         position: absolute;
@@ -18,11 +19,12 @@ export default Styled.div`
         position: relative;
         z-index: 2;
     }
-    header {
+    header.component--header {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
+        margin-bottom: 4em;
         svg {
             font-size: 4rem;
         }

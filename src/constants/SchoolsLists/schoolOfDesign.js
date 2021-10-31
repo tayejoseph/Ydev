@@ -106,6 +106,8 @@ const schoolOfDesign = {
       },
     ],
   },
+  footerTitle:
+    'Learn more about our Design course and how to take your first step!',
 }
 
 export default schoolOfDesign
