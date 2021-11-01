@@ -1,10 +1,12 @@
 import React, { useRef, useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 import { Button } from '../../../UI'
-import { carouselContent } from '../../../constants'
+import { carouselContent, AppRoutes } from '../../../constants'
 import Container from './styles'
 
 const Immersive = () => {
+  const history = useHistory()
   const activeRef = useRef(null)
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -31,7 +33,9 @@ const Immersive = () => {
           your needs. Our curriculum meets global standards putting you in the
           top 1% in the tech space.
         </p>
-        <Button>View our curriculum</Button>
+        <Button onClick={() => history.push(AppRoutes.curriculum)}>
+          View our curriculum
+        </Button>
         <div className="action--container">
           <button
             arial-label="go back"

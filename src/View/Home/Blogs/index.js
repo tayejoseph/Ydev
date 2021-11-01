@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../../UI'
 import { Blogs } from '../../../assets/convertedSvgs'
-import { HomeContent } from '../../../constants'
+import { HomeContent, contacts } from '../../../constants'
 import Container from './styles'
 
 const BlogsContent = () => {
@@ -31,7 +31,9 @@ const BlogsContent = () => {
         ))}
       </div>
       <footer>
-        <Button secondary>Read more</Button>
+        <Button secondary onClick={() => window.open(contacts.blogLink)}>
+          Read more
+        </Button>
       </footer>
     </Container>
   )

@@ -8,6 +8,7 @@ import {
   dataSchool,
   engineeringSchool,
 } from '../assets/svgImgs'
+import { AppRoutes } from '../constants'
 
 const curriculumContent = {
   allCourses: [
@@ -17,6 +18,7 @@ const curriculumContent = {
       detail:
         'Gain the basic knowledge to help you build a career in Design and grow through fundamental user-centred approaches to stunning user-interfaces.',
       img: designSchool,
+      link: AppRoutes.programs.designSchool,
       curicula: [
         { no: '8', details: 'Weeks of immersive training in product design' },
         { no: '30+', details: 'Carefully crafted topics in curriculum' },
@@ -29,6 +31,7 @@ const curriculumContent = {
       detail:
         'Start your journey to becoming a full-stack developer. Learn how to write different kinds of code for complex frontend and backend tasks.',
       img: softwareSchool,
+      link: AppRoutes.programs.softwareSchool,
       curicula: [
         {
           no: '24',
@@ -44,6 +47,7 @@ const curriculumContent = {
       detail:
         'Set yourself up for success and a rewarding career with our product school.',
       img: productSchool,
+      link: AppRoutes.programs.productSchool,
       curicula: [
         {
           no: '8',
@@ -59,6 +63,7 @@ const curriculumContent = {
       detail:
         "A pre-course task will be assigned to you. It's to prepare both newcomers to coding and others for future. Lorem ipsum lasum",
       img: devOpsSchool,
+      link: AppRoutes.programs.devOpsSchool,
       curicula: [
         {
           no: '20',
@@ -74,6 +79,7 @@ const curriculumContent = {
       detail:
         'Set yourself up for success and a rewarding career with our Salesforce school.',
       img: productManagementSchool,
+      link: AppRoutes.programs.salesForceSchool,
       curicula: [
         {
           no: '10',
@@ -89,6 +95,7 @@ const curriculumContent = {
       detail:
         'A program that is designed to equip you with the required skills you need to take on quality assurance and software testing roles',
       img: qaSchool,
+      link: AppRoutes.programs.qaSchool,
       curicula: [
         {
           no: '8',
@@ -104,6 +111,7 @@ const curriculumContent = {
       detail:
         'Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.',
       img: engineeringSchool,
+      link: AppRoutes.programs.cloudSchool,
       curicula: [
         {
           no: '12',
@@ -119,6 +127,7 @@ const curriculumContent = {
       detail:
         'Learn how to gain insights from complex data and the basics needed to transition into a career in data science and machine learning.',
       img: dataSchool,
+      link: AppRoutes.programs.dataSchool,
       curicula: [
         {
           no: '8',

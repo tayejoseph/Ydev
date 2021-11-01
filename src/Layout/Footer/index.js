@@ -25,7 +25,7 @@ const Footer = () => {
             <p>Connect with us</p>
             <div className="social--row">
               {footerContent.socials.map((item) => (
-                <a href={item.link} key={uuid()}>
+                <a href={item.link} target="__blank" key={uuid()}>
                   {item.icon}
                 </a>
               ))}
@@ -101,8 +101,9 @@ const Footer = () => {
       </div>
       <footer>
         <p>
-          Copyright ©2021 Ydev Academy. All Rights Reserved. The Ydev word mark
-          is a registered trademark of Harbor Incubator Technology Limited.{' '}
+          Copyright ©{new Date().getFullYear()} Ydev Academy. All Rights
+          Reserved. The Ydev word mark is a registered trademark of Harbor
+          Incubator Technology Limited.{' '}
         </p>
         <nav>
           <NavLink to="/">Cookies</NavLink>

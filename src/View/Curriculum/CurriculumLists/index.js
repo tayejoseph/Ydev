@@ -1,5 +1,6 @@
 import React from 'react'
 import { v4 as uuid } from 'uuid'
+import { useHistory } from 'react-router-dom'
 import { RiArrowDropRightLine } from 'react-icons/ri'
 import { TitleWithDesign } from '../../../component'
 import { Button } from '../../../UI'
@@ -7,8 +8,9 @@ import { curriculumContent } from '../../../constants'
 import Container from './styles'
 
 const CurriculumLists = () => {
+  const history = useHistory()
   return (
-    <Container>
+    <Container id="courseContainerPosition">
       <header className="title--header">
         <TitleWithDesign title="All available courses" />
       </header>
@@ -19,7 +21,7 @@ const CurriculumLists = () => {
               <h1>{item.no}</h1>
               <div>
                 <h2>{item.title}</h2>
-                <Button plain>
+                <Button plain onClick={() => history.push(item.link)}>
                   View courses
                   <RiArrowDropRightLine />
                 </Button>

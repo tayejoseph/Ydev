@@ -54,6 +54,9 @@ export default Styled.div`
                         font-weight: 800;
                         font-size: 1rem;
                         color: ${({ theme }) => theme.primary};
+                        &:hover, &:focus {
+                            text-decoration: underline;
+                        }
                         .icon {
                             font-size: 2rem;
                             margin-left: -0.1em;
