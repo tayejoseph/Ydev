@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { CompanySponsors, TitleWithDesign, ReachUs } from '../../component'
+import { Parteners, TitleWithDesign, ReachUs } from '../../component'
 import { coperateTraining } from '../../assets/svgImgs'
 import { Cusion, FormIllustration } from '../../assets/convertedSvgs'
 import { Button, InputGroup } from '../../UI'
@@ -75,8 +75,7 @@ const CorperateTraining = () => {
         </p>
       </section>
       <section className="section--patterns">
-        <h1>Our partners</h1>
-        <CompanySponsors />
+        <Parteners title={'Our Partners'} />
       </section>
       <section className="section--workforce">
         <div className="col--1">

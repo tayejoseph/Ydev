@@ -145,11 +145,6 @@ export default Styled.div`
     section.section--patterns {
         position: relative;
         padding-bottom: 3em;
-        h1 {
-            text-align: center;
-            padding-top: 2em;
-            margin: 0px;
-        }
 
          &:after {
             content: "";
