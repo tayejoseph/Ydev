@@ -17,6 +17,9 @@ import {
   Tableau,
   Oracle,
   RedHat,
+  Nut,
+  Yabatech,
+  Unilag,
 } from '../../assets/convertedSvgs'
 import Container from './styles'
 
@@ -60,6 +63,18 @@ const hires = [
   {
     logo: Oracle,
     link: 'https://www.redhat.com/en/services/training/red-hat-academy',
+  },
+  {
+    logo: Nut,
+    link: 'https://nutmng.org/',
+  },
+  {
+    logo: Unilag,
+    link: 'https://unilag.edu.ng/',
+  },
+  {
+    logo: Yabatech,
+    link: 'https://www.yabatech.edu.ng/',
   },
 ]
 

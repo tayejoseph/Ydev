@@ -156,6 +156,44 @@ const tabContent = [
     ],
   },
   {
+    title: 'Higher Education',
+    content: [
+      {
+        title: 'Do you train employees for companies?',
+        details:
+          'Yes, we do. We offer a dynamic curriculum that is tailored to match the needs of employees and employers around the globe.',
+      },
+      {
+        title: 'Do you provide support with talent recruitment for companies?',
+        details:
+          'Yes, we do. From our vast pool of graduates, we provide qualified talents to firms based on the needs of your teams, business and individuals.',
+      },
+      {
+        title: 'What courses do you teach?',
+        details:
+          'Our curriculum is made up of in-demand tech skills that range from data science, UI/X design, product management, IT-Ops to software engineering.',
+      },
+      {
+        title: 'Are there any special benefits partnering with Ydev?',
+        details:
+          'Yes, there are. Firstly, we teach and expose your employees to new tools and methods so that you can produce results and bring greater value to your workplace. Secondly, we help enterprise business/clients re-tool their workforce based on customizable curriculums.',
+      },
+      {
+        title: 'How do we reach you?',
+        details: (
+          <>
+            You can call us on{' '}
+            <a href={`tel:${contacts.phoneNo}`}>{contacts.phoneNo}</a> or reach
+            out to us via email at{' '}
+            <a href={`mailto:${contacts.enterpriseEmail}`}>
+              {contacts.enterpriseEmail}
+            </a>
+          </>
+        ),
+      },
+    ],
+  },
+  {
     title: 'Corporate training',
     content: [
       {

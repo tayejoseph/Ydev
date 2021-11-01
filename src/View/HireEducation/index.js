@@ -1,5 +1,4 @@
 import React from 'react'
-import { v4 as uuid } from 'uuid'
 import { Switch } from 'antd'
 import { Link } from 'react-router-dom'
 import { Button, InputGroup } from '../../UI'
@@ -19,27 +18,27 @@ import Container from './styles'
 
 const palletLists = [
   {
-    title: 'Robust curriculum',
+    title: 'World-Class Curriculum',
     details:
-      'You get to work with highly motivated individuals with great vision.',
+      'Begin with a solid foundation. The Ydev curriculum is carefully curated to maximze impact',
     icon: Handshake2,
   },
   {
-    title: 'Self-paced learning',
+    title: 'Alumni Support',
     details:
-      'We offer a rewarding compensation (both locally and internationally) for your time and commitment being a part of our winning team.',
+      'Ydev goes above and beyond. Students will be assimilated into our Alumni Program, where thousands of professionals with real-world experiences will be there to guide them',
     icon: MoneyBag,
   },
   {
     title: 'Industry experts',
     details:
-      'Our work is driven at impacting lives positively. Get to be a part of our team creating better outcomes for young people in Nigeria and across Africa.',
+      'Students will be trained by industry experts; They will learn innovative solutions to complex problems, sharpen their thirst for knowledge and increase their job-market value',
     icon: Rocket2,
   },
   {
-    title: 'Programs flexibility',
+    title: 'Mentorship',
     details:
-      'We are equally interested in your personal growth and development just as we are in our students. We provide continuous support to our team members to ensure they rise to the peak of their career.',
+      'Students will be matched with mentors whose careers align with their desires. By shadowing these mentors, they can see first hand what their path will look like and learn the soft skills needed to apply what knowledge they have acquired',
     icon: Eye2,
   },
 ]
