@@ -1,0 +1,8 @@
+export { default as ReachUs } from './ReachUs'
+export { default as TitleWithDesign } from './TitleWithDesign'
+export { default as ReadyStart } from './ReadyStart'
+export { default as CompanySponsors } from './CompanySponsors'
+export { default as HelpForm } from './HelpForm'
+export { default as CompanyHire } from './CompanyHire'
+export { default as Parteners } from './Parteners'
+export { default as LargeCarousel } from './LargeCarousel'
