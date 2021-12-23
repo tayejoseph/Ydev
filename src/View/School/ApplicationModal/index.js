@@ -41,7 +41,10 @@ const ApplicationModal = ({
   const handlePayment = (amount) => {
     handleFlutterPayment({
       callback: (data) => {
-        handleSubmit({ payment: true }).then((response) => {
+        handleSubmit({
+          payment: true,
+          reference: data.transactionRef,
+        }).then((response) => {
           if (response && response.success) {
             setTimeout(() => {
               closePaymentModal()

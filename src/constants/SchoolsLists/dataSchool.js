@@ -4,7 +4,7 @@ const schoolOfDesign = {
     'https://drive.google.com/file/d/14jjU9SF2uPpxkAI31wMCPx16PWtyWnT0/view?usp=sharing',
   jumbotron: {
     title: 'Data School',
-    price: '200',
+    price: '200, 000',
     details:
       'A 2-month program for you to learn the basic skills you need to transition into a career in Data Science & Machine Learning',
     lists: ['Python', 'R', 'SQL', 'Privacy and data ethics'],

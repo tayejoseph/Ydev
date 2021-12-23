@@ -61,7 +61,6 @@ const School = () => {
   }
 
   const handleSubmit = async (payment = {}) => {
-    console.log({ payment }, '222')
     setLoading(true)
     return await applyForSchool({
       ...formData,
