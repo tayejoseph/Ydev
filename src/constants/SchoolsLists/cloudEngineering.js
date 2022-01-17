@@ -4,7 +4,7 @@ const schoolOfDesign = {
     'https://drive.google.com/file/d/14jjU9SF2uPpxkAI31wMCPx16PWtyWnT0/view?usp=sharing',
   jumbotron: {
     title: 'Cloud Engineering School',
-    price: '300',
+    price: '300000',
     details:
       'A 3-month immersive course that will take you through core principles in Cloud Technologies.',
     lists: [
