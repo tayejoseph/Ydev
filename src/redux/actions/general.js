@@ -32,7 +32,7 @@ export const applyForJob = async (id, data) => {
 
 export const applyForSchool = async (data) => {
   try {
-    return await axios.post('/program', data)
+    return await axios.post('/program/', data)
   } catch ({ response }) {
     handleError(response)
   }
@@ -96,7 +96,7 @@ export const becomeAnInstructor = async (data) => {
 
 export const getInTouch = async (data) => {
   try {
-    return await axios.post('/get-in-touch', data)
+    return await axios.post('/get-in-touch/', data)
   } catch ({ response }) {
     handleError(response)
   }
