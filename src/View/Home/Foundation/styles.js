@@ -1,6 +1,5 @@
 import Styled from 'styled-components'
-import { outStudentPattern } from '../../../assets/svgImgs'
-import { minQuery, maxQuery } from '../../../helpers'
+import { minQuery } from '../../../helpers'
 
 export default Styled.div`
     section.section--top {

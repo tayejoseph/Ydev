@@ -1,6 +1,5 @@
 import Styled from 'styled-components'
 import { uniBg } from '../../assets/png'
-import { OurMission } from '../../assets/svgImgs'
 import { maxQuery, minQuery } from '../../helpers'
 
 export default Styled.div`

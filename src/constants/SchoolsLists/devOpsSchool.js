@@ -4,7 +4,7 @@ const schoolOfDesign = {
     'https://drive.google.com/file/d/1iFB0n8UUPnnc0Laa7fCix_YBFyXOfqqm/view?usp=sharing',
   jumbotron: {
     title: 'DevOps School',
-    price: '300',
+    price: '300000',
     details:
       'A 4-month intensive program where you learn to design and deploy infrastructure as code, build and monitor CI/CD pipelines for different deployment strategies, and deploy scalable microservices',
     lists: [

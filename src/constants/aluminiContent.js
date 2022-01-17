@@ -1,21 +1,10 @@
-import {
-  Lego,
-  Form,
-  Todo,
-  Google2,
-  CircleCi2,
-  Cowrywise,
-  Mach,
-  Tecto,
-  Nutm,
-} from '../assets/convertedSvgs'
+import { Lego, Form, Todo, Mach, Tecto, Nutm } from '../assets/convertedSvgs'
 import { Tolu } from '../assets/png'
 import {
   TopAlumin,
   Flexible,
   Support,
   firstEng,
-  secondEng,
   thirdEng,
 } from '../assets/svgImgs'
 

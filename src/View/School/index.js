@@ -65,12 +65,18 @@ const School = () => {
     return await applyForSchool({
       ...formData,
       program,
+      payment: false,
+      transaction_reference: null,
       ...payment,
     })
       .then((response) => {
-        message.success('Successfully submitted data!')
         setLoading(false)
-        return { success: true }
+        if (response) {
+          message.success('Successfully submitted data!')
+          setDisplay(false)
+          return { success: true }
+        }
+        return
       })
       .catch(() => {
         setLoading(false)

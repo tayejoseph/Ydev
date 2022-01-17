@@ -4,7 +4,7 @@ const schoolOfDesign = {
     'https://drive.google.com/file/d/1CM_D6n_t-qxs1G9MyeKsnoe0RwkwocNP/view?usp=sharing',
   jumbotron: {
     title: 'QA/Software Testing School',
-    price: '200',
+    price: '200000',
     details:
       'A 2-month program designed to equip you with the required skills you need to take on quality assurance and software testing roles.',
     lists: [

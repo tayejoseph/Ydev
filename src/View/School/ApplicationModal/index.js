@@ -41,15 +41,14 @@ const ApplicationModal = ({
   const handlePayment = (amount) => {
     handleFlutterPayment({
       callback: (data) => {
+        console.log({ data })
         handleSubmit({
           payment: true,
-          reference: data.transactionRef,
+          transaction_reference: data.tx_ref,
         }).then((response) => {
-          if (response && response.success) {
-            setTimeout(() => {
-              closePaymentModal()
-            }, 300)
-          }
+          setTimeout(() => {
+            closePaymentModal()
+          }, 300)
         })
       },
       onClose: (response) => {},
@@ -62,7 +61,7 @@ const ApplicationModal = ({
           <div className="col-1">
             <div className="header-row">
               <h1>{jumbotron.title}</h1>
-              <h1>₦{toMoney(jumbotron.price)}</h1>
+              <h1>₦{toMoney(jumbotron.price, true)}</h1>
             </div>
             <p>{jumbotron.details}</p>
             <ol>

@@ -25,7 +25,12 @@ const Footer = () => {
             <p>Connect with us</p>
             <div className="social--row">
               {footerContent.socials.map((item) => (
-                <a href={item.link} target="__blank" key={uuid()}>
+                <a
+                  href={item.link}
+                  target="__blank"
+                  rel="noreferrer"
+                  key={uuid()}
+                >
                   {item.icon}
                 </a>
               ))}
@@ -42,7 +47,7 @@ const Footer = () => {
             </NavLink>
             <NavLink to={AppRoutes.aboutUs.events}>Events</NavLink>
             <NavLink to={AppRoutes.aboutUs.faq}>FAQs</NavLink>
-            <a href={contacts.blogLink} target={'_blank'}>
+            <a href={contacts.blogLink} target={'_blank'} rel="noreferrer">
               Blogs
             </a>
           </nav>

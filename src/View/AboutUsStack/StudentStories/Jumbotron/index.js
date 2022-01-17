@@ -1,6 +1,5 @@
 import React from 'react'
 import { TitleWithDesign } from '../../../../component'
-import { StudentsStories } from '../../../../assets/svgImgs'
 import Container from './styles'
 
 const Jumbotron = () => {
@@ -18,6 +17,7 @@ const Jumbotron = () => {
       </div>
       <div className="col--2">
         <iframe
+          title="testimonal"
           src="https://drive.google.com/file/d/1UJ_AEo3w0qV_xzzHJm150B_ls787qQ3G/preview"
           width="550rem"
           height="320rem"

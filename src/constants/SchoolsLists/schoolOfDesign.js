@@ -4,7 +4,7 @@ const schoolOfDesign = {
     'https://drive.google.com/file/d/1G3DZbHsDfrFkMCvX0o8y_AG2N5ilMvJB/view',
   jumbotron: {
     title: 'School of Design',
-    price: '250',
+    price: '250000',
     details:
       'A 2-month program created to meet the needs of those starting a career or interested at any level of design experience, including people with no design background.',
     lists: [

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { contacts, hireEdContent } from '../../../constants'
 import { ReadyStart } from '../../../component'
-import { Button, Tabs, PalletOpen } from '../../../UI'
-import { Questions, AppLogo } from '../../../assets/convertedSvgs'
+import { Tabs, PalletOpen } from '../../../UI'
+import { Questions } from '../../../assets/convertedSvgs'
 import Container from './styles'
 
 const tabContent = [
@@ -171,7 +171,7 @@ const FrequentQuestions = () => {
         </header>
         <Tabs tabs={tabContent} title={'Categories'}>
           {(item) => {
-            const { title, content } = item ? item : {}
+            const { content } = item ? item : {}
             return content && content.map((item) => <PalletOpen {...item} />)
           }}
         </Tabs>

@@ -39,11 +39,6 @@ import {
   Alaja,
   Ifeanyi,
 } from '../assets/png'
-import {
-  wireframing,
-  designThinking,
-  functionalDesign,
-} from '../assets/svgImgs'
 
 const HomeContent = {
   exclusives: [

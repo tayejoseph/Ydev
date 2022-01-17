@@ -1,5 +1,4 @@
 import Styled from 'styled-components'
-import { HireJumbotron } from '../../../assets/svgImgs'
 import { rem } from 'polished'
 
 export default Styled.div`

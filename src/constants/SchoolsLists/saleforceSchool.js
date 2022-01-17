@@ -4,7 +4,7 @@ const schoolOfDesign = {
     'https://drive.google.com/file/d/1Zrhn15rH09WS4tm25PQDVQhlB_CnHLTX/view?usp=sharing',
   jumbotron: {
     title: 'Salesforce School',
-    price: '250',
+    price: '250000',
     details:
       'A 3-month immersive course that is self-paced that avails students the beginning essentials to start off their Salesforce Administration journey.',
     lists: [

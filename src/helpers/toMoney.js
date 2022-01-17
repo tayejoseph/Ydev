@@ -19,7 +19,7 @@ const toMoney = (value, fixed) => {
       value[i] = `${value[i]},`
     }
   }
-
+  console.log({ fixed })
   if (fixed) {
     return `${value.reverse().join('')}`
   }

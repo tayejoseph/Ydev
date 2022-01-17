@@ -39,7 +39,7 @@ const WantMoreInfo = () => {
       </header>
       <Tabs title="Category" tabs={tabContent}>
         {(item) => {
-          const { title, content } = item ? item : {}
+          const { content } = item ? item : {}
           return content && content.map((item) => <PalletOpen {...item} />)
         }}
       </Tabs>

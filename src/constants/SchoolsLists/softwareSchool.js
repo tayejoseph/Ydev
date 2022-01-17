@@ -4,7 +4,7 @@ const schoolOfDesign = {
     'https://drive.google.com/file/d/1CM_D6n_t-qxs1G9MyeKsnoe0RwkwocNP/view?usp=sharing',
   jumbotron: {
     title: 'Software School',
-    price: '500',
+    price: '500000',
     details:
       'A 6-month immersive course to take you from complete beginner to professional.',
     lists: [

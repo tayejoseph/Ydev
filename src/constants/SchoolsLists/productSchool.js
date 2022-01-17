@@ -4,7 +4,7 @@ const schoolOfDesign = {
     'https://drive.google.com/file/d/1fTRfHwz4M_mIjEUxFNyERDDXLSuB4K5D/view?usp=sharing',
   jumbotron: {
     title: 'School of Product Management',
-    price: '300',
+    price: '300000',
     details:
       'A 2-month program for professionals with strong technical or business backgrounds who want to transition into product management roles',
     lists: [

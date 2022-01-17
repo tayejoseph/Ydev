@@ -1,6 +1,5 @@
 import Styled from 'styled-components'
 import {
-  honeycombPattern,
   communityMap,
   digitalWorkforce,
   whyChooseDev,

@@ -11,10 +11,7 @@ import {
   Thompson,
   Bashirat,
 } from '../../../../assets/png'
-import TabContent from '../TabContent'
 import Container from './styles'
-
-const { TabPane } = Tabs
 
 const tabContent = [
   {
