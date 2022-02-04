@@ -1,5 +1,5 @@
 const schoolOfDesign = {
-  program: 'cloud_school',
+  program: 'cloud_engineering_school',
   downloadLink:
     'https://drive.google.com/file/d/14jjU9SF2uPpxkAI31wMCPx16PWtyWnT0/view?usp=sharing',
   jumbotron: {

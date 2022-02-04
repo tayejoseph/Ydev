@@ -2,7 +2,7 @@ import { message } from 'antd'
 import { axios, handleError } from '../../lib'
 
 export const getEvents = () => async (dispatch) => {
-  const { status, ...response } = await axios.get('event')
+  const { status, ...response } = await axios.get('event/')
   if (status === 200) {
     dispatch({
       type: 'ALT_EVENTS',
@@ -12,7 +12,7 @@ export const getEvents = () => async (dispatch) => {
 }
 
 export const getJobOpenings = () => async (dispatch) => {
-  const { status, ...response } = await axios.get('job')
+  const { status, ...response } = await axios.get('job/')
   if (status === 200) {
     dispatch({
       type: 'ALT_JOB_OPENING',

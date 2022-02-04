@@ -1,5 +1,5 @@
 const schoolOfDesign = {
-  program: 'devOps_school',
+  program: 'devops_school',
   downloadLink:
     'https://drive.google.com/file/d/1iFB0n8UUPnnc0Laa7fCix_YBFyXOfqqm/view?usp=sharing',
   jumbotron: {
