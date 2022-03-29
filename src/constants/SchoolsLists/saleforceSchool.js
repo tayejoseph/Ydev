@@ -1,7 +1,7 @@
 const schoolOfDesign = {
   program: 'salesforce_school',
   downloadLink:
-    'https://drive.google.com/file/d/1Zrhn15rH09WS4tm25PQDVQhlB_CnHLTX/view?usp=sharing',
+    'https://drive.google.com/file/d/1pPA9sp5BAh24hsHQWzidKrnG4PqP4-SB/view',
   jumbotron: {
     title: 'Salesforce School',
     price: '250000',

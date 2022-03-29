@@ -9,7 +9,7 @@ const handleError = (error) => {
     } else if (error.data.error) {
       errorMessage = error.data.error
     } else if (Array.isArray(errors)) {
-      errors.map((item) => {
+      errors.forEach((item) => {
         errorMessage = `${errorMessage} ${item.field}: ${item.message}`
       })
     } else if (error.data) {

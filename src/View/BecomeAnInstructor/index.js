@@ -133,11 +133,7 @@ const BecomeAMentor = () => {
               <div key={uuid()} className="job--item">
                 <p>
                   {jobOpenings[item].title}
-                  <span>
-                    {moment(jobOpenings[item].uploadAt)
-                      .startOf('day')
-                      .fromNow()}
-                  </span>
+                  <span>{moment(jobOpenings[item].uploadAt).fromNow()}</span>
                 </p>
                 <Button
                   plain

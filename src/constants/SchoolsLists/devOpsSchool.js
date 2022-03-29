@@ -1,7 +1,7 @@
 const schoolOfDesign = {
   program: 'devops_school',
   downloadLink:
-    'https://drive.google.com/file/d/1iFB0n8UUPnnc0Laa7fCix_YBFyXOfqqm/view?usp=sharing',
+    'https://drive.google.com/file/d/1BcOAV_rGoVRF4L2nEmScPmwyF1at7aMw/view',
   jumbotron: {
     title: 'DevOps School',
     price: '300000',

@@ -9,6 +9,7 @@ import FrequentQuestions from './FrequentQuestions'
 import Foundation from './Foundation'
 import Blogs from './Blogs'
 import PodCast from './PodCast'
+import { ReadyStart } from '../../component'
 import Container from './styles'
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <Immersive />
       <TestimonalImpact />
       <OurProcess />
+      <ReadyStart />
       <FrequentQuestions />
       <Blogs />
       <PodCast />

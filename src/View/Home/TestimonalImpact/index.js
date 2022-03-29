@@ -94,7 +94,7 @@ const TestimonalImpact = () => {
         <div className="pallet--container">
           {palletLists.map((item) => (
             <div className="pallet--item" key={item}>
-              {item}
+              <p>{item}</p>
             </div>
           ))}
         </div>

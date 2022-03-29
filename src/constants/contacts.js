@@ -3,9 +3,10 @@ const contacts = {
   phoneNo: '+234 816 662 6000',
   blogLink: 'https://ydevacademy.medium.com/',
   enterpriseEmail: 'enterprise@ydev.academy',
-  address: '17A, Jibowu Street, off Alakija Street, Jibowu, Yaba.',
+  address:
+    '17A, Jibowu Street, off Alakija Street, Jibowu, Yaba 100001, Lagos State',
   termAddress:
-    '17A, Jibowu Street, off Alakija Street, Jibowu, Yaba, Lagos Nigeria.',
+    '17A, Jibowu Street, off Alakija Street, Jibowu, Yaba 100001, Lagos State',
   socials: {
     facebook: 'https://web.facebook.com/ydevacademy?_rdc=1&_rdr',
     linkedIn: 'https://www.linkedin.com/company/ydevacademy/',

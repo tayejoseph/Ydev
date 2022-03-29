@@ -53,7 +53,9 @@ export default Styled.div`
             }
             p {
                 color: #393839;
+                ${({ theme }) => theme.mixins.lineClamp(2)};
                 font-size: 1.1rem;
+                margin-bottom: 1.5em;
             }
         }
     }

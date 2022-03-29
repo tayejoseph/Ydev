@@ -7,12 +7,12 @@ const Jumbotron = () => {
   return (
     <Container>
       <TitleWithDesign title="Frequently Asked Questions" />
-      <form>
+      {/* <form>
         <button arial-lable="search">
           <FiSearch />
         </button>
         <input placeholder="what do you want to know?" />
-      </form>
+      </form> */}
     </Container>
   )
 }

@@ -3,8 +3,8 @@ import { MdAdd } from 'react-icons/md'
 import { IoClose } from 'react-icons/io5'
 import Container from './style'
 
-const PalletOpen = ({ title, details }) => {
-  const [openTab, setDisplay] = useState(false)
+const PalletOpen = ({ title, details, show = false }) => {
+  const [openTab, setDisplay] = useState(show)
   return (
     <Container>
       <header

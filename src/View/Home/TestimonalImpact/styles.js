@@ -151,9 +151,14 @@ export default Styled.div`
                 border: 1px solid #DDDDDD;
                 display: flex;
                 align-items: center;
-                font-size: 1.2rem;
-                line-height: 110%;
                 justify-content: center;
+                p {
+                    line-height: 110%;
+                    font-size: 1.2rem;
+                    ::first-line {
+                        font-weight: 600;
+                    }
+                }
             }
         }
     }

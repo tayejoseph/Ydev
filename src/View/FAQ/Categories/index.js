@@ -5,7 +5,7 @@ import Container from './styles'
 
 const tabContent = [
   {
-    title: 'All questions',
+    title: 'General',
     content: [
       {
         title: 'Do you train employees for companies?',
@@ -219,7 +219,11 @@ const Categories = () => {
     <Container>
       <div className="nav--container">
         <Tabs title="Categories" tabs={tabContent}>
-          {({ content }) => content.map((item) => <PalletOpen {...item} />)}
+          {({ content }) =>
+            content.map((item, index) => (
+              <PalletOpen {...{ ...item, show: index === 0 ? true : false }} />
+            ))
+          }
         </Tabs>
       </div>
       <div className="content--container"></div>

@@ -1,7 +1,7 @@
 const schoolOfDesign = {
   program: 'software_school',
   downloadLink:
-    'https://drive.google.com/file/d/1CM_D6n_t-qxs1G9MyeKsnoe0RwkwocNP/view?usp=sharing',
+    'https://drive.google.com/file/d/1pPA9sp5BAh24hsHQWzidKrnG4PqP4-SB/view',
   jumbotron: {
     title: 'Software School',
     price: '500000',

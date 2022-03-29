@@ -38,6 +38,12 @@ import {
   Opeyemi,
   Alaja,
   Ifeanyi,
+  RadioPublic,
+  Spotify,
+  GooglePodcast,
+  Pocketcasts,
+  Breaker,
+  Anchor,
 } from '../assets/png'
 
 const HomeContent = {
@@ -209,27 +215,33 @@ const HomeContent = {
   podcastLists: [
     {
       name: 'Google Podcasts',
+      src: GooglePodcast,
       link:
         'https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82NThkNWIwYy9wb2RjYXN0L3Jzcw==',
     },
     {
       name: 'Spotify',
+      src: Spotify,
       link: 'https://open.spotify.com/show/2VLgwjb36s4DfFnQfvizEj',
     },
     {
       name: 'Anchor',
+      src: Anchor,
       link: 'https://anchor.fm/techlifecast',
     },
     {
       name: 'Breaker',
+      src: Breaker,
       link: 'https://www.breaker.audio/bracket-techpod',
     },
     {
       name: 'Pocket Casts',
+      src: Pocketcasts,
       link: 'https://pca.st/q8mlgbz2',
     },
     {
       name: 'Radio Public',
+      src: RadioPublic,
       link: 'https://radiopublic.com/techlifecast-6rqaKk',
     },
   ],

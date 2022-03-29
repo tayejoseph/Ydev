@@ -1,7 +1,7 @@
 const schoolOfDesign = {
   program: 'cloud_engineering_school',
   downloadLink:
-    'https://drive.google.com/file/d/14jjU9SF2uPpxkAI31wMCPx16PWtyWnT0/view?usp=sharing',
+    'https://drive.google.com/file/d/1BcOAV_rGoVRF4L2nEmScPmwyF1at7aMw/view',
   jumbotron: {
     title: 'Cloud Engineering School',
     price: '300000',

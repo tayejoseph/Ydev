@@ -44,6 +44,14 @@ export default Styled.div`
                     text-decoration: underline;
                     
                 }
+                img {
+                    width: 5rem;
+                }
+            }
+            &:first-of-type {
+                img {
+                    width: 8rem;
+                }
             }
         }
     }

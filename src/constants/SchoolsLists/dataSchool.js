@@ -1,7 +1,7 @@
 const schoolOfDesign = {
   program: 'data_school',
   downloadLink:
-    'https://drive.google.com/file/d/14jjU9SF2uPpxkAI31wMCPx16PWtyWnT0/view?usp=sharing',
+    'https://drive.google.com/file/d/16hFjKUDER9e1ezI5GM48B7Wr1KRHRXuT/view',
   jumbotron: {
     title: 'Data School',
     price: '200000',

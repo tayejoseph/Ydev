@@ -4,7 +4,7 @@ import { minQuery } from '../../../helpers'
 export default Styled.div`
     position: relative;
     padding: 3em 0px;
-    padding-bottom: 5em;
+    padding-bottom: 1em;
     &:after {
         content: "";
         position: absolute;

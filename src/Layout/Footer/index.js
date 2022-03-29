@@ -48,7 +48,7 @@ const Footer = () => {
             <NavLink to={AppRoutes.aboutUs.events}>Events</NavLink>
             <NavLink to={AppRoutes.aboutUs.faq}>FAQs</NavLink>
             <a href={contacts.blogLink} target={'_blank'} rel="noreferrer">
-              Blogs
+              Blog
             </a>
           </nav>
         </div>

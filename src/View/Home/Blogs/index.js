@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../../UI'
 import { Blogs } from '../../../assets/convertedSvgs'
-import { HomeContent, contacts } from '../../../constants'
+import { HomeContent } from '../../../constants'
 import Container from './styles'
 
 const BlogsContent = () => {
@@ -18,23 +18,23 @@ const BlogsContent = () => {
       <div className="grid--container">
         {HomeContent.blogs.map((item) => (
           <div className="grid--item">
-            <a href={item.link} target="_blank" rel="noreferrer">
-              <div className="img--container">
-                <img src={item.imgAddress} alt={item.title} />
-              </div>
-              <div className="content--container">
-                <h1>{item.title}</h1>
-                <p>{item.details}</p>
-              </div>
-            </a>
+            <div className="img--container">
+              <img src={item.imgAddress} alt={item.title} />
+            </div>
+            <div className="content--container">
+              <h1>{item.title}</h1>
+              <p>{item.details}</p>
+            </div>
+            <Button
+              onClick={() => {
+                window.open(item.link)
+              }}
+            >
+              Read more
+            </Button>
           </div>
         ))}
       </div>
-      <footer>
-        <Button secondary onClick={() => window.open(contacts.blogLink)}>
-          Read more
-        </Button>
-      </footer>
     </Container>
   )
 }
