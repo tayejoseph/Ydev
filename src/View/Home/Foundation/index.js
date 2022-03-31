@@ -23,7 +23,7 @@ const Foundation = () => {
             through our robust curriculum.
           </p>
           <Button onClick={() => history.push(AppRoutes.curriculum)}>
-            Explore our curriculum
+            Explore our courses
           </Button>
         </div>
       </section>

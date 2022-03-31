@@ -29,7 +29,7 @@ const higherEdContent = {
         {
           title: 'Do you train students for companies?',
           details:
-            "Yes, we do. We provide a dynamic curriculum that is tailored to the needs of today's market and employers worldwide.",
+            "Yes, we do. We provide a dynamic program that is tailored to the needs of today's market and employers worldwide.",
         },
         {
           title:
@@ -40,12 +40,12 @@ const higherEdContent = {
         {
           title: 'What courses do you teach?',
           details:
-            'Our curriculum is made up of in-demand tech skills that range from data science, UI/X design, product management, DevOps to software engineering and much more.',
+            'Our program is made up of in-demand tech skills that range from data science, UI/X design, product management, DevOps to software engineering and much more.',
         },
         {
           title: 'Are there any special benefits partnering with Ydev ?',
           details:
-            'There are, indeed. First and foremost, we teach and expose your students to new tools and methods so that they can produce results and add value to any workplace right away. Second, we assist schools in retooling their graduates using customizable curriculums.',
+            'There are, indeed. First and foremost, we teach and expose your students to new tools and methods so that they can produce results and add value to any workplace right away. Second, we assist schools in retooling their graduates using customizable programs.',
         },
         {
           title: 'How do we reach you?',

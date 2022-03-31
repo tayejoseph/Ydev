@@ -4,11 +4,11 @@ import { Button } from '../../UI'
 import { AppLogo } from '../../assets/convertedSvgs'
 import Container from './styles'
 
-const ReadyStart = ({ withBackDrop = false, title }) => {
+const ReadyStart = ({ withBackDrop = false, hasLogo = true, title }) => {
   const history = useHistory()
   return (
     <Container withBackDrop={withBackDrop}>
-      <AppLogo />
+      {hasLogo && <AppLogo />}
       <h1 className="u--typo__title2">{title || 'Ready to start?'}</h1>
       <Button onClick={() => history.push('?popup=apply')}>Apply now</Button>
     </Container>

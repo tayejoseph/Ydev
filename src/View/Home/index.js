@@ -22,7 +22,7 @@ const Home = () => {
       <Immersive />
       <TestimonalImpact />
       <OurProcess />
-      <ReadyStart />
+      <ReadyStart hasLogo={false} />
       <FrequentQuestions />
       <Blogs />
       <PodCast />
