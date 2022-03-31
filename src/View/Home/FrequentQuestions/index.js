@@ -7,7 +7,7 @@ import Container from './styles'
 
 const tabContent = [
   {
-    title: 'All Questions',
+    title: 'General',
     content: [
       {
         title: 'What is Ydev academy about?',
@@ -163,7 +163,7 @@ const FrequentQuestions = () => {
       <section className="section--questions">
         <header>
           <Questions />
-          <h1 className="u--typo__title2">Frequently asked questions</h1>
+          <h1 className="u--typo__title2">Frequently Asked Questions</h1>
           <p>
             <Link to="/">Know more</Link> about our programs
           </p>

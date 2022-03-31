@@ -42,6 +42,7 @@ export default Styled.div`
                     }
                 }
                 &.action--right {
+                    background: pink;
                     transform: translateX(60vw);
                 }
 
@@ -49,7 +50,7 @@ export default Styled.div`
         }
         div.testimonial--container {
             display: flex;
-            grid-gap: 2em;
+            grid-gap: 3em;
             padding-top: 2em;
             overflow-x: auto;
             width: 80vw;

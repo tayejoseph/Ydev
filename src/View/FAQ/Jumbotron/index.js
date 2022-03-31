@@ -1,5 +1,4 @@
 import React from 'react'
-import { FiSearch } from 'react-icons/fi'
 import { TitleWithDesign } from '../../../component'
 import Container from './styles'
 
