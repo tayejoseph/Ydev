@@ -9,6 +9,7 @@ import { AppRoutes } from '../../constants'
 import { Button } from '../../UI'
 import { AppLogo } from '../../assets/convertedSvgs'
 import Container from './styles'
+import { blue_arrow } from '../../assets/png'
 
 const menus = [
   {
@@ -126,7 +127,12 @@ const TopNav = () => {
     )
   }
   return (
-    <Container>
+    <Container style={{flexDirection: "column"}}>
+      <div style={{backgroundColor: "black", width: "100%", height: "auto", color: "white", textAlign: "center", padding: "15px 0", fontSize: "18px", marginBottom: "20px"}}>
+        <a href='https://tally.so/r/w7QBPm?transparentBackground=1' target={"_blank"} style={{color: "inherit", display: "block", width: "100%", height: "100%"}}>
+        Register for our <span style={{textDecoration: "underline"}}>Career Starter Program</span> for <span style={{textDecoration: "underline"}}>University Students in Nigeria</span>. With up to <span style={{textDecoration: "underline"}}>60%</span> off our normal prices <img src={blue_arrow}></img>
+        </a>
+      </div>
       <div className="content--container nav--desktop">
         <Link to="/" className="brand--logo">
           <AppLogo />
