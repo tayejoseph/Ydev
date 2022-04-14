@@ -7,7 +7,7 @@ export default Styled.div`
     grid-gap: 2em;
     position: relative;
     padding-bottom: 2em;
-    padding: 3em 0px;
+    padding: 4.5em 0px;
     ${minQuery('lg')} {
         grid-template-columns: 1fr 1fr;
     }

@@ -128,12 +128,12 @@ const TopNav = () => {
   }
   return (
     <Container style={{flexDirection: "column"}}>
-      <div style={{backgroundColor: "#051A26", width: "100%", height: "auto", color: "white", textAlign: "center", padding: "15px 0", fontSize: "18px", marginBottom: "20px"}}>
+      <div style={{backgroundColor: "#051A26", width: "100%", height: "auto", color: "white", textAlign: "center", padding: "15px 5px", fontSize: "18px"}}>
         <a href='https://tally.so/r/w7QBPm?transparentBackground=1' target={"_blank"} style={{color: "inherit", display: "block", width: "100%", height: "100%"}}>
-        Register for our <span style={{textDecoration: "underline"}}>Career Starter Program</span> for <span style={{textDecoration: "underline"}}>University Students in Nigeria</span>. With up to <span style={{textDecoration: "underline"}}>60%</span> off our normal prices <img src={blue_arrow}></img>
+        Register for our <span style={{textDecoration: "underline"}}>Career Starter Program</span> for <span style={{textDecoration: "underline"}}>University Students in Nigeria</span>. With up to <span style={{textDecoration: "underline"}}>60%</span> off our normal prices <img src={blue_arrow} style={{paddingTop: "7.5px"}}></img>
         </a>
       </div>
-      <div className="content--container nav--desktop">
+      <div className="content--container nav--desktop" style={{padding: "20px 0", background: "white"}}>
         <Link to="/" className="brand--logo">
           <AppLogo />
         </Link>
@@ -145,7 +145,7 @@ const TopNav = () => {
         </nav>
       </div>
 
-      <div className="content--container nav--mobile">
+      <div className="content--container nav--mobile" style={{background: "white", padding: "10px 0"}}>
         <div className="top--section">
           <Link to="/" className="brand--logo">
             <AppLogo />
