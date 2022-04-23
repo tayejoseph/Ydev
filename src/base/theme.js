@@ -1,8 +1,8 @@
 import mixins from './mixins'
 
 const dimensions = {
-  navHeight: '6rem',
-  navHeightMobile: '4.5rem',
+  navHeight: '7.5rem',
+  navHeightMobile: '6rem',
   maxWidth: '1100px',
   adminTopNavHeight: '4.5rem',
   footerHeight: '3.5rem',
