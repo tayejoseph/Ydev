@@ -139,7 +139,7 @@ const TopNav = () => {
         </nav>
       </div>
 
-      <div className="content--container nav--mobile">
+      <div className="content--container nav--mobile" style={{background: "white", padding: "10px 20px", width: "100%"}}>
         <div className="top--section">
           <Link to="/" className="brand--logo">
             <AppLogo />
