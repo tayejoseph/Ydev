@@ -8,6 +8,7 @@ import { HiOutlineMenu } from 'react-icons/hi'
 import { AppRoutes } from '../../constants'
 import { Button } from '../../UI'
 import { AppLogo } from '../../assets/convertedSvgs'
+import { BlueArrow } from '../../assets/png'
 import Container from './styles'
 
 const menus = [
@@ -129,7 +130,7 @@ const TopNav = () => {
     <Container style={{flexDirection: "column", paddingBottom: "9rem"}}>
       <div style={{backgroundColor: "#051A26", width: "100%", height: "auto", color: "white", textAlign: "center", padding: "15px 5px", fontSize: "18px"}}>
         <a href='https://tally.so/r/w7QBPm?transparentBackground=1' target={"_blank"} style={{color: "inherit", display: "block", width: "100%", height: "100%"}}>
-        Register for our <span style={{textDecoration: "underline"}}>Career Starter Program</span> for <span style={{textDecoration: "underline"}}>University Students in Nigeria</span>. With up to <span style={{textDecoration: "underline"}}>60%</span> off our normal prices <img style={{paddingTop: "7.5px"}}></img>
+        Register for our <span style={{textDecoration: "underline"}}>Career Starter Program</span> for <span style={{textDecoration: "underline"}}>University Students in Nigeria</span>. With up to <span style={{textDecoration: "underline"}}>60%</span> off our normal prices <img src={BlueArrow} style={{paddingTop: "7.5px"}}></img>
         </a>
       </div>
       <div className="content--container nav--desktop" style={{padding: "20px 0", background: "white"}}>
