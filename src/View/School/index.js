@@ -15,9 +15,11 @@ import { applyForSchool } from '../../redux/actions'
 import { formValidator } from '../../helpers'
 import { Button, InputGroup } from '../../UI'
 import ApplicationModal from './ApplicationModal'
+import useAnalyticsEventTracker from '../../analytics/useAnalyticsEventTracker'
 import Container from './styles'
 
 const School = () => {
+  const gaEventTracker = useAnalyticsEventTracker('Download Curriculum')
   const {
     params: { schoolName },
   } = useRouteMatch()
@@ -58,6 +60,7 @@ const School = () => {
 
   const downloadCurriculum = () => {
     window.open(downloadLink)
+    gaEventTracker(program)
   }
 
   const handleSubmit = async (payment = {}) => {

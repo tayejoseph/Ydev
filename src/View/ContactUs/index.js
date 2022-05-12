@@ -7,8 +7,10 @@ import { Button, InputGroup } from '../../UI'
 import { getInTouch } from '../../redux/actions'
 import { AppRoutes, contacts } from '../../constants'
 import Container from './styles'
+import useAnalyticsEventTracker from '../../analytics/useAnalyticsEventTracker'
 
 const ContactUs = () => {
+  const gaEventTracker = useAnalyticsEventTracker('Contact Us')
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     first_name: '',
@@ -123,7 +125,7 @@ const ContactUs = () => {
               <Link to={AppRoutes.termsandcondition}>Terms</Link> and{' '}
               <Link to={AppRoutes.privacyPolicy}>Privacy Policy</Link>
             </p>
-            <Button loading={loading} spinnerWithTxt full type="submit">
+            <Button loading={loading} spinnerWithTxt full type="submit" onClick={()=>gaEventTracker('contactUsButton')}>
               Send Message
             </Button>
           </footer>

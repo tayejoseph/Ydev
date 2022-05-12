@@ -28,6 +28,11 @@ import { AppRoutes } from './constants'
 import { useQuery } from './hooks'
 import theme from './base/theme'
 import GlobalStyle from './base/globalStyles'
+import ReactGA from 'react-ga'
+
+const TRACKING_ID = "G-Y37R99HCVG"
+ReactGA.initialize(TRACKING_ID)
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -48,6 +53,7 @@ const App = () => {
   useEffect(() => {
     dispatch(getEvents())
     dispatch(getJobOpenings())
+    ReactGA.pageview(window.location.pathname + window.location.search)
   }, [dispatch])
 
   return (
